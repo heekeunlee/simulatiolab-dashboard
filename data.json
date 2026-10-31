@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-31 23:19",
+ "generated": "2026-10-31 23:20",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -599,10 +599,15 @@
  ],
  "site": {
   "version": "1.8.3",
-  "liveVersion": "1.8.2",
+  "liveVersion": "1.8.3",
   "experiments": 81,
   "languages": 8,
   "commits": [
+   {
+    "hash": "aee85d2",
+    "date": "2026-10-31T23:19:27+09:00",
+    "msg": "대시보드: 푸시 전 원격 변경 받기 순서 수정"
+   },
    {
     "hash": "ae5b0ca",
     "date": "2026-10-31T23:19:03+09:00",
@@ -657,14 +662,9 @@
     "hash": "a3a3021",
     "date": "2026-10-30T09:14:08+09:00",
     "msg": "생존자 편향 쇼츠 주소 바로잡음, 반딧불이 실험에 쇼츠 연결"
-   },
-   {
-    "hash": "22118b3",
-    "date": "2026-10-30T09:09:59+09:00",
-    "msg": "재능 vs 운·버스 몰림 실험: 쇼츠 연결"
    }
   ],
-  "commitCount": 186
+  "commitCount": 187
  },
  "eleven": {
   "used": 24633,
