@@ -87,7 +87,7 @@ td.date{white-space:nowrap;font-variant-numeric:tabular-nums;font-size:13px}
 <div class="sec">채널 성과</div>
 <section class="kpis" id="kpis"></section>
 <section class="card"><h2>날짜별 조회수</h2><div id="trend" style="position:relative"></div></section>
-<section class="card"><h2>영상 × 날짜 잔디맵</h2><div class="muted small" style="margin:-6px 0 10px">칸 = 그날 늘어난 조회수 · 진할수록 많음 · 테두리 = 게시한 날 · 빗금 = 기록 전</div><div class="tw" id="hmwrap" style="position:relative"></div><div class="scale" id="hmscale"></div></section>
+<section class="card"><h2>영상별 일일 조회 온도 <span class="muted small">(진할수록 뜨거운 날)</span></h2><div class="muted small" style="margin:-6px 0 10px">칸 = 그날 늘어난 조회수 · 진할수록 많음 · 테두리 = 게시한 날 · 빗금 = 기록 전</div><div class="tw" id="hmwrap" style="position:relative"></div><div class="scale" id="hmscale"></div></section>
 <section class="card">
   <h2>영상별 조회 분석</h2>
   <div class="tw"><table><thead><tr><th>게시일</th><th>영상</th><th class="num">경과</th><th class="num">조회</th><th class="num" id="dh">24시간 증가</th><th class="num">시간당</th><th class="num">좋아요</th><th class="num">좋아요율</th><th class="num" title="피드에서 넘기지 않고 본 비율">계속 시청</th><th class="num">평균 조회율</th><th class="num">구독</th><th>조회 비중</th></tr></thead><tbody id="ana"></tbody></table></div>
@@ -132,6 +132,7 @@ const day = iso => iso ? kst(iso).slice(5, 10).replace('-', '/') : '';
 const hm = iso => iso ? kst(iso).slice(11, 16) : '';
 const ago = h => h < 48 ? Math.round(h) + '시간' : (h / 24).toFixed(1) + '일';
 const short = t => (t || '').replace(/\s*#shorts.*/i, '');
+const ko = v => (window.KO && window.KO[v.id]) || short(v.title);
 const J = u => fetch(u + '?' + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null);
 let filter = '전체';
 
@@ -144,6 +145,7 @@ async function load() {
   const norm = t => (t || '').toLowerCase().replace(/#\w+/g, '').replace(/[^a-z0-9]/g, '');
   const byTitle = Object.fromEntries(yt.map(v => [norm(v.title), v]));
   d.shorts.forEach(s => { if (!s.youtube && s.title && byTitle[norm(s.title)]) s.youtube = byTitle[norm(s.title)].id; s.yt = byId[s.youtube]; });
+  window.KO = Object.fromEntries(d.shorts.filter(s => s.youtube).map(s => [s.youtube, s.name]));
   const H = (hist || []).map(h => ({...h, ts: new Date(h.t + ':00+09:00').getTime()}));
   const now = Date.now();
   // 24시간 전에 가장 가까운 기록 (없으면 가장 오래된 기록)
@@ -199,7 +201,7 @@ function dailyData(H, yt) {
 
 function trendHTML(H, yt) {
   const D = dailyData(H, yt);
-  const name = Object.fromEntries(yt.map(v => [v.id, short(v.title)]));
+  const name = Object.fromEntries(yt.map(v => [v.id, ko(v)]));
   if (!D) return '<div class="muted small">기록 없음</div>';
   const rows = D.rows.slice(-range), W = Math.max(300, Math.round($('trend').clientWidth || 1000)), P = {l: 46, r: 12, t: 14, b: 30};
   const every = Math.max(1, Math.ceil(rows.length / Math.max(2, Math.floor(W / 78)))), showVal = W / rows.length > 34;
@@ -276,12 +278,12 @@ function heatmap(H, yt) {
     if (r.first && r.k === first) { /* 기록 첫날: 시작 이후만 */ }
     const g = r.gain[v.id] || 0, st = [...RAMP].reverse().find(x => g >= x[0]);
     const bg = st ? st[1] : 'var(--line)', fg = st ? st[2] : 'var(--muted)';
-    return `<td class="c${pk === r.k ? ' pub' : ''}" style="background:${bg};color:${fg}" data-t="${esc(short(v.title))}|${dlab(r.k)}${r.partial ? ' · 진행 중' : ''}|+${fmt(g)}${pk === r.k ? '|게시한 날' : ''}">${g ? fmt(g) : ''}</td>`;
+    return `<td class="c${pk === r.k ? ' pub' : ''}" style="background:${bg};color:${fg}" data-t="${esc(ko(v))}|${dlab(r.k)}${r.partial ? ' · 진행 중' : ''}|+${fmt(g)}${pk === r.k ? '|게시한 날' : ''}">${g ? fmt(g) : ''}</td>`;
   };
   const pre = rows[0].k > first ? '' : '';
   $('hmwrap').innerHTML = `<table class="hm"><thead><tr><th></th>${rows.map(r => `<th>${dlab(r.k).replace('(', '<br>(')}</th>`).join('')}<th>합계</th></tr></thead><tbody>${vids.map(v => {
     const tot = rows.reduce((a, r) => a + (r.gain[v.id] || 0), 0);
-    return `<tr><td class="v" title="${esc(v.title)}"><a href="https://www.youtube.com/shorts/${v.id}" target="_blank" rel="noopener">${esc(short(v.title))}</a></td>${rows.map(r => cell(v, r)).join('')}<td class="num small"><b>+${fmt(tot)}</b></td></tr>`; }).join('')}</tbody></table><div id="hmtip" class="tip" hidden></div>`;
+    return `<tr><td class="v" title="${esc(ko(v))} · ${esc(short(v.title))}"><a href="https://www.youtube.com/shorts/${v.id}" target="_blank" rel="noopener">${esc(ko(v))}</a></td>${rows.map(r => cell(v, r)).join('')}<td class="num small"><b>+${fmt(tot)}</b></td></tr>`; }).join('')}</tbody></table><div id="hmtip" class="tip" hidden></div>`;
   $('hmscale').innerHTML = '적음 <i style="background:var(--line)"></i>' + RAMP.map(x => `<i style="background:${x[1]}" title="${x[0]}+"></i>`).join('') + ' 많음 <span style="margin-left:8px">(0 · 1+ · 10+ · 50+ · 200+ · 500+)</span>';
   const tip = $('hmtip'), w = $('hmwrap');
   w.querySelectorAll('td.c[data-t]').forEach(c => { const f = ev => { const [t, d, g, p] = c.dataset.t.split('|'); tip.innerHTML = `<b>${t}</b><div>${d}</div><div>${g}회${p ? ' · ' + p : ''}</div>`; tip.hidden = false; const r = w.getBoundingClientRect(); let x = ev.clientX - r.left + w.scrollLeft + 12; tip.style.left = Math.min(x, w.scrollWidth - 240) + 'px'; tip.style.top = (ev.clientY - r.top + 12) + 'px'; }; c.onmousemove = f; c.ontouchstart = e => f(e.touches[0]); c.onmouseleave = () => tip.hidden = true; });
@@ -324,7 +326,7 @@ function render(d, yt, ytAt, ch, H, span, st) {
   const mx = Math.max(1, ...yt.map(v => v.views));
   $('ana').innerHTML = [...yt].sort((a, b) => b.published.localeCompare(a.published)).map(v => `<tr>
     <td class="date">${day(v.published)}<div class="sub">${hm(v.published)}</div></td>
-    <td style="min-width:220px"><a href="https://www.youtube.com/shorts/${v.id}" target="_blank" rel="noopener">${esc(short(v.title))}</a></td>
+    <td style="min-width:220px"><a class="nm" href="https://www.youtube.com/shorts/${v.id}" target="_blank" rel="noopener">${esc(ko(v))}</a><div class="sub">${esc(short(v.title))}</div></td>
     <td class="num">${ago(v.age)}</td><td class="num"><b>${fmt(v.views)}</b></td>
     <td class="num">${v.delta == null ? '–' : `<span class="${v.delta > 0 ? 'up' : ''}">+${fmt(v.delta)}</span>`}</td>
     <td class="num">${v.rate.toFixed(1)}</td><td class="num">${fmt(v.likes)}</td><td class="num">${(v.lr * 100).toFixed(1)}%</td>${(() => { const m = window.STUDIO?.videos?.[v.id]; return m ? `<td class="num"><b style="color:${m.stayed >= 50 ? 'var(--ok)' : m.stayed < 35 ? 'var(--bad)' : 'inherit'}">${m.stayed}%</b></td><td class="num">${m.avgPct}%</td><td class="num">${m.subs ?? '–'}</td>` : '<td class="num">–</td><td class="num">–</td><td class="num">–</td>'; })()}
