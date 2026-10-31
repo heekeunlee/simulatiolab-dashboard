@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01 01:39",
+ "generated": "2026-11-01 08:37",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -23,8 +23,8 @@
    ],
    "srt": false,
    "langs": [],
-   "youtube": "DIUHq6UK9Zs",
-   "linked": true,
+   "youtube": null,
+   "linked": false,
    "thumb": "thumbs/02-braess.jpg"
   },
   {
@@ -54,8 +54,8 @@
     "ru",
     "zh"
    ],
-   "youtube": "8LKa2AeEOik",
-   "linked": true,
+   "youtube": null,
+   "linked": false,
    "thumb": "thumbs/03-braess-theory.jpg"
   },
   {
@@ -78,8 +78,8 @@
    "langs": [
     "en"
    ],
-   "youtube": "cQkILvcl008",
-   "linked": true,
+   "youtube": null,
+   "linked": false,
    "thumb": "thumbs/04-bus-bunching.jpg"
   },
   {
@@ -126,8 +126,8 @@
    "langs": [
     "en"
    ],
-   "youtube": "l6zXtQNpIdI",
-   "linked": true,
+   "youtube": null,
+   "linked": false,
    "thumb": "thumbs/06-friendship.jpg"
   },
   {
@@ -150,8 +150,8 @@
    "langs": [
     "en"
    ],
-   "youtube": "lGnrLC4eFzE",
-   "linked": true,
+   "youtube": null,
+   "linked": false,
    "thumb": "thumbs/07-survivor.jpg"
   },
   {
@@ -318,8 +318,8 @@
    "langs": [
     "en"
    ],
-   "youtube": "3zXaoMD-jms",
-   "linked": true,
+   "youtube": null,
+   "linked": false,
    "thumb": "thumbs/14-talent-vs-luck.jpg"
   },
   {
@@ -342,8 +342,8 @@
    "langs": [
     "en"
    ],
-   "youtube": "EzuqP_klgoY",
-   "linked": true,
+   "youtube": null,
+   "linked": false,
    "thumb": "thumbs/15-firefly.jpg"
   },
   {
@@ -438,8 +438,8 @@
    "langs": [
     "en"
    ],
-   "youtube": "yTuOnrvKgNg",
-   "linked": true,
+   "youtube": null,
+   "linked": false,
    "thumb": "thumbs/19-strait.jpg"
   },
   {
@@ -539,64 +539,7 @@
    "thumb": "thumbs/23-zipper.jpg"
   }
  ],
- "youtube": [
-  {
-   "id": "yTuOnrvKgNg",
-   "title": "One Sea Lane Gets Blocked. Do Your Prices Rise Too? #shorts",
-   "published": "2026-10-31T00:00:19+00:00",
-   "views": 1424,
-   "likes": 15
-  },
-  {
-   "id": "EzuqP_klgoY",
-   "title": "How Do Fireflies Blink in Sync With No Leader? #shorts",
-   "published": "2026-10-29T15:11:45+00:00",
-   "views": 16,
-   "likes": 0
-  },
-  {
-   "id": "cQkILvcl008",
-   "title": "Why Do Buses Always Come in Pairs? #shorts",
-   "published": "2026-10-29T15:06:52+00:00",
-   "views": 6,
-   "likes": 1
-  },
-  {
-   "id": "3zXaoMD-jms",
-   "title": "The Most Talented Person Almost Never Ends Up the Richest #shorts",
-   "published": "2026-10-29T15:00:30+00:00",
-   "views": 9,
-   "likes": 1
-  },
-  {
-   "id": "l6zXtQNpIdI",
-   "title": "Your Friends Are More Popular Than You (It's Math) #shorts #math",
-   "published": "2026-10-29T14:55:09+00:00",
-   "views": 9,
-   "likes": 1
-  },
-  {
-   "id": "lGnrLC4eFzE",
-   "title": "Where Would You Add Armor? (Most People Get It Wrong) #shorts",
-   "published": "2026-10-29T14:46:12+00:00",
-   "views": 1303,
-   "likes": 20
-  },
-  {
-   "id": "8LKa2AeEOik",
-   "title": "Braess's Paradox: Why More Roads Can Mean More Traffic #shorts",
-   "published": "2026-10-29T02:44:08+00:00",
-   "views": 1119,
-   "likes": 6
-  },
-  {
-   "id": "DIUHq6UK9Zs",
-   "title": "Why a New Road Made Everyone Slower #shorts",
-   "published": "2026-10-29T01:03:39+00:00",
-   "views": 1272,
-   "likes": 9
-  }
- ],
+ "youtube": [],
  "site": {
   "version": "1.8.7",
   "liveVersion": "1.8.7",
