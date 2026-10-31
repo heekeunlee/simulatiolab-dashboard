@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>Simulatio Lab 운영 현황</title>
+<title>유튜브 숏폼영상 운영현황</title>
 <style>
 :root{--bg:#f3f4f7;--card:#fff;--fg:#151a24;--muted:#626b7d;--line:#e1e4ea;--accent:#2f6bff;--ok:#18a058;--warn:#d98a00;--bad:#d64545;--soft:#eef2ff;--bar:#2f6bff;color-scheme:light}
 *{box-sizing:border-box}
@@ -51,103 +51,212 @@ td.num{font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
 .commits{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size:13px}
 .commits code{font-size:12px;color:var(--muted);margin-right:6px}
 .legend{font-size:12px;color:var(--muted);margin-top:8px}
+.chart{width:100%;height:auto;display:block}
+.chart text{font-size:11px;fill:var(--muted)}
+.studio{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.studio div{border:1px dashed var(--line);border-radius:10px;padding:10px 12px}
+.studio b{display:block;font-size:13px}.studio span{font-size:12px;color:var(--muted)}
+.share{display:inline-block;width:70px;height:6px;background:var(--line);border-radius:99px;overflow:hidden;vertical-align:middle;margin-left:6px}.share i{display:block;height:100%;background:var(--bar)}
+.up{color:var(--ok);font-weight:600}
+td.date{white-space:nowrap;font-variant-numeric:tabular-nums;font-size:13px}
+.sec{font-size:12px;font-weight:700;letter-spacing:.06em;color:var(--muted);text-transform:uppercase;margin:6px 0 -8px}
 </style>
 </head>
 <body>
 <main>
 <header>
-  <div><h1>시뮬라티오 랩 운영 현황</h1><div class="muted small">쇼츠 제작 · 유튜브 게시 · 사이트 · 크레딧 — 모니터링용 (검색 비노출)</div></div>
+  <div><h1>유튜브 숏폼영상 운영현황</h1><div class="muted small">Simulatio Lab · 쇼츠 제작 · 게시 · 조회 분석 · 성장 전략 (검색 비노출)</div></div>
   <div class="small muted" id="stamp">불러오는 중…</div>
 </header>
+
+<div class="sec">채널 성과</div>
 <section class="kpis" id="kpis"></section>
+<section class="card"><h2>누적 조회수 추이</h2><div id="trend"></div><div class="legend" id="trendnote"></div></section>
+<section class="card">
+  <h2>영상별 조회 분석</h2>
+  <div class="tw"><table><thead><tr><th>게시일</th><th>영상</th><th class="num">경과</th><th class="num">조회</th><th class="num" id="dh">24시간 증가</th><th class="num">시간당</th><th class="num">좋아요</th><th class="num">좋아요율</th><th>조회 비중</th></tr></thead><tbody id="ana"></tbody></table></div>
+  <div class="legend">유튜브 공개 정보 기준(1시간마다 자동 갱신, 최근 15개 영상). 시간당 = 조회 ÷ 게시 후 경과 시간. 좋아요율 = 좋아요 ÷ 조회.</div>
+</section>
+<section class="card">
+  <h2>YouTube Studio 전용 지표</h2>
+  <div class="studio">
+    <div><b>피드 노출수</b><span>쇼츠 피드에 몇 번 떴는지</span></div>
+    <div><b>본 영상 vs 넘긴 영상</b><span>피드에서 멈춘 비율 (첫 1~2초 성적)</span></div>
+    <div><b>평균 시청 지속률</b><span>100% 넘으면 반복 재생</span></div>
+    <div><b>시청 시간</b><span>수익 조건 계산에는 쇼츠 조회수 별도</span></div>
+    <div><b>트래픽 소스</b><span>쇼츠 피드 · 검색 · 채널 · 외부</span></div>
+    <div><b>시청자 국가·연령</b><span>올리는 시간대 결정 근거</span></div>
+    <div><b>구독 전환</b><span>영상별 구독자 증가</span></div>
+    <div><b>댓글 · 공유</b><span>참여 신호</span></div>
+  </div>
+  <div class="legend" id="studionote"></div>
+</section>
+
+<div class="sec">성장 전략</div>
+<section class="card"><h2>데이터에서 보이는 것 (자동)</h2><ul class="alerts" id="auto"></ul></section>
+<section class="grid2">
+  <div class="card"><h2>조회수·피드 노출 전략</h2><p class="small muted" id="sum"></p><ul class="alerts" id="strat"></ul></div>
+  <div class="card"><h2>지금까지 배운 것</h2><ul class="alerts" id="learned"></ul><div class="legend" id="stratAt"></div></div>
+</section>
+
+<div class="sec">제작·운영</div>
+<section class="kpis" id="kpis2"></section>
 <section class="card"><h2>확인할 것</h2><ul class="alerts" id="alerts"></ul></section>
 <section class="card">
   <h2>쇼츠 제작 파이프라인</h2>
   <div class="filters" id="filters"></div>
-  <div class="tw"><table><thead><tr><th></th><th>#</th><th>주제</th><th>시리즈</th><th class="num">길이</th><th>진행</th><th>상태</th><th class="num">조회</th><th class="num">좋아요</th></tr></thead><tbody id="rows"></tbody></table></div>
-  <div class="legend">진행 칸: 영 = 완성 영상 · 섬 = 섬네일 · 자 = 영어 자막 · 유 = 유튜브 게시 · 사 = 사이트 실험 페이지에 연결</div>
+  <div class="tw"><table><thead><tr><th>게시일</th><th></th><th>#</th><th>주제</th><th>시리즈</th><th class="num">길이</th><th>진행</th><th>상태</th><th class="num">조회</th><th class="num">좋아요</th></tr></thead><tbody id="rows"></tbody></table></div>
+  <div class="legend">진행 칸: 영 = 완성 영상 · 섬 = 섬네일 · 자 = 영어 자막 · 유 = 유튜브 게시 · 사 = 사이트 실험 페이지에 연결. 게시일은 한국 시간.</div>
 </section>
-<section class="grid2">
-  <div class="card"><h2>유튜브 조회수 (공개 영상)</h2><div class="bars" id="views"></div><div class="legend" id="ytnote"></div></div>
-  <div class="card"><h2>사이트 · 저장소</h2><div id="site"></div><h2 style="margin-top:18px">최근 커밋</h2><ul class="commits" id="commits"></ul></div>
-</section>
+<section class="card"><h2>사이트 · 저장소</h2><div class="grid2"><div id="site"></div><ul class="commits" id="commits"></ul></div></section>
 </main>
 <script>
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const fmt = n => n == null ? '–' : n.toLocaleString('ko-KR');
+const fmt = n => n == null ? '–' : Math.round(n).toLocaleString('ko-KR');
+const kst = iso => { const d = new Date(new Date(iso).getTime() + 9 * 3600e3); return d.toISOString(); };
+const day = iso => iso ? kst(iso).slice(5, 10).replace('-', '/') : '';
+const hm = iso => iso ? kst(iso).slice(11, 16) : '';
+const ago = h => h < 48 ? Math.round(h) + '시간' : (h / 24).toFixed(1) + '일';
+const short = t => (t || '').replace(/\s*#shorts.*/i, '');
+const J = u => fetch(u + '?' + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null);
 let filter = '전체';
 
 async function load() {
-  const d = await fetch('data.json?' + Date.now()).then(r => r.json());
-  let yt = d.youtube, ytAt = d.generated + ' (맥미니)';
-  try { const y = await fetch('yt.json?' + Date.now()).then(r => r.ok ? r.json() : null); if (y && y.videos?.length) { yt = y.videos; ytAt = y.updated + ' (자동)'; } } catch (e) {}
+  const [d, y, hist, st] = await Promise.all([J('data.json'), J('yt.json'), J('history.json'), J('strategy.json')]);
+  let yt = d.youtube, ytAt = d.generated + ' (맥미니)', ch = {};
+  if (y && y.videos?.length) { yt = y.videos; ytAt = y.updated + ' (자동)'; ch = y.channel || {}; }
   const byId = Object.fromEntries(yt.map(v => [v.id, v]));
-  // 대본에 없던 새 게시 영상은 제목으로 다시 맞춤
   const norm = t => (t || '').toLowerCase().replace(/#\w+/g, '').replace(/[^a-z0-9]/g, '');
   const byTitle = Object.fromEntries(yt.map(v => [norm(v.title), v]));
   d.shorts.forEach(s => { if (!s.youtube && s.title && byTitle[norm(s.title)]) s.youtube = byTitle[norm(s.title)].id; s.yt = byId[s.youtube]; });
-  render(d, yt, ytAt);
+  const H = (hist || []).map(h => ({...h, ts: new Date(h.t + ':00+09:00').getTime()}));
+  const now = Date.now();
+  // 24시간 전에 가장 가까운 기록 (없으면 가장 오래된 기록)
+  const base = H.length ? (H.filter(h => h.ts <= now - 24 * 3600e3).pop() || H[0]) : null;
+  const span = base ? (now - base.ts) / 3600e3 : 0;
+  yt.forEach(v => {
+    v.age = (now - new Date(v.published).getTime()) / 3600e3;
+    v.rate = v.views / Math.max(1, v.age);
+    v.lr = v.views ? v.likes / v.views : 0;
+    v.delta = base && span >= 1 ? v.views - (base.v[v.id] ?? (new Date(v.published).getTime() > base.ts ? 0 : v.views)) : null;
+  });
+  render(d, yt, ytAt, ch, H, span, st || {});
 }
 
 function status(s) {
-  if (s.yt || s.youtube) return ['게시됨', 'p-live'];
+  if (s.youtube) return ['게시됨', 'p-live'];
   if (s.rendered && s.thumbs.length && s.srt) return ['게시 대기', 'p-ready'];
   return ['제작 중', 'p-todo'];
 }
+const card = ([k, v, s, m]) => `<div class="card kpi"><span>${k}</span><b>${v}</b><span>${s}</span>${m != null ? `<div class="meter"><i style="width:${Math.min(100, m * 100).toFixed(0)}%;${m > .85 ? 'background:var(--bad)' : m > .65 ? 'background:var(--warn)' : ''}"></i></div>` : ''}</div>`;
 
-function render(d, yt, ytAt) {
+function trend(H) {
+  if (H.length < 2) return `<div class="muted small">기록이 쌓이는 중이에요. 1시간마다 한 점씩 늘어나요 (현재 ${H.length}개).</div>`;
+  const pts = H.map(h => ({x: h.ts, y: Object.values(h.v).reduce((a, b) => a + b, 0)}));
+  const W = 1000, Ht = 220, P = 40, x0 = pts[0].x, x1 = pts.at(-1).x, y0 = Math.min(...pts.map(p => p.y)), y1 = Math.max(...pts.map(p => p.y)) || 1;
+  const X = x => P + (x - x0) / Math.max(1, x1 - x0) * (W - P * 2), Y = y => Ht - 24 - (y - y0) / Math.max(1, y1 - y0) * (Ht - 48);
+  const path = pts.map((p, i) => (i ? 'L' : 'M') + X(p.x).toFixed(1) + ' ' + Y(p.y).toFixed(1)).join('');
+  const lab = t => { const d = new Date(t + 9 * 3600e3).toISOString(); return d.slice(5, 10).replace('-', '/') + ' ' + d.slice(11, 13) + '시'; };
+  return `<svg class="chart" viewBox="0 0 ${W} ${Ht}" role="img" aria-label="누적 조회수 추이"><line x1="${P}" x2="${W - P}" y1="${Ht - 24}" y2="${Ht - 24}" stroke="var(--line)"/><path d="${path} L${X(x1)} ${Ht - 24} L${X(x0)} ${Ht - 24}Z" fill="var(--bar)" opacity=".12"/><path d="${path}" fill="none" stroke="var(--bar)" stroke-width="2.5"/><circle cx="${X(x1)}" cy="${Y(pts.at(-1).y)}" r="4" fill="var(--bar)"/><text x="${P}" y="${Ht - 6}">${lab(x0)}</text><text x="${W - P}" y="${Ht - 6}" text-anchor="end">${lab(x1)}</text><text x="${X(x1) - 6}" y="${Y(pts.at(-1).y) - 10}" text-anchor="end" style="fill:var(--fg);font-weight:700">${fmt(pts.at(-1).y)}</text><text x="${P}" y="${Y(y0) - 6}">${fmt(y0)}</text></svg>`;
+}
+
+function render(d, yt, ytAt, ch, H, span, st) {
   const S = d.shorts, live = S.filter(s => s.youtube), ready = S.filter(s => !s.youtube && s.rendered && s.thumbs.length && s.srt);
   const views = yt.reduce((a, v) => a + v.views, 0), likes = yt.reduce((a, v) => a + v.likes, 0);
-  $('stamp').innerHTML = `데이터 ${esc(d.generated)} · 조회수 ${esc(ytAt)}<br><a href="https://www.youtube.com/${d.channel.handle}" target="_blank" rel="noopener">${d.channel.handle}</a> · <a href="https://simulatiolab.com" target="_blank" rel="noopener">simulatiolab.com</a>`;
-  const e = d.eleven;
+  const dsum = yt.some(v => v.delta != null) ? yt.reduce((a, v) => a + (v.delta || 0), 0) : null;
+  const subs0 = H.find(h => h.s != null)?.s;
+  $('stamp').innerHTML = `제작 데이터 ${esc(d.generated)} · 조회수 ${esc(ytAt)}<br><a href="https://www.youtube.com/${d.channel.handle}" target="_blank" rel="noopener">${d.channel.handle}</a> · <a href="https://studio.youtube.com/channel/${d.channel.id}/analytics" target="_blank" rel="noopener">Studio 분석</a> · <a href="https://simulatiolab.com" target="_blank" rel="noopener">simulatiolab.com</a>`;
+  const top = [...yt].sort((a, b) => b.views - a.views)[0];
   $('kpis').innerHTML = [
+    ['구독자', ch.subscribers != null ? fmt(ch.subscribers) + '명' : '–', subs0 != null && ch.subscribers != null ? `기록 시작 대비 ${ch.subscribers - subs0 >= 0 ? '+' : ''}${ch.subscribers - subs0}` : '채널 공개 숫자'],
+    ['총 조회수', fmt(views), `게시 영상 ${yt.length}개`],
+    [span >= 23 ? '최근 24시간 조회' : `최근 ${Math.max(0, Math.round(span))}시간 조회`, dsum == null ? '–' : '+' + fmt(dsum), span >= 1 ? '자동 기록 기준' : '기록이 쌓이면 표시'],
+    ['영상당 평균 조회', fmt(views / Math.max(1, yt.length)), top ? `최고 ${fmt(top.views)} · ${esc(short(top.title)).slice(0, 18)}…` : ''],
+    ['좋아요', fmt(likes), `좋아요율 ${(likes / Math.max(1, views) * 100).toFixed(1)}%`],
+  ].map(card).join('');
+  $('trend').innerHTML = trend(H);
+  $('trendnote').textContent = '모든 공개 영상 조회수 합계 · 1시간마다 기록';
+  $('dh').textContent = span >= 23 ? '24시간 증가' : `최근 ${Math.max(0, Math.round(span))}시간 증가`;
+  const mx = Math.max(1, ...yt.map(v => v.views));
+  $('ana').innerHTML = [...yt].sort((a, b) => b.published.localeCompare(a.published)).map(v => `<tr>
+    <td class="date">${day(v.published)}<div class="sub">${hm(v.published)}</div></td>
+    <td><a href="https://www.youtube.com/shorts/${v.id}" target="_blank" rel="noopener">${esc(short(v.title))}</a></td>
+    <td class="num">${ago(v.age)}</td><td class="num"><b>${fmt(v.views)}</b></td>
+    <td class="num">${v.delta == null ? '–' : `<span class="${v.delta > 0 ? 'up' : ''}">+${fmt(v.delta)}</span>`}</td>
+    <td class="num">${v.rate.toFixed(1)}</td><td class="num">${fmt(v.likes)}</td><td class="num">${(v.lr * 100).toFixed(1)}%</td>
+    <td class="small">${(v.views / Math.max(1, views) * 100).toFixed(0)}%<span class="share"><i style="width:${(v.views / mx * 100).toFixed(0)}%"></i></span></td></tr>`).join('');
+  $('studionote').innerHTML = esc(st.studio || '') + ` <a href="https://studio.youtube.com/channel/${d.channel.id}/analytics/tab-content/period-default/explore?entity_type=CHANNEL&entity_id=${d.channel.id}&r_flags=" target="_blank" rel="noopener">Studio 열기</a>`;
+
+  // 자동 관찰
+  const au = [];
+  // 1시간 안쪽 간격으로 이어 올린 묶음 찾기
+  const seq = [...yt].sort((a, b) => a.published.localeCompare(b.published)), groups = [];
+  seq.forEach((v, i) => { if (i && new Date(v.published) - new Date(seq[i - 1].published) < 60 * 6e4) groups.at(-1).push(v); else groups.push([v]); });
+  groups.filter(g => g.length >= 3).forEach(vs => {
+    const mins = (new Date(vs.at(-1).published) - new Date(vs[0].published)) / 6e4;
+    au.push(['w', `${day(vs[0].published)} ${hm(vs[0].published)}부터 ${vs.length}편을 ${Math.round(mins)}분 사이에 올림 → 조회 ${vs.map(v => fmt(v.views)).join(' / ')}. 몰아 올리면 일부만 퍼짐: 하루 1편 권장.`]);
+  });
+  const med = [...yt].map(v => v.views).sort((a, b) => a - b)[Math.floor(yt.length / 2)] || 0;
+  const hot = yt.filter(v => v.views >= Math.max(100, med * 3)), cold = yt.filter(v => v.age > 24 && v.views < Math.max(30, med / 3));
+  if (hot.length) au.push(['', `잘 된 영상 ${hot.length}편: ${hot.map(v => esc(short(v.title))).join(' · ')}. 같은 결(첫 화면 질문·반전 주제)을 먼저 올리기.`]);
+  if (cold.length) au.push(['w', `24시간 넘게 조회가 적은 영상 ${cold.length}편: ${cold.map(v => esc(short(v.title))).join(' · ')}. 고정 댓글 질문·관련 영상 연결·외부 공유로 다시 밀어 보기.`]);
+  const best = [...yt].filter(v => v.views >= 50).sort((a, b) => b.lr - a.lr)[0];
+  if (best) au.push(['', `좋아요율 1위: ${esc(short(best.title))} (${(best.lr * 100).toFixed(1)}%). 반응이 좋은 주제라 후속편 후보.`]);
+  const hours = yt.filter(v => v.views >= Math.max(100, med * 3)).map(v => +hm(v.published).slice(0, 2));
+  if (hours.length) au.push(['', `잘 된 영상의 게시 시각(한국): ${hours.map(h => h + '시').join(', ')}. 다음 영상도 이 시간대에 올려 비교.`]);
+  if (ready.length) au.push(['', `올릴 준비가 끝난 영상 ${ready.length}편 = 하루 1편이면 약 ${ready.length}일치. 매일 같은 시간에 하나씩.`]);
+  $('auto').innerHTML = au.map(([c, t]) => `<li class="${c}">${t}</li>`).join('') || '<li>데이터가 더 쌓이면 표시돼요.</li>';
+  const tagc = {'확실': 'p-live', '권장': 'p-ready', '실험': 'p-todo'};
+  $('sum').textContent = st.summary || '';
+  $('strat').innerHTML = (st.strategy || []).map(x => `<li><span class="pill ${tagc[x.tag] || ''}">${esc(x.tag)}</span> <b>${esc(x.title)}</b><div class="small">${esc(x.text)}</div></li>`).join('');
+  $('learned').innerHTML = (st.learned || []).slice().reverse().map(x => `<li><div class="sub">${esc(x.date)}</div>${esc(x.text)}<div class="small"><b>→ ${esc(x.action)}</b></div></li>`).join('');
+  $('stratAt').textContent = st.updated ? `전략 메모 업데이트 ${st.updated} · 새 영상 성과가 나올 때마다 갱신` : '';
+
+  // 제작·운영
+  const e = d.eleven;
+  $('kpis2').innerHTML = [
     ['제작한 쇼츠', S.length + '편', `완성 영상 ${S.filter(s => s.rendered).length}편`],
-    ['유튜브 게시', yt.length + '개', `쇼츠 ${live.length}편 + 기타`],
+    ['게시', live.length + '편', `쇼츠 대본 기준`],
     ['게시 대기', ready.length + '편', '영상·섬네일·자막 준비 끝'],
-    ['총 조회수', fmt(views), `좋아요 ${fmt(likes)}`],
     ['사이트', 'v' + d.site.version, `실험 ${d.site.experiments}개 · ${d.site.languages}개 언어`],
     e ? ['ElevenLabs 크레딧', Math.round(e.used / e.limit * 100) + '%', `${fmt(e.used)} / ${fmt(e.limit)} · ${e.reset} 초기화`, e.used / e.limit] : null,
-  ].filter(Boolean).map(([k, v, s, m]) => `<div class="card kpi"><span>${k}</span><b>${v}</b><span>${s}</span>${m != null ? `<div class="meter"><i style="width:${Math.min(100, m * 100).toFixed(0)}%;${m > .85 ? 'background:var(--bad)' : m > .65 ? 'background:var(--warn)' : ''}"></i></div>` : ''}</div>`).join('');
-
+  ].filter(Boolean).map(card).join('');
   const al = [];
   const unlinked = S.filter(s => s.youtube && !s.linked);
   if (unlinked.length) al.push(['w', `게시했지만 사이트 실험 페이지에 아직 안 붙은 영상: ${unlinked.map(s => '#' + s.num + ' ' + esc(s.name)).join(', ')}`]);
-  if (ready.length) al.push(['', `올릴 준비가 끝난 쇼츠 ${ready.length}편 (하루 1편이면 약 ${ready.length}일치): ${ready.slice(0, 4).map(s => '#' + s.num).join(', ')}${ready.length > 4 ? ' …' : ''}`]);
   const todo = S.filter(s => !s.youtube && !(s.rendered && s.thumbs.length && s.srt));
   if (todo.length) al.push(['w', `빠진 산출물이 있는 쇼츠: ${todo.map(s => '#' + s.num + '(' + [!s.rendered && '영상', !s.thumbs.length && '섬네일', !s.srt && '자막'].filter(Boolean).join('·') + ')').join(', ')}`]);
-  if (d.site.liveVersion && d.site.liveVersion !== d.site.version) al.push(['w', `배포 버전 차이: 저장소 v${d.site.version} / 사이트 v${d.site.liveVersion} (배포 확인 필요)`]);
+  if (d.site.liveVersion && d.site.liveVersion !== d.site.version) al.push(['w', `배포 버전 차이: 저장소 v${d.site.version} / 사이트 v${d.site.liveVersion}`]);
   if (e && e.used / e.limit > .8) al.push(['w', `ElevenLabs 크레딧 ${Math.round(e.used / e.limit * 100)}% 사용 — ${e.reset} 초기화 전까지 아껴 쓰기`]);
   const orphan = yt.filter(v => !S.some(s => s.youtube === v.id));
-  if (orphan.length) al.push(['', `대본 목록에 없는 채널 영상: ${orphan.map(v => esc(v.title)).join(', ')}`]);
+  if (orphan.length) al.push(['', `대본 목록에 없는 채널 영상: ${orphan.map(v => esc(short(v.title))).join(', ')}`]);
   if (!al.length) al.push(['', '특이 사항 없음']);
   $('alerts').innerHTML = al.map(([c, t]) => `<li class="${c}">${t}</li>`).join('');
 
   const series = ['전체', '게시됨', '게시 대기', ...new Set(S.map(s => s.series))];
   $('filters').innerHTML = series.map(x => `<button type="button" class="${x === filter ? 'on' : ''}">${esc(x)}</button>`).join('');
-  $('filters').querySelectorAll('button').forEach(b => b.onclick = () => { filter = b.textContent; render(d, yt, ytAt); });
-  const rows = S.filter(s => filter === '전체' || s.series === filter || status(s)[0] === filter);
+  $('filters').querySelectorAll('button').forEach(b => b.onclick = () => { filter = b.textContent; render(d, yt, ytAt, ch, H, span, st); });
+  const rows = S.filter(s => filter === '전체' || s.series === filter || status(s)[0] === filter)
+    .sort((a, b) => (b.yt?.published || '').localeCompare(a.yt?.published || '') || a.num - b.num);
   $('rows').innerHTML = rows.map(s => {
-    const [st, cls] = status(s);
+    const [stt, cls] = status(s);
     const step = (on, t, tip) => `<i class="${on ? 'on' : ''}" title="${tip}">${t}</i>`;
     const exp = s.exp ? `<a href="https://simulatiolab.com/experiments/${s.exp}/" target="_blank" rel="noopener">${esc(s.exp)}</a>` : '';
     const yl = s.youtube ? ` · <a href="https://www.youtube.com/shorts/${s.youtube}" target="_blank" rel="noopener">YouTube</a>` : '';
-    return `<tr><td>${s.thumb ? `<img class="th" loading="lazy" src="${s.thumb}" alt="">` : ''}</td><td class="num">${s.num}</td>
-      <td><div class="nm">${esc(s.name)}</div><div class="sub">${esc((s.title || '').replace(/ #shorts.*/, ''))}</div><div class="sub">${exp}${yl}</div></td>
+    const pub = s.yt?.published;
+    return `<tr><td class="date">${pub ? day(pub) + '<div class="sub">' + hm(pub) + '</div>' : '<span class="muted">미게시</span>'}</td>
+      <td>${s.thumb ? `<img class="th" loading="lazy" src="${s.thumb}" alt="">` : ''}</td><td class="num">${s.num}</td>
+      <td><div class="nm">${esc(s.name)}</div><div class="sub">${esc(short(s.title))}</div><div class="sub">${exp}${yl}</div></td>
       <td><div>${esc(s.series)}</div><div class="sub">${esc(s.voice || '')}</div></td>
       <td class="num">${s.length ? s.length + '초' : '–'}</td>
       <td><span class="st">${step(s.rendered, '영', '완성 영상' + (s.renderedAt ? ' ' + s.renderedAt : ''))}${step(s.thumbs.length, '섬', '섬네일 ' + s.thumbs.length + '장')}${step(s.srt, '자', '자막 ' + s.langs.join(','))}${step(s.youtube, '유', '유튜브 게시')}${step(s.linked, '사', '사이트 연결')}</span></td>
-      <td><span class="pill ${cls}">${st}</span></td>
+      <td><span class="pill ${cls}">${stt}</span></td>
       <td class="num">${s.yt ? fmt(s.yt.views) : '–'}</td><td class="num">${s.yt ? fmt(s.yt.likes) : '–'}</td></tr>`;
   }).join('');
-
-  const max = Math.max(1, ...yt.map(v => v.views));
-  $('views').innerHTML = [...yt].sort((a, b) => b.views - a.views).map(v => `<div class="bar"><span class="lbl"><a href="https://www.youtube.com/shorts/${v.id}" target="_blank" rel="noopener">${esc(v.title.replace(/ #shorts.*/i, ''))}</a></span><span class="num small" style="text-align:right">${fmt(v.views)}</span><span class="trk"><i style="width:${(v.views / max * 100).toFixed(1)}%"></i></span></div>`).join('') || '<div class="muted">게시된 영상 없음</div>';
-  $('ytnote').textContent = `유튜브 공개 피드 기준(최근 15개까지) · 게시일 ${yt.map(v => v.published?.slice(5, 10)).filter(Boolean).sort().slice(0, 1)}부터`;
-
   const si = d.site;
-  $('site').innerHTML = `<table><tr><td>저장소 버전</td><td class="num">v${esc(si.version)}</td></tr><tr><td>사이트 버전</td><td class="num">${si.liveVersion ? 'v' + esc(si.liveVersion) + (si.liveVersion === si.version ? ' ✓' : ' ⚠') : '–'}</td></tr><tr><td>실험 수</td><td class="num">${si.experiments}개</td></tr><tr><td>언어</td><td class="num">${si.languages}개</td></tr><tr><td>총 커밋</td><td class="num">${fmt(si.commitCount)}</td></tr></table>`;
-  $('commits').innerHTML = si.commits.map(c => `<li><code>${esc(c.hash)}</code><span class="muted">${esc(c.date.slice(5, 16).replace('T', ' '))}</span> ${esc(c.msg)}</li>`).join('');
+  $('site').innerHTML = `<table><tr><td>저장소 버전</td><td class="num">v${esc(si.version)}</td></tr><tr><td>사이트 버전</td><td class="num">${si.liveVersion ? 'v' + esc(si.liveVersion) + (si.liveVersion === si.version ? ' ✓' : ' ⚠') : '–'}</td></tr><tr><td>실험 수</td><td class="num">${si.experiments}개</td></tr><tr><td>총 커밋</td><td class="num">${fmt(si.commitCount)}</td></tr></table>`;
+  $('commits').innerHTML = si.commits.slice(0, 6).map(c => `<li><code>${esc(c.hash)}</code><span class="muted">${esc(c.date.slice(5, 16).replace('T', ' '))}</span> ${esc(c.msg)}</li>`).join('');
 }
 load().catch(e => { $('stamp').textContent = '데이터를 불러오지 못했어요: ' + e.message; });
 </script>
