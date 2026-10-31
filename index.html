@@ -74,6 +74,28 @@ td.date{white-space:nowrap;font-variant-numeric:tabular-nums;font-size:13px}
 .tg{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
 .tg .card{padding:14px}.tg .k{font-size:12px;color:var(--muted);font-weight:700;letter-spacing:.04em}.tg .pick{font-size:17px;font-weight:700;margin:2px 0 6px}
 .tg .ck{font-size:12px;color:var(--muted);margin-top:6px}
+.ps{display:grid;grid-template-columns:150px minmax(0,1fr) minmax(0,1fr);gap:22px;align-items:start}
+@media (max-width:860px){.ps{grid-template-columns:1fr}}
+.av{display:grid;justify-items:center;gap:8px;text-align:center}.av svg{width:120px;height:120px}
+.ps h3{margin:0 0 6px;font-size:18px;line-height:1.35}
+.attr{display:grid;grid-template-columns:44px minmax(0,1fr) 48px;gap:8px;align-items:center;font-size:13px;margin:7px 0}
+.attr .tk{height:10px;background:var(--line);border-radius:99px;overflow:hidden;display:flex}.attr .tk i{display:block;height:100%}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 10px}.chips span{font-size:12px;padding:3px 10px;border-radius:99px;background:var(--soft)}
+.hooks{margin:0;padding-left:18px;font-size:14px}.hooks li{margin:4px 0}
+.rm{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;position:relative}
+@media (max-width:860px){.rm{grid-template-columns:1fr}}
+.st3{padding:0 16px 0 0;position:relative}
+.st3 .dot{width:18px;height:18px;border-radius:50%;border:3px solid var(--accent);background:var(--card);position:relative;z-index:1}
+.st3.now .dot{background:var(--accent)}
+.st3 .ln{position:absolute;top:8px;left:18px;right:0;height:3px;background:var(--line)}
+.st3:last-child .ln{display:none}
+.st3 .when{font-size:12px;color:var(--muted);margin-top:8px}.st3 h3{margin:2px 0 10px;font-size:17px}
+.goal{margin:8px 0;font-size:13px}.goal .gt{display:flex;justify-content:space-between;gap:8px}.goal .tk{height:8px;background:var(--line);border-radius:99px;overflow:hidden;margin-top:4px}.goal .tk i{display:block;height:100%;background:var(--accent);border-radius:99px}
+.goal.done .tk i{background:var(--ok)}
+.acts{margin:10px 0 18px;padding-left:18px;font-size:13px;color:var(--fg)}.acts li{margin:3px 0}
+.tl{list-style:none;margin:0;padding:0 0 0 18px;border-left:2px solid var(--line);display:grid;gap:14px}
+.tl li{position:relative;font-size:14px}.tl li::before{content:"";position:absolute;left:-25px;top:5px;width:10px;height:10px;border-radius:50%;background:var(--accent);border:2px solid var(--card)}
+.tl .act{margin-top:4px;font-weight:600;color:var(--accent)}
 .sec{font-size:12px;font-weight:700;letter-spacing:.06em;color:var(--muted);text-transform:uppercase;margin:6px 0 -8px}
 </style>
 </head>
@@ -101,16 +123,14 @@ td.date{white-space:nowrap;font-variant-numeric:tabular-nums;font-size:13px}
 </section>
 
 <div class="sec">성장 전략</div>
-<section class="card"><h2>타겟 전략 한눈에</h2><div class="tg" id="target"></div><div class="legend">데이터 = 우리 채널 숫자로 확인 · 가설 = 장르 일반론, Studio 시청자층 숫자로 확인 필요</div></section>
+<section class="card"><h2>우리 시청자 한 명</h2><div id="persona"></div><div class="legend">YouTube Studio 시청자층(10/30까지)과 영상별 성과로 그린 대표 시청자 · 실제 인물 아님</div></section>
+<section class="card"><h2>성장 로드맵</h2><div id="roadmap"></div><div class="legend">막대 = 지금 값 / 목표 · 자동 갱신(조회·구독) + Studio 값(계속 시청·성별)</div></section>
 <section class="grid2">
   <div class="card"><h2>다음 2주 업로드 계획 <span class="muted small">(매일 한국 오전 9시)</span></h2><div class="tw"><table><thead><tr><th>날짜</th><th>#</th><th>영상</th><th>상태</th></tr></thead><tbody id="sched"></tbody></table></div></div>
   <div class="card"><h2>다음에 만들 쇼츠 주제</h2><ul class="alerts" id="next"></ul><div class="legend">사이트에 실험이 이미 있어 바로 제작 가능 · 잘 된 결(일상 역설 + 퀴즈형)에 맞춘 순서</div></div>
 </section>
 <section class="card"><h2>데이터에서 보이는 것 (자동)</h2><ul class="alerts" id="auto"></ul></section>
-<section class="grid2">
-  <div class="card"><h2>조회수·피드 노출 전략</h2><p class="small muted" id="sum"></p><ul class="alerts" id="strat"></ul></div>
-  <div class="card"><h2>지금까지 배운 것</h2><ul class="alerts" id="learned"></ul><div class="legend" id="stratAt"></div></div>
-</section>
+<section class="card"><h2>지금까지 배운 것</h2><ol class="tl" id="learned"></ol><div class="legend" id="stratAt"></div></section>
 
 <div class="sec">제작·운영</div>
 <section class="kpis" id="kpis2"></section>
@@ -147,6 +167,7 @@ async function load() {
   d.shorts.forEach(s => { if (!s.youtube && s.title && byTitle[norm(s.title)]) s.youtube = byTitle[norm(s.title)].id; s.yt = byId[s.youtube]; });
   window.KO = Object.fromEntries(d.shorts.filter(s => s.youtube).map(s => [s.youtube, s.name]));
   const H = (hist || []).map(h => ({...h, ts: new Date(h.t + ':00+09:00').getTime()}));
+  window.HH = H;
   const now = Date.now();
   // 24시간 전에 가장 가까운 기록 (없으면 가장 오래된 기록)
   const base = H.length ? (H.filter(h => h.ts <= now - 24 * 3600e3).pop() || H[0]) : null;
@@ -296,9 +317,36 @@ function studioPanel(d) {
   const bars = (title, arr, max) => `<div class="card"><div class="k">${title}</div><div class="bars" style="margin-top:8px">${arr.map(([n, v]) => `<div class="bar"><span class="lbl">${esc(n)}</span><span class="num small" style="text-align:right">${v}%</span><span class="trk"><i style="width:${(v / max * 100).toFixed(0)}%"></i></span></div>`).join('')}</div></div>`;
   $('stbars').innerHTML = bars('국가 (상위)', T.country.slice(0, 8), T.country[0][1]) + bars('연령', T.age, Math.max(...T.age.map(x => x[1]))) + bars('성별', T.gender, 100) + bars('유입 경로', T.traffic, 100);
 }
+function persona(st, yt, ch, views) {
+  const P = st.persona || {}, T = window.STUDIO;
+  const C = ['#2a78d6', '#eb6834', '#1baf7a', '#eda100', '#e87ba4', '#6250d6'];
+  const seg = arr => arr.map(([n, v], i) => `<i style="width:${v}%;background:${C[i % C.length]}" title="${esc(n)} ${v}%"></i>`).join('');
+  const row = (k, arr, hi) => `<div class="attr"><span class="muted">${k}</span><span class="tk">${seg(arr)}</span><b class="small" style="text-align:right">${hi}</b></div>`;
+  const top = T ? T.age.reduce((a, b) => b[1] > a[1] ? b : a) : null;
+  const sum5 = T ? T.country.slice(0, 5).reduce((a, b) => a + b[1], 0) : 0;
+  const attrs = T ? row('연령', T.age, top[0] + ' ' + Math.round(top[1]) + '%') + `<div class="small muted" style="margin:-4px 0 4px 52px">${T.age.map(([n, v], i) => `<span style="color:${C[i]}">■</span> ${n}`).join(' ')}</div>` +
+    row('성별', T.gender, '남 ' + Math.round(T.gender[0][1]) + '%') + row('유입', T.traffic, '피드 ' + Math.round(T.traffic[0][1]) + '%') +
+    `<div class="attr"><span class="muted">국가</span><span class="small">${T.country.slice(0, 6).map(c => esc(c[0])).join(' · ')}</span><b class="small" style="text-align:right">상위5 ${Math.round(sum5)}%</b></div>` : '<div class="muted small">Studio 데이터 없음</div>';
+  $('persona').innerHTML = `<div class="ps">
+    <div class="av"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="58" fill="var(--soft)"/><circle cx="60" cy="48" r="20" fill="var(--accent)" opacity=".85"/><path d="M24 104c4-20 18-30 36-30s32 10 36 30" fill="var(--accent)" opacity=".85"/><rect x="74" y="66" width="22" height="36" rx="4" fill="var(--fg)"/><rect x="77" y="70" width="16" height="26" rx="2" fill="#fff"/><path d="M82 80l6 3-6 3z" fill="var(--bad)"/></svg>
+      <div class="small muted">쇼츠 피드 시청자</div></div>
+    <div><h3>${esc(P.title || '')}</h3>${attrs}<div class="small" style="margin-top:8px"><b>언제:</b> ${esc(P.when || '')}</div></div>
+    <div><div class="small muted">좋아하는 것</div><div class="chips">${(P.likes || []).map(x => `<span>${esc(x)}</span>`).join('')}</div>
+      <div class="small muted">이 사람을 붙잡는 법</div><ul class="hooks">${(P.hook || []).map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+      <div class="small" style="margin-top:8px;padding:8px 10px;border-radius:8px;background:var(--soft)"><b>넓힐 시청자:</b> ${esc(P.grow || '')}</div></div></div>`;
+  // 로드맵
+  const D = dailyData(window.HH || [], yt), full = D ? D.rows.filter(r => !r.partial && !r.bridge) : [];
+  const last3 = full.slice(-3), daily = last3.length ? last3.reduce((a, r) => a + Object.values(r.gain).reduce((x, y) => x + y, 0), 0) / last3.length : null;
+  const cur = {stayed: T?.total.stayed, posts: yt.length, avg: views / Math.max(1, yt.length), female: T ? T.gender[1][1] : null, subs: ch.subscribers, daily};
+  const today = new Date(Date.now() + 9 * 3600e3).toISOString().slice(5, 10).replace('-', '/');
+  $('roadmap').innerHTML = `<div class="rm">${(st.roadmap || []).map((r, i) => `<div class="st3 ${i === 0 ? 'now' : ''}"><div class="dot"></div><div class="ln"></div>
+    <div class="when">${esc(r.stage)}${i === 0 ? ` · 오늘 ${today}` : ''}</div><h3>${i + 1}. ${esc(r.title)}</h3>
+    ${r.targets.map(t => { const c = cur[t.m], pct = c == null ? 0 : Math.min(100, c / t.goal * 100); return `<div class="goal ${pct >= 100 ? 'done' : ''}"><div class="gt"><span>${esc(t.label)}</span><span><b>${c == null ? '–' : fmt(c)}</b> / ${fmt(t.goal)}${t.unit}</span></div><div class="tk"><i style="width:${pct.toFixed(0)}%"></i></div></div>`; }).join('')}
+    <ul class="acts">${r.actions.map(a => `<li>${esc(a)}</li>`).join('')}</ul></div>`).join('')}</div>`;
+}
 function targets(st, S) {
   const pc = x => /데이터/.test(x) && !/가설/.test(x) ? 'p-live' : /데이터/.test(x) ? 'p-ready' : 'p-todo';
-  $('target').innerHTML = (st.target || []).map(t => `<div class="card"><div class="k">${esc(t.k)} <span class="pill ${pc(t.status)}" style="float:right">${esc(t.status)}</span></div><div class="pick">${esc(t.pick)}</div><div class="small">${esc(t.why)}</div><div class="ck">확인: ${esc(t.check)}</div></div>`).join('');
+
   const byNum = Object.fromEntries(S.map(s => [s.num, s]));
   $('sched').innerHTML = (st.schedule || []).map(x => { const s = byNum[x.num] || {}; const [t, c] = s.youtube ? ['게시됨', 'p-live'] : s.rendered ? ['대기', 'p-ready'] : ['제작 중', 'p-todo'];
     return `<tr><td class="date">${esc(x.date)}</td><td class="num">${x.num}</td><td><div class="nm">${esc(s.name || '')}</div><div class="sub">${esc(x.why)}</div></td><td><span class="pill ${c}">${t}</span>${s.yt ? `<div class="sub">${fmt(s.yt.views)}회</div>` : ''}</td></tr>`; }).join('');
@@ -355,9 +403,9 @@ function render(d, yt, ytAt, ch, H, span, st) {
   $('auto').innerHTML = au.map(([c, t]) => `<li class="${c}">${t}</li>`).join('') || '<li>데이터가 더 쌓이면 표시돼요.</li>';
   targets(st, S);
   const tagc = {'확실': 'p-live', '권장': 'p-ready', '실험': 'p-todo'};
-  $('sum').textContent = st.summary || '';
-  $('strat').innerHTML = (st.strategy || []).map(x => `<li><span class="pill ${tagc[x.tag] || ''}">${esc(x.tag)}</span> <b>${esc(x.title)}</b><div class="small">${esc(x.text)}</div></li>`).join('');
-  $('learned').innerHTML = (st.learned || []).slice().reverse().map(x => `<li><div class="sub">${esc(x.date)}</div>${esc(x.text)}<div class="small"><b>→ ${esc(x.action)}</b></div></li>`).join('');
+  if ($('strat')) $('strat').innerHTML = (st.strategy || []).map(x => `<li><span class="pill ${tagc[x.tag] || ''}">${esc(x.tag)}</span> <b>${esc(x.title)}</b><div class="small">${esc(x.text)}</div></li>`).join('');
+  $('learned').innerHTML = (st.learned || []).slice().reverse().map(x => `<li><div class="sub">${esc(x.date)}</div>${esc(x.text)}<div class="act">→ ${esc(x.action)}</div></li>`).join('');
+  persona(st, yt, ch, views);
   $('stratAt').textContent = st.updated ? `전략 메모 업데이트 ${st.updated} · 새 영상 성과가 나올 때마다 갱신` : '';
 
   // 제작·운영
