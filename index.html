@@ -171,17 +171,17 @@ function render(d, yt, ytAt, ch, H, span, st) {
   $('kpis').innerHTML = [
     ['구독자', ch.subscribers != null ? fmt(ch.subscribers) + '명' : '–', subs0 != null && ch.subscribers != null ? `기록 시작 대비 ${ch.subscribers - subs0 >= 0 ? '+' : ''}${ch.subscribers - subs0}` : '채널 공개 숫자'],
     ['총 조회수', fmt(views), `게시 영상 ${yt.length}개`],
-    [span >= 23 ? '최근 24시간 조회' : `최근 ${Math.max(0, Math.round(span))}시간 조회`, dsum == null ? '–' : '+' + fmt(dsum), span >= 1 ? '자동 기록 기준' : '기록이 쌓이면 표시'],
+    [span >= 23 || span < 1 ? '최근 24시간 조회' : `최근 ${Math.round(span)}시간 조회`, dsum == null ? '–' : '+' + fmt(dsum), span >= 1 ? '자동 기록 기준' : '기록이 쌓이면 표시'],
     ['영상당 평균 조회', fmt(views / Math.max(1, yt.length)), top ? `최고 ${fmt(top.views)} · ${esc(short(top.title)).slice(0, 18)}…` : ''],
     ['좋아요', fmt(likes), `좋아요율 ${(likes / Math.max(1, views) * 100).toFixed(1)}%`],
   ].map(card).join('');
   $('trend').innerHTML = trend(H);
   $('trendnote').textContent = '모든 공개 영상 조회수 합계 · 1시간마다 기록';
-  $('dh').textContent = span >= 23 ? '24시간 증가' : `최근 ${Math.max(0, Math.round(span))}시간 증가`;
+  $('dh').textContent = span >= 23 || span < 1 ? '24시간 증가' : `최근 ${Math.round(span)}시간 증가`;
   const mx = Math.max(1, ...yt.map(v => v.views));
   $('ana').innerHTML = [...yt].sort((a, b) => b.published.localeCompare(a.published)).map(v => `<tr>
     <td class="date">${day(v.published)}<div class="sub">${hm(v.published)}</div></td>
-    <td><a href="https://www.youtube.com/shorts/${v.id}" target="_blank" rel="noopener">${esc(short(v.title))}</a></td>
+    <td style="min-width:220px"><a href="https://www.youtube.com/shorts/${v.id}" target="_blank" rel="noopener">${esc(short(v.title))}</a></td>
     <td class="num">${ago(v.age)}</td><td class="num"><b>${fmt(v.views)}</b></td>
     <td class="num">${v.delta == null ? '–' : `<span class="${v.delta > 0 ? 'up' : ''}">+${fmt(v.delta)}</span>`}</td>
     <td class="num">${v.rate.toFixed(1)}</td><td class="num">${fmt(v.likes)}</td><td class="num">${(v.lr * 100).toFixed(1)}%</td>
@@ -247,7 +247,7 @@ function render(d, yt, ytAt, ch, H, span, st) {
     const pub = s.yt?.published;
     return `<tr><td class="date">${pub ? day(pub) + '<div class="sub">' + hm(pub) + '</div>' : '<span class="muted">미게시</span>'}</td>
       <td>${s.thumb ? `<img class="th" loading="lazy" src="${s.thumb}" alt="">` : ''}</td><td class="num">${s.num}</td>
-      <td><div class="nm">${esc(s.name)}</div><div class="sub">${esc(short(s.title))}</div><div class="sub">${exp}${yl}</div></td>
+      <td style="min-width:200px"><div class="nm">${esc(s.name)}</div><div class="sub">${esc(short(s.title))}</div><div class="sub">${exp}${yl}</div></td>
       <td><div>${esc(s.series)}</div><div class="sub">${esc(s.voice || '')}</div></td>
       <td class="num">${s.length ? s.length + '초' : '–'}</td>
       <td><span class="st">${step(s.rendered, '영', '완성 영상' + (s.renderedAt ? ' ' + s.renderedAt : ''))}${step(s.thumbs.length, '섬', '섬네일 ' + s.thumbs.length + '장')}${step(s.srt, '자', '자막 ' + s.langs.join(','))}${step(s.youtube, '유', '유튜브 게시')}${step(s.linked, '사', '사이트 연결')}</span></td>
