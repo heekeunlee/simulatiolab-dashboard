@@ -212,7 +212,7 @@ function trendHTML(H, yt) {
   const path = pts.map((p, i) => (i ? 'L' : 'M') + LX(p.x).toFixed(1) + ' ' + LY(p.y).toFixed(1)).join('');
   const last = pts.at(-1);
   const line = `<svg class="chart" id="lineSvg" viewBox="0 0 ${W} ${Hl}" role="img" aria-label="누적 조회수">${dgrid}
-    <text x="${P.l - 8}" y="${LY(hi - pad) + 4}" text-anchor="end">${fmt(hi - pad)}</text><text x="${P.l - 8}" y="${LY(lo + pad) + 4}" text-anchor="end">${fmt(lo + pad)}</text>
+    <text x="${P.l - 8}" y="${LY(hi - pad) + 4}" text-anchor="end">${fmt(hi - pad)}</text>${LY(lo + pad) - LY(hi - pad) > 16 ? `<text x="${P.l - 8}" y="${LY(lo + pad) + 4}" text-anchor="end">${fmt(lo + pad)}</text>` : ''}
     ${pts.length > 1 ? `<path d="${path}" fill="none" stroke="${SER[0]}" stroke-width="2"/>` : ''}
     <circle cx="${LX(last.x)}" cy="${LY(last.y)}" r="5" fill="${SER[0]}" stroke="var(--card)" stroke-width="2"/>
     <text x="${LX(last.x) - 10}" y="${LY(last.y) - 10}" text-anchor="end" style="fill:var(--fg);font-weight:700">${fmt(last.y)}</text>
