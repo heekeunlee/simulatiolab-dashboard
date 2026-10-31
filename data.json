@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01 00:15",
+ "generated": "2026-11-01 00:44",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -544,7 +544,7 @@
    "id": "yTuOnrvKgNg",
    "title": "One Sea Lane Gets Blocked. Do Your Prices Rise Too? #shorts",
    "published": "2026-10-31T00:00:19+00:00",
-   "views": 1367,
+   "views": 1424,
    "likes": 15
   },
   {
@@ -598,11 +598,21 @@
   }
  ],
  "site": {
-  "version": "1.8.3",
-  "liveVersion": "1.8.3",
+  "version": "1.8.4",
+  "liveVersion": "1.8.4",
   "experiments": 81,
   "languages": 8,
   "commits": [
+   {
+    "hash": "838c569",
+    "date": "2026-11-01T00:42:29+09:00",
+    "msg": "모바일 빠른 개선: 실험 페이지 방문자 상자 숨김(화면 흔들림 CLS 0.38→0), 터치 영역 44px, 이메일 주소 스팸 봇 수집 방지, ver. 1.8.4"
+   },
+   {
+    "hash": "2a31d87",
+    "date": "2026-11-01T00:15:58+09:00",
+    "msg": "대시보드: 성장전략을 시청자 페르소나 + 3단계 로드맵(목표 진행 막대) + 배운 것 타임라인으로"
+   },
    {
     "hash": "cb55dd7",
     "date": "2026-11-01T00:06:16+09:00",
@@ -652,19 +662,9 @@
     "hash": "aee85d2",
     "date": "2026-10-31T23:19:27+09:00",
     "msg": "대시보드: 푸시 전 원격 변경 받기 순서 수정"
-   },
-   {
-    "hash": "ae5b0ca",
-    "date": "2026-10-31T23:19:03+09:00",
-    "msg": "막힌 바닷길 쇼츠 유튜브 게시 연결 (strait), ver. 1.8.3"
-   },
-   {
-    "hash": "ef5e19b",
-    "date": "2026-10-31T23:02:16+09:00",
-    "msg": "운영 대시보드: 쇼츠 제작·유튜브 게시·조회수·사이트·크레딧 현황 (tools/dashboard)"
    }
   ],
-  "commitCount": 196
+  "commitCount": 198
  },
  "eleven": {
   "used": 24633,

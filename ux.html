@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>모바일 UX 진단</title>
+<style>
+:root{--bg:#f3f4f7;--card:#fff;--fg:#151a24;--muted:#626b7d;--line:#e1e4ea;--accent:#2f6bff;--ok:#18a058;--warn:#d98a00;--bad:#d64545;--soft:#eef2ff;color-scheme:light}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;padding:24px 16px 60px}
+main{max-width:1080px;margin:0 auto;display:grid;gap:20px}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+h1{margin:0;font-size:clamp(22px,4vw,30px)}h2{margin:0 0 12px;font-size:18px}h3{margin:0 0 4px;font-size:16px}
+.muted{color:var(--muted)}.small{font-size:13px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;min-width:0}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.kpi span{font-size:13px;color:var(--muted);display:block}.kpi b{font-size:26px;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.kpi .ba{font-size:13px;color:var(--muted)}.kpi .ba s{color:var(--bad)}.kpi .ba em{color:var(--ok);font-style:normal;font-weight:700}
+.tw{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{font-size:12px;color:var(--muted);text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:top}tr:last-child td{border-bottom:0}
+td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.pill{display:inline-block;font-size:12px;font-weight:700;padding:2px 9px;border-radius:99px;white-space:nowrap}
+.done{background:color-mix(in srgb,var(--ok) 16%,transparent);color:var(--ok)}
+.next{background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent)}
+.later{background:color-mix(in srgb,var(--warn) 18%,transparent);color:var(--warn)}
+.good{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px}
+.good div{padding:10px 12px;border-radius:10px;background:var(--soft);font-size:14px}.good b{display:block}
+.issues{display:grid;gap:12px}
+.is{display:grid;grid-template-columns:38px minmax(0,1fr) auto;gap:12px;align-items:start;padding:14px;border:1px solid var(--line);border-radius:12px}
+.is .n{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;font-weight:800;background:var(--soft);color:var(--accent)}
+.is.ok .n{background:color-mix(in srgb,var(--ok) 16%,transparent);color:var(--ok)}
+.is p{margin:4px 0 0;font-size:14px}.is .fix{margin-top:6px;font-size:14px}.is .fix b{color:var(--ok)}
+@media (max-width:640px){.is{grid-template-columns:32px minmax(0,1fr)}.is .pill{grid-column:2;justify-self:start}}
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.shots figure{margin:0}.shots img{width:100%;border-radius:12px;border:1px solid var(--line);display:block}.shots figcaption{font-size:13px;color:var(--muted);margin-top:6px}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:14px}
+.flow span{padding:6px 12px;border-radius:99px;background:var(--soft)}.flow i{color:var(--muted);font-style:normal}
+.flow span.x{background:color-mix(in srgb,var(--bad) 14%,transparent);color:var(--bad);font-weight:700}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div class="small"><a href="./">← 유튜브 숏폼영상 운영현황</a></div>
+  <h1>simulatiolab.com 모바일 UX 진단</h1>
+  <div class="muted small">2026-11-01 · 아이폰 13 화면(390×664)으로 메인 + 쇼츠 연결 실험 7곳 측정 · 대상: 미국·영어권 남성, 휴대폰, 쇼츠에서 유입</div>
+</header>
+
+<section class="kpis">
+  <div class="card kpi"><span>화면 흔들림 (CLS, 최악 페이지)</span><b>0</b><div class="ba">이전 <s>0.91</s> → <em>0</em> · 좋음 ≤ 0.1</div></div>
+  <div class="card kpi"><span>작은 터치 영역 (실험 페이지 평균)</span><b>7개</b><div class="ba">이전 <s>11개</s> → <em>7개</em> · 남은 것은 슬라이더 이름표</div></div>
+  <div class="card kpi"><span>소스에 노출된 이메일</span><b>0곳</b><div class="ba">이전 <s>90곳</s> → <em>0곳</em></div></div>
+  <div class="card kpi"><span>첫 화면 표시 (LCP)</span><b>0.5–1.2초</b><div class="ba">좋음 기준 2.5초 이하 · 그대로 양호</div></div>
+  <div class="card kpi"><span>메인 페이지 무게</span><b>6.2MB</b><div class="ba">요청 127개 · <span style="color:var(--warn);font-weight:700">개선 예정</span></div></div>
+</section>
+
+<section class="card">
+  <h2>쇼츠 시청자의 이동 경로</h2>
+  <div class="flow"><span>쇼츠 시청</span><i>→</i><span class="x">설명란 링크 클릭 불가 (2023~)</span><i>→</i><span>채널 프로필 링크 / 주소 직접 입력</span><i>→</i><span>메인 화면</span><i>→</i><span class="x">방금 본 실험 찾기</span><i>→</i><span>실험 페이지</span><i>→</i><span class="x">시뮬레이션까지 2~3번 스크롤</span></div>
+  <p class="small muted" style="margin:10px 0 0">빨간 칸이 이탈이 생기는 곳. 유튜브는 쇼츠 설명란·댓글 링크를 누를 수 없게 해서, 끝 화면의 주소 문구와 채널 링크가 사실상 유일한 길이다.</p>
+</section>
+
+<section class="card">
+  <h2>잘 되어 있는 것</h2>
+  <div class="good">
+    <div><b>가로 넘침 없음</b>8개 페이지 모두 화면 폭 390px 안</div>
+    <div><b>빠른 첫 화면</b>LCP 0.5~1.2초</div>
+    <div><b>읽기 좋은 글자</b>본문 16px, 제목 22~24px</div>
+    <div><b>손가락 슬라이더</b>높이 44px</div>
+    <div><b>앱 같은 메인</b>큰 첫 화면 + 하단 탭바</div>
+    <div><b>자동 영어</b>미국 브라우저에서 한글 0자</div>
+    <div><b>예측 퀴즈</b>답하기 전 결과 흐림 → 참여 유도</div>
+  </div>
+</section>
+
+<section class="card">
+  <h2>진단과 개선 (중요한 순서)</h2>
+  <div class="issues">
+    <div class="is"><div class="n">1</div><div><h3>쇼츠에서 오는 길이 막힘</h3><p>쇼츠 설명란 링크를 누를 수 없어 메인으로 들어오는데, 메인에 "방금 본 쇼츠" 입구가 없다.</p><div class="fix">개선안: 메인 맨 위 "Just watched our Short?" 줄 + 최근 쇼츠 8개, <code>simulatiolab.com/strait</code> 같은 짧은 주소를 끝 화면에 표시</div></div><span class="pill later">다음 주</span></div>
+    <div class="is"><div class="n">2</div><div><h3>실험 페이지에서 시뮬레이션이 바로 안 보임</h3><p>첫 화면은 제목·설명·탭·퀴즈. 건너뛰기를 눌러도 시뮬레이션은 960px 아래에 있다(보이는 화면은 664px까지).</p><div class="fix">개선안: 제목 아래 자동 재생 미리보기, 답하거나 건너뛰면 시뮬레이션 위치로 자동 스크롤, 아래 고정 "▶ Run it" 버튼</div></div><span class="pill next">이번 주</span></div>
+    <div class="is ok"><div class="n">3</div><div><h3>읽는 중 화면 흔들림</h3><p>방문자 수 상자가 1.1~1.2초 늦게 나타나며 상단 바가 두 줄로 커지고 본문이 20px 밀렸다 (CLS 버스 몰림 0.91, 재능 vs 운·반딧불이 0.38).</p><div class="fix"><b>완료:</b> 실험 페이지에서 상자 숨김 → 측정한 5곳 모두 CLS 0</div></div><span class="pill done">완료</span></div>
+    <div class="is"><div class="n">4</div><div><h3>메인 페이지가 무거움</h3><p>6.2MB · 요청 127개. 섬네일 JPG 130~205KB씩(합 5.4MB), 3D 도구 655KB, 영어 번역 파일 276KB를 3번 받음. 시청자 2~4위 인도·필리핀·인도네시아는 모바일 회선이 느린 곳이 많다.</p><div class="fix">개선안: 섬네일 WebP 30~50KB + 보일 때만 불러오기, 첫 화면 미리보기는 와이파이일 때만, 번역 파일 1번만</div></div><span class="pill next">이번 주</span></div>
+    <div class="is ok"><div class="n">5</div><div><h3>작은 버튼</h3><p>언어 버튼 94×32, "More" 39×31, "Skip and see it now" 146×29, 첫 화면 넘김 점 18×4 (애플 권장 44px 이상).</p><div class="fix"><b>완료:</b> 휴대폰에서 언어·More·건너뛰기 버튼 높이 44px, 넘김 점은 보이는 크기는 그대로 두고 누르는 영역만 26×44로</div></div><span class="pill done">완료</span></div>
+    <div class="is ok"><div class="n">6</div><div><h3>"Today 0"이 신뢰를 깎음</h3><p>실험 페이지 맨 위 "Today 0 · Total 305"(한국 시간). 해외 방문자에게 빈 사이트처럼 보인다.</p><div class="fix"><b>완료:</b> 실험 페이지에서는 숨김(집계는 계속), 메인에는 유지</div></div><span class="pill done">완료</span></div>
+    <div class="is"><div class="n">7</div><div><h3>공유·구독으로 이어지는 장치 없음</h3><p>18–34세 남성 시청자는 맞혔다/틀렸다를 자랑하고 싶어 한다.</p><div class="fix">개선안: 결과 공유 이미지("I guessed 5 weeks. It took 17."), 결과 아래 "More paradoxes on YouTube" 구독 버튼</div></div><span class="pill later">다음 주</span></div>
+    <div class="is ok"><div class="n">8</div><div><h3>이메일 주소가 스팸 봇에 노출</h3><p>90개 페이지 하단에 메일 주소가 링크로 그대로 있었다. 최근 스팸 메일의 원인일 수 있다.</p><div class="fix"><b>완료:</b> 소스에서 @·mailto 제거("[at]" 표기), 누르면 메일 앱이 열리게. 연락처 표시는 그대로</div></div><span class="pill done">완료</span></div>
+  </div>
+</section>
+
+<section class="card">
+  <h2>측정 상세 (개선 전 → 후)</h2>
+  <div class="tw"><table>
+    <thead><tr><th>페이지</th><th class="num">무게</th><th class="num">LCP</th><th class="num">CLS 전</th><th class="num">CLS 후</th><th class="num">작은 터치 전</th><th class="num">후</th><th class="num">시뮬레이션 위치</th></tr></thead>
+    <tbody>
+      <tr><td>메인</td><td class="num">6,237KB</td><td class="num">1.23초</td><td class="num">0</td><td class="num">0.01</td><td class="num">32</td><td class="num">29</td><td class="num">–</td></tr>
+      <tr><td>막힌 바닷길</td><td class="num">1,041KB</td><td class="num">0.94초</td><td class="num">0~0.38</td><td class="num">0</td><td class="num">12</td><td class="num">8</td><td class="num">1,443px</td></tr>
+      <tr><td>브라에스 역설</td><td class="num">1,196KB</td><td class="num">0.91초</td><td class="num">0</td><td class="num">0</td><td class="num">11</td><td class="num">7</td><td class="num">1,656px</td></tr>
+      <tr><td>생존자 편향</td><td class="num">141KB</td><td class="num">0.52초</td><td class="num">0</td><td class="num">0</td><td class="num">10</td><td class="num">6</td><td class="num">1,302px</td></tr>
+      <tr><td>재능 vs 운</td><td class="num">198KB</td><td class="num">0.77초</td><td class="num">0.38</td><td class="num">0</td><td class="num">12</td><td class="num">8</td><td class="num">1,243px</td></tr>
+      <tr><td>버스 몰림</td><td class="num">478KB</td><td class="num">1.16초</td><td class="num">0.91</td><td class="num">0</td><td class="num">11</td><td class="num">7</td><td class="num">1,253px</td></tr>
+      <tr><td>친구 역설</td><td class="num">160KB</td><td class="num">1.00초</td><td class="num">0</td><td class="num">0</td><td class="num">10</td><td class="num">6</td><td class="num">1,228px</td></tr>
+      <tr><td>반딧불이</td><td class="num">470KB</td><td class="num">0.82초</td><td class="num">0.38</td><td class="num">0</td><td class="num">9</td><td class="num">6</td><td class="num">743px</td></tr>
+    </tbody></table></div>
+  <p class="small muted" style="margin:10px 0 0">CLS는 방문자 수 서비스가 늦게 응답할 때만 생겨서 측정마다 달랐다(0~0.91). 남은 "작은 터치"는 대부분 슬라이더 이름표(320×25)로, 슬라이더 자체는 44px라 실제 조작에는 문제없다. 시뮬레이션 위치는 페이지 맨 위에서 그림까지 거리(보이는 화면 664px).</p>
+</section>
+
+<section class="card">
+  <h2>화면 (개선 전 측정 당시)</h2>
+  <div class="shots">
+    <figure><img loading="lazy" src="ux/home.jpg" alt="메인 첫 화면"><figcaption>메인: 큰 첫 화면 + 하단 탭바 (좋음)</figcaption></figure>
+    <figure><img loading="lazy" src="ux/strait.jpg" alt="실험 페이지 첫 화면"><figcaption>실험 첫 화면: 위에 "Today 0"(이제 숨김), 시뮬레이션은 아직 안 보임</figcaption></figure>
+    <figure><img loading="lazy" src="ux/skip.jpg" alt="건너뛰기 후 화면"><figcaption>건너뛰기를 눌러도 결과 숫자만 보이고 시뮬레이션은 더 아래</figcaption></figure>
+  </div>
+</section>
+
+<section class="card">
+  <h2>다음 단계</h2>
+  <div class="tw"><table>
+    <thead><tr><th>시기</th><th>할 일</th><th>기대 효과</th></tr></thead>
+    <tbody>
+      <tr><td><span class="pill done">완료 11/1</span></td><td>③ 흔들림 · ⑤ 44px 버튼 · ⑥ Today 0 숨김 · ⑧ 이메일 가리기 (ver. 1.8.4)</td><td>잘못 누르기 감소, 신뢰도, 스팸 감소</td></tr>
+      <tr><td><span class="pill next">이번 주</span></td><td>② 시뮬레이션을 첫 화면 가까이 · ④ 이미지 가볍게</td><td>"직접 돌려 보기" 도달률, 느린 회선 국가 이탈 감소</td></tr>
+      <tr><td><span class="pill later">다음 주</span></td><td>① 쇼츠 시청자 입구 + 짧은 주소 · ⑦ 결과 공유·구독 버튼</td><td>쇼츠 → 사이트 → 구독으로 이어지는 흐름</td></tr>
+    </tbody></table></div>
+</section>
+</main>
+</body>
+</html>
