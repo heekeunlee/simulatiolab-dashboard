@@ -1,0 +1,675 @@
+{
+ "generated": "2026-10-31 23:00",
+ "channel": {
+  "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
+  "handle": "@simulatiolab"
+ },
+ "shorts": [
+  {
+   "num": 2,
+   "base": "02-braess",
+   "name": "새 길을 뚫었는데 왜 더 막힐까?",
+   "series": "교통",
+   "voice": "Brian",
+   "length": 31.8,
+   "exp": "braess",
+   "title": "Why a New Road Made Everyone Slower #shorts",
+   "rendered": true,
+   "renderedAt": "10-29 00:16",
+   "sizeMB": 3.3,
+   "thumbs": [
+    "02-braess-en-a.png",
+    "02-braess-en-b.png"
+   ],
+   "srt": false,
+   "langs": [],
+   "youtube": "DIUHq6UK9Zs",
+   "linked": true,
+   "thumb": "thumbs/02-braess.jpg"
+  },
+  {
+   "num": 3,
+   "base": "03-braess-이론",
+   "name": "브라에스의 역설, 이론 설명",
+   "series": "교통",
+   "voice": "Brian",
+   "length": 35.1,
+   "exp": "braess",
+   "title": "Braess's Paradox: Why More Roads Can Mean More Traffic #shorts",
+   "rendered": true,
+   "renderedAt": "10-29 10:23",
+   "sizeMB": 31.2,
+   "thumbs": [
+    "03-braess-theory-en-a.png",
+    "03-braess-theory-en-b.png"
+   ],
+   "srt": true,
+   "langs": [
+    "de",
+    "en",
+    "es",
+    "fr",
+    "ja",
+    "ko",
+    "ru",
+    "zh"
+   ],
+   "youtube": "8LKa2AeEOik",
+   "linked": true,
+   "thumb": "thumbs/03-braess-theory.jpg"
+  },
+  {
+   "num": 4,
+   "base": "04-bus-bunching",
+   "name": "버스는 왜 두 대씩 몰려올까",
+   "series": "교통",
+   "voice": "Brian",
+   "length": 34.8,
+   "exp": "bunching",
+   "title": "Why Do Buses Always Come in Pairs? #shorts",
+   "rendered": true,
+   "renderedAt": "10-29 12:38",
+   "sizeMB": 26.4,
+   "thumbs": [
+    "04-bus-bunching-en-a.png",
+    "04-bus-bunching-en-b.png"
+   ],
+   "srt": true,
+   "langs": [
+    "en"
+   ],
+   "youtube": "cQkILvcl008",
+   "linked": true,
+   "thumb": "thumbs/04-bus-bunching.jpg"
+  },
+  {
+   "num": 5,
+   "base": "05-phantom-jam",
+   "name": "유령 정체",
+   "series": "교통",
+   "voice": "Brian",
+   "length": 34.9,
+   "exp": "traffic",
+   "title": "No Crash. No Roadwork. So Why Did Traffic Stop? #shorts",
+   "rendered": true,
+   "renderedAt": "10-30 16:15",
+   "sizeMB": 24.4,
+   "thumbs": [
+    "05-phantom-jam-en-a.png",
+    "05-phantom-jam-en-b.png"
+   ],
+   "srt": true,
+   "langs": [
+    "en"
+   ],
+   "youtube": null,
+   "linked": false,
+   "thumb": "thumbs/05-phantom-jam.jpg"
+  },
+  {
+   "num": 6,
+   "base": "06-friendship",
+   "name": "내 친구들은 왜 나보다 친구가 많을까",
+   "series": "사람·심리",
+   "voice": "Alice",
+   "length": 33.4,
+   "exp": "friendship",
+   "title": "Your Friends Are More Popular Than You (It's Math) #shorts",
+   "rendered": true,
+   "renderedAt": "10-29 12:17",
+   "sizeMB": 38.7,
+   "thumbs": [
+    "06-friendship-en-a.png",
+    "06-friendship-en-b.png"
+   ],
+   "srt": true,
+   "langs": [
+    "en"
+   ],
+   "youtube": "l6zXtQNpIdI",
+   "linked": true,
+   "thumb": "thumbs/06-friendship.jpg"
+  },
+  {
+   "num": 7,
+   "base": "07-survivor",
+   "name": "돌아온 비행기의 총탄 자국: 생존자 편향",
+   "series": "역사·통계",
+   "voice": "Daniel",
+   "length": 35.3,
+   "exp": "survivor",
+   "title": "Where Would You Add Armor? (Most People Get It Wrong) #shorts",
+   "rendered": true,
+   "renderedAt": "10-29 12:43",
+   "sizeMB": 32.4,
+   "thumbs": [
+    "07-survivor-en-a.png",
+    "07-survivor-en-b.png"
+   ],
+   "srt": true,
+   "langs": [
+    "en"
+   ],
+   "youtube": "lGnrLC4eFzE",
+   "linked": true,
+   "thumb": "thumbs/07-survivor.jpg"
+  },
+  {
+   "num": 8,
+   "base": "08-inspection",
+   "name": "버스는 10분마다 오는데 왜 10분을 기다릴까: 검사 역설",
+   "series": "교통",
+   "voice": "Brian",
+   "length": 33.4,
+   "exp": "inspection",
+   "title": "A Bus Comes Every 10 Minutes. How Long Do You Wait? #shorts",
+   "rendered": true,
+   "renderedAt": "10-30 16:17",
+   "sizeMB": 22.2,
+   "thumbs": [
+    "08-inspection-en-a.png",
+    "08-inspection-en-b.png"
+   ],
+   "srt": true,
+   "langs": [
+    "en"
+   ],
+   "youtube": null,
+   "linked": false,
+   "thumb": "thumbs/08-inspection.jpg"
+  },
+  {
+   "num": 9,
+   "base": "09-secretary",
+   "name": "37%의 법칙: 몇 명을 만나 보고 정해야 할까",
+   "series": "사람·심리",
+   "voice": "Alice",
+   "length": 35.1,
+   "exp": "secretary",
+   "title": "You'll Meet 40 People. When Should You Choose? #shorts",
+   "rendered": true,
+   "renderedAt": "10-30 16:18",
+   "sizeMB": 23.7,
+   "thumbs": [
+    "09-secretary-en-a.png",
+    "09-secretary-en-b.png"
+   ],
+   "srt": true,
+   "langs": [
+    "en"
+   ],
+   "youtube": null,
+   "linked": false,
+   "thumb": "thumbs/09-secretary.jpg"
+  },
+  {
+   "num": 10,
+   "base": "10-checkout",
+   "name": "마트 계산대, 줄을 하나로 서면 왜 더 빠를까",
+   "series": "사람·심리",
+   "voice": "Alice",
+   "length": 35.1,
+   "exp": "checkout",
+   "title": "4 Lines or 1 Shared Line: Which Is Faster? #shorts",
+   "rendered": true,
+   "renderedAt": "10-30 16:19",
+   "sizeMB": 41.0,
+   "thumbs": [
+    "10-checkout-en-a.png",
+    "10-checkout-en-b.png"
+   ],
+   "srt": true,
+   "langs": [
+    "en"
+   ],
+   "youtube": null,
+   "linked": false,
+   "thumb": "thumbs/10-checkout.jpg"
+  },
+  {
+   "num": 11,
+   "base": "11-regression",
+   "name": "칭찬했더니 못하고, 혼냈더니 잘하더라: 평균으로의 회귀",
+   "series": "사람·심리",
+   "voice": "Alice",
+   "length": 34.7,
+   "exp": "regression",
+   "title": "Praise the Best, Scold the Worst. Who Improves? #shorts",
+   "rendered": true,
+   "renderedAt": "10-30 16:18",
+   "sizeMB": 33.2,
+   "thumbs": [
+    "11-regression-en-a.png",
+    "11-regression-en-b.png"
+   ],
+   "srt": true,
+   "langs": [
+    "en"
+   ],
+   "youtube": null,
+   "linked": false,
+   "thumb": "thumbs/11-regression.jpg"
+  },
+  {
+   "num": 12,
+   "base": "12-wealth",
+   "name": "공정한 내기에도 돈은 왜 몰릴까",
+   "series": "경제·사회",
+   "voice": "George",
+   "length": 33.7,
+   "exp": "wealth",
+   "title": "Every Bet Is Fair. So Who Ends Up Rich? #shorts",
+   "rendered": true,
+   "renderedAt": "10-30 16:19",
+   "sizeMB": 48.6,
+   "thumbs": [
+    "12-wealth-en-a.png",
+    "12-wealth-en-b.png"
+   ],
+   "srt": true,
+   "langs": [
+    "en"
+   ],
+   "youtube": null,
+   "linked": false,
+   "thumb": "thumbs/12-wealth.jpg"
+  },
+  {
+   "num": 13,
+   "base": "13-schelling",
+   "name": "끼리끼리 모이는 이유",
+   "series": "경제·사회",
+   "voice": "George",
+   "length": 34.7,
+   "exp": "schelling",
+   "title": "Everyone Is Fine Being Outnumbered. Does the Town Still Split? #shorts",
+   "rendered": true,
+   "renderedAt": "10-30 16:16",
+   "sizeMB": 53.6,
+   "thumbs": [
+    "13-schelling-en-a.png",
+    "13-schelling-en-b.png"
+   ],
+   "srt": true,
+   "langs": [
+    "en"
+   ],
+   "youtube": null,
+   "linked": false,
+   "thumb": "thumbs/13-schelling.jpg"
+  },
+  {
+   "num": 14,
+   "base": "14-talent-vs-luck",
+   "name": "성공은 노력일까, 운일까",
+   "series": "경제·사회",
+   "voice": "George",
+   "length": 33.9,
+   "exp": "talent-vs-luck",
+   "title": "The Most Talented Person Almost Never Ends Up the Richest #shorts",
+   "rendered": true,
+   "renderedAt": "10-29 13:22",
+   "sizeMB": 32.7,
+   "thumbs": [
+    "14-talent-vs-luck-en-a.png",
+    "14-talent-vs-luck-en-b.png"
+   ],
+   "srt": true,
+   "langs": [
+    "en"
+   ],
+   "youtube": "3zXaoMD-jms",
+   "linked": true,
+   "thumb": "thumbs/14-talent-vs-luck.jpg"
+  },
+  {
+   "num": 15,
+   "base": "15-firefly",
+   "name": "반딧불이는 왜 동시에 깜빡일까",
+   "series": "자연",
+   "voice": "Lily",
+   "length": 34.6,
+   "exp": "firefly",
+   "title": "How Do Fireflies Blink in Sync With No Leader? #shorts",
+   "rendered": true,
+   "renderedAt": "10-29 12:43",
+   "sizeMB": 22.1,
+   "thumbs": [
+    "15-firefly-en-a.png",
+    "15-firefly-en-b.png"
+   ],
+   "srt": true,
+   "langs": [
+    "en"
+   ],
+   "youtube": "EzuqP_klgoY",
+   "linked": true,
+   "thumb": "thumbs/15-firefly.jpg"
+  },
+  {
+   "num": 16,
+   "base": "16-wildfire",
+   "name": "작은 산불을 다 끄면 왜 더 큰 불이 날까",
+   "series": "자연",
+   "voice": "Lily",
+   "length": 34.1,
+   "exp": "wildfire",
+   "title": "Put Out Every Small Fire. What Happens Next? #shorts",
+   "rendered": true,
+   "renderedAt": "10-30 16:19",
+   "sizeMB": 27.6,
+   "thumbs": [
+    "16-wildfire-en-a.png",
+    "16-wildfire-en-b.png"
+   ],
+   "srt": true,
+   "langs": [
+    "en"
+   ],
+   "youtube": null,
+   "linked": false,
+   "thumb": "thumbs/16-wildfire.jpg"
+  },
+  {
+   "num": 17,
+   "base": "17-seating",
+   "name": "7석 벤치에 왜 3명만 앉을까",
+   "series": "교통",
+   "voice": "Brian",
+   "length": 32.0,
+   "exp": "seating",
+   "title": "7 Seats, Nobody Wants a Neighbor. How Many Can Sit? #shorts",
+   "rendered": true,
+   "renderedAt": "10-30 16:27",
+   "sizeMB": 34.1,
+   "thumbs": [
+    "17-seating-en-a.png",
+    "17-seating-en-b.png"
+   ],
+   "srt": true,
+   "langs": [
+    "en"
+   ],
+   "youtube": null,
+   "linked": false,
+   "thumb": "thumbs/17-seating.jpg"
+  },
+  {
+   "num": 18,
+   "base": "18-elfarol",
+   "name": "다들 붐빌 거라 피하면 어떻게 될까: 엘 파롤 바 문제",
+   "series": "교통",
+   "voice": "Brian",
+   "length": 30.8,
+   "exp": "bar",
+   "title": "100 People, 60 Seats. Will Tonight Be Packed? #shorts",
+   "rendered": true,
+   "renderedAt": "10-30 16:26",
+   "sizeMB": 24.7,
+   "thumbs": [
+    "18-elfarol-en-a.png",
+    "18-elfarol-en-b.png"
+   ],
+   "srt": true,
+   "langs": [
+    "en"
+   ],
+   "youtube": null,
+   "linked": false,
+   "thumb": "thumbs/18-elfarol.jpg"
+  },
+  {
+   "num": 19,
+   "base": "19-strait",
+   "name": "안 쓰던 바닷길이 막혀도 왜 내 물가가 오를까",
+   "series": "교통",
+   "voice": "Brian",
+   "length": 32.8,
+   "exp": "strait",
+   "title": "One Sea Lane Gets Blocked. Do Your Prices Rise Too? #shorts",
+   "rendered": true,
+   "renderedAt": "10-30 19:01",
+   "sizeMB": 59.1,
+   "thumbs": [
+    "19-strait-en-a.png",
+    "19-strait-en-b.png"
+   ],
+   "srt": true,
+   "langs": [
+    "en"
+   ],
+   "youtube": "yTuOnrvKgNg",
+   "linked": false,
+   "thumb": "thumbs/19-strait.jpg"
+  },
+  {
+   "num": 20,
+   "base": "20-queue",
+   "name": "새치기가 이득이면 왜 모두 새치기하지 않을까",
+   "series": "교통",
+   "voice": "Brian",
+   "length": 28.9,
+   "exp": "queue",
+   "title": "If Cutting the Line Pays, Why Doesn't Everyone Cut? #shorts",
+   "rendered": true,
+   "renderedAt": "10-30 16:29",
+   "sizeMB": 28.1,
+   "thumbs": [
+    "20-queue-en-a.png",
+    "20-queue-en-b.png"
+   ],
+   "srt": true,
+   "langs": [
+    "en"
+   ],
+   "youtube": null,
+   "linked": false,
+   "thumb": "thumbs/20-queue.jpg"
+  },
+  {
+   "num": 21,
+   "base": "21-greenwave",
+   "name": "신호등을 한 번도 안 걸리고 달릴 수 있을까: 녹색 물결",
+   "series": "교통",
+   "voice": "Brian",
+   "length": 32.3,
+   "exp": "greenwave",
+   "title": "70 vs 50 km/h Through 8 Timed Lights. Who Gets There First? #shorts",
+   "rendered": true,
+   "renderedAt": "10-30 16:46",
+   "sizeMB": 15.2,
+   "thumbs": [
+    "21-greenwave-en-a.png",
+    "21-greenwave-en-b.png"
+   ],
+   "srt": true,
+   "langs": [
+    "en"
+   ],
+   "youtube": null,
+   "linked": false,
+   "thumb": "thumbs/21-greenwave.jpg"
+  },
+  {
+   "num": 22,
+   "base": "22-lanechange",
+   "name": "옆 차선은 왜 늘 더 빨라 보일까",
+   "series": "교통",
+   "voice": "Brian",
+   "length": 32.4,
+   "exp": "lanechange",
+   "title": "Is the Other Lane Really Faster? #shorts",
+   "rendered": true,
+   "renderedAt": "10-30 16:46",
+   "sizeMB": 36.0,
+   "thumbs": [
+    "22-lanechange-en-a.png",
+    "22-lanechange-en-b.png"
+   ],
+   "srt": true,
+   "langs": [
+    "en"
+   ],
+   "youtube": null,
+   "linked": false,
+   "thumb": "thumbs/22-lanechange.jpg"
+  },
+  {
+   "num": 23,
+   "base": "23-zipper",
+   "name": "차로가 줄어들 때, 미리 끼어들까 끝까지 가서 끼어들까: 지퍼 병합",
+   "series": "교통",
+   "voice": "Brian",
+   "length": 30.9,
+   "exp": "zipper",
+   "title": "Lane Ends Ahead. Merge Early or at the Very End? #shorts",
+   "rendered": true,
+   "renderedAt": "10-30 16:50",
+   "sizeMB": 28.2,
+   "thumbs": [
+    "23-zipper-en-a.png",
+    "23-zipper-en-b.png"
+   ],
+   "srt": true,
+   "langs": [
+    "en"
+   ],
+   "youtube": null,
+   "linked": false,
+   "thumb": "thumbs/23-zipper.jpg"
+  }
+ ],
+ "youtube": [
+  {
+   "id": "yTuOnrvKgNg",
+   "title": "One Sea Lane Gets Blocked. Do Your Prices Rise Too? #shorts",
+   "published": "2026-10-31T00:00:19+00:00",
+   "views": 1354,
+   "likes": 15
+  },
+  {
+   "id": "EzuqP_klgoY",
+   "title": "How Do Fireflies Blink in Sync With No Leader? #shorts",
+   "published": "2026-10-29T15:11:45+00:00",
+   "views": 16,
+   "likes": 0
+  },
+  {
+   "id": "cQkILvcl008",
+   "title": "Why Do Buses Always Come in Pairs? #shorts",
+   "published": "2026-10-29T15:06:52+00:00",
+   "views": 6,
+   "likes": 1
+  },
+  {
+   "id": "3zXaoMD-jms",
+   "title": "The Most Talented Person Almost Never Ends Up the Richest #shorts",
+   "published": "2026-10-29T15:00:30+00:00",
+   "views": 9,
+   "likes": 1
+  },
+  {
+   "id": "l6zXtQNpIdI",
+   "title": "Your Friends Are More Popular Than You (It's Math) #shorts #math",
+   "published": "2026-10-29T14:55:09+00:00",
+   "views": 9,
+   "likes": 1
+  },
+  {
+   "id": "lGnrLC4eFzE",
+   "title": "Where Would You Add Armor? (Most People Get It Wrong) #shorts",
+   "published": "2026-10-29T14:46:12+00:00",
+   "views": 1302,
+   "likes": 20
+  },
+  {
+   "id": "8LKa2AeEOik",
+   "title": "Braess's Paradox: Why More Roads Can Mean More Traffic #shorts",
+   "published": "2026-10-29T02:44:08+00:00",
+   "views": 1119,
+   "likes": 6
+  },
+  {
+   "id": "DIUHq6UK9Zs",
+   "title": "Why a New Road Made Everyone Slower #shorts",
+   "published": "2026-10-29T01:03:39+00:00",
+   "views": 1272,
+   "likes": 9
+  }
+ ],
+ "site": {
+  "version": "1.8.2",
+  "liveVersion": "1.8.2",
+  "experiments": 81,
+  "languages": 8,
+  "commits": [
+   {
+    "hash": "29deefb",
+    "date": "2026-10-30T19:27:19+09:00",
+    "msg": "쇼츠 15편 대본에 유튜브 태그 줄 추가"
+   },
+   {
+    "hash": "7445ac0",
+    "date": "2026-10-30T19:02:10+09:00",
+    "msg": "막힌 바닷길 쇼츠 v3: 안 쓰던 항구의 항로도 막힌다는 화면 설명 추가"
+   },
+   {
+    "hash": "205acb9",
+    "date": "2026-10-30T18:45:08+09:00",
+    "msg": "막힌 바닷길 쇼츠 v2: 사이트 3D 지구본·카메라 이동으로 다시 렌더, 섬네일 새로"
+   },
+   {
+    "hash": "24316e7",
+    "date": "2026-10-30T18:19:21+09:00",
+    "msg": "유령 정체 쇼츠: 올릴 파일 이름 바로잡음"
+   },
+   {
+    "hash": "d58fb9d",
+    "date": "2026-10-30T17:05:18+09:00",
+    "msg": "새 교통 실험 3개(옆 차선 착시·지퍼 병합·녹색 물결) 8개 언어, 교통 쇼츠 3편 대본·자막·섬네일, ver. 1.8.2"
+   },
+   {
+    "hash": "4c2fe3b",
+    "date": "2026-10-30T16:29:58+09:00",
+    "msg": "교통 쇼츠 4편: 벤치 자리·엘 파롤 바·막힌 바닷길·새치기 줄 대본·업로드 문구·영어 자막·섬네일"
+   },
+   {
+    "hash": "7ee6e61",
+    "date": "2026-10-30T16:20:42+09:00",
+    "msg": "남은 쇼츠 8편: 휴대폰 안전 영역 재배치 기록"
+   },
+   {
+    "hash": "8e889a1",
+    "date": "2026-10-30T15:56:58+09:00",
+    "msg": "남은 쇼츠 8편: 제목·고정 댓글을 질문형으로, 끝 장면 구독 유도 문구 기록"
+   },
+   {
+    "hash": "a3a3021",
+    "date": "2026-10-30T09:14:08+09:00",
+    "msg": "생존자 편향 쇼츠 주소 바로잡음, 반딧불이 실험에 쇼츠 연결"
+   },
+   {
+    "hash": "22118b3",
+    "date": "2026-10-30T09:09:59+09:00",
+    "msg": "재능 vs 운·버스 몰림 실험: 쇼츠 연결"
+   },
+   {
+    "hash": "e5ea0ed",
+    "date": "2026-10-30T09:05:26+09:00",
+    "msg": "친구 역설 실험: 쇼츠 연결"
+   },
+   {
+    "hash": "2471e24",
+    "date": "2026-10-30T08:30:31+09:00",
+    "msg": "유튜브 채널 배너 영문판 (Simulatio Lab · Rerun the world, see why)"
+   }
+  ],
+  "commitCount": 184
+ },
+ "eleven": {
+  "used": 24633,
+  "limit": 40000,
+  "tier": "starter",
+  "reset": "2026-11-25"
+ }
+}

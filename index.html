@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Simulatio Lab 운영 현황</title>
+<style>
+:root{--bg:#f3f4f7;--card:#fff;--fg:#151a24;--muted:#626b7d;--line:#e1e4ea;--accent:#2f6bff;--ok:#18a058;--warn:#d98a00;--bad:#d64545;--soft:#eef2ff;--bar:#2f6bff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1017;--card:#161b25;--fg:#e9edf5;--muted:#8d96a8;--line:#262d3b;--accent:#6c9bff;--ok:#3ccf83;--warn:#f0b03a;--bad:#ff6b6b;--soft:#1c2436;--bar:#6c9bff;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0d1017;--card:#161b25;--fg:#e9edf5;--muted:#8d96a8;--line:#262d3b;--accent:#6c9bff;--ok:#3ccf83;--warn:#f0b03a;--bad:#ff6b6b;--soft:#1c2436;--bar:#6c9bff;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;padding:24px 16px 60px}
+main{max-width:1180px;margin:0 auto;display:grid;gap:20px}
+header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:8px}
+h1{margin:0;font-size:clamp(22px,4vw,30px);letter-spacing:-.01em}
+h2{margin:0 0 12px;font-size:17px}
+.muted{color:var(--muted)}.small{font-size:13px}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;min-width:0}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}
+.kpi b{display:block;font-size:28px;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.kpi span{font-size:13px;color:var(--muted)}
+.meter{height:8px;border-radius:99px;background:var(--line);overflow:hidden;margin-top:8px}.meter i{display:block;height:100%;background:var(--accent)}
+.grid2{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:20px}
+@media (max-width:860px){.grid2{grid-template-columns:1fr}}
+.tw{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{font-size:12px;color:var(--muted);font-weight:600;text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:8px;border-bottom:1px solid var(--line);vertical-align:middle}
+tr:last-child td{border-bottom:0}
+td.num{font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+.th{width:52px;height:92px;object-fit:cover;border-radius:6px;display:block;background:var(--line)}
+.nm{font-weight:600}.sub{font-size:12px;color:var(--muted)}
+.st{display:inline-flex;gap:3px}
+.st i{width:22px;height:22px;border-radius:6px;display:inline-grid;place-items:center;font-style:normal;font-size:11px;font-weight:700;background:var(--line);color:var(--muted)}
+.st i.on{background:var(--ok);color:#fff}
+.pill{display:inline-block;font-size:12px;font-weight:600;padding:2px 9px;border-radius:99px;white-space:nowrap}
+.p-live{background:color-mix(in srgb,var(--ok) 18%,transparent);color:var(--ok)}
+.p-ready{background:color-mix(in srgb,var(--accent) 16%,transparent);color:var(--accent)}
+.p-todo{background:color-mix(in srgb,var(--warn) 20%,transparent);color:var(--warn)}
+.filters{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.filters button{font:inherit;font-size:13px;padding:5px 11px;border-radius:99px;border:1px solid var(--line);background:var(--card);color:var(--fg);cursor:pointer}
+.filters button.on{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.bars{display:grid;gap:8px}
+.bar{display:grid;grid-template-columns:minmax(0,1fr) 60px;gap:8px;align-items:center;font-size:13px}
+.bar .lbl{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar .trk{grid-column:1/-1;height:8px;background:var(--line);border-radius:99px;overflow:hidden;margin-top:-4px}
+.bar .trk i{display:block;height:100%;background:var(--bar);border-radius:99px}
+.alerts{display:grid;gap:8px;margin:0;padding:0;list-style:none}
+.alerts li{padding:9px 12px;border-radius:10px;background:var(--soft);font-size:14px}
+.alerts li.w{background:color-mix(in srgb,var(--warn) 14%,transparent)}
+.commits{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size:13px}
+.commits code{font-size:12px;color:var(--muted);margin-right:6px}
+.legend{font-size:12px;color:var(--muted);margin-top:8px}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div><h1>시뮬라티오 랩 운영 현황</h1><div class="muted small">쇼츠 제작 · 유튜브 게시 · 사이트 · 크레딧 — 모니터링용 (검색 비노출)</div></div>
+  <div class="small muted" id="stamp">불러오는 중…</div>
+</header>
+<section class="kpis" id="kpis"></section>
+<section class="card"><h2>확인할 것</h2><ul class="alerts" id="alerts"></ul></section>
+<section class="card">
+  <h2>쇼츠 제작 파이프라인</h2>
+  <div class="filters" id="filters"></div>
+  <div class="tw"><table><thead><tr><th></th><th>#</th><th>주제</th><th>시리즈</th><th class="num">길이</th><th>진행</th><th>상태</th><th class="num">조회</th><th class="num">좋아요</th></tr></thead><tbody id="rows"></tbody></table></div>
+  <div class="legend">진행 칸: 영 = 완성 영상 · 섬 = 섬네일 · 자 = 영어 자막 · 유 = 유튜브 게시 · 사 = 사이트 실험 페이지에 연결</div>
+</section>
+<section class="grid2">
+  <div class="card"><h2>유튜브 조회수 (공개 영상)</h2><div class="bars" id="views"></div><div class="legend" id="ytnote"></div></div>
+  <div class="card"><h2>사이트 · 저장소</h2><div id="site"></div><h2 style="margin-top:18px">최근 커밋</h2><ul class="commits" id="commits"></ul></div>
+</section>
+</main>
+<script>
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt = n => n == null ? '–' : n.toLocaleString('ko-KR');
+let filter = '전체';
+
+async function load() {
+  const d = await fetch('data.json?' + Date.now()).then(r => r.json());
+  let yt = d.youtube, ytAt = d.generated + ' (맥미니)';
+  try { const y = await fetch('yt.json?' + Date.now()).then(r => r.ok ? r.json() : null); if (y && y.videos?.length) { yt = y.videos; ytAt = y.updated + ' (자동)'; } } catch (e) {}
+  const byId = Object.fromEntries(yt.map(v => [v.id, v]));
+  // 대본에 없던 새 게시 영상은 제목으로 다시 맞춤
+  const norm = t => (t || '').toLowerCase().replace(/#\w+/g, '').replace(/[^a-z0-9]/g, '');
+  const byTitle = Object.fromEntries(yt.map(v => [norm(v.title), v]));
+  d.shorts.forEach(s => { if (!s.youtube && s.title && byTitle[norm(s.title)]) s.youtube = byTitle[norm(s.title)].id; s.yt = byId[s.youtube]; });
+  render(d, yt, ytAt);
+}
+
+function status(s) {
+  if (s.yt || s.youtube) return ['게시됨', 'p-live'];
+  if (s.rendered && s.thumbs.length && s.srt) return ['게시 대기', 'p-ready'];
+  return ['제작 중', 'p-todo'];
+}
+
+function render(d, yt, ytAt) {
+  const S = d.shorts, live = S.filter(s => s.youtube), ready = S.filter(s => !s.youtube && s.rendered && s.thumbs.length && s.srt);
+  const views = yt.reduce((a, v) => a + v.views, 0), likes = yt.reduce((a, v) => a + v.likes, 0);
+  $('stamp').innerHTML = `데이터 ${esc(d.generated)} · 조회수 ${esc(ytAt)}<br><a href="https://www.youtube.com/${d.channel.handle}" target="_blank" rel="noopener">${d.channel.handle}</a> · <a href="https://simulatiolab.com" target="_blank" rel="noopener">simulatiolab.com</a>`;
+  const e = d.eleven;
+  $('kpis').innerHTML = [
+    ['제작한 쇼츠', S.length + '편', `완성 영상 ${S.filter(s => s.rendered).length}편`],
+    ['유튜브 게시', yt.length + '개', `쇼츠 ${live.length}편 + 기타`],
+    ['게시 대기', ready.length + '편', '영상·섬네일·자막 준비 끝'],
+    ['총 조회수', fmt(views), `좋아요 ${fmt(likes)}`],
+    ['사이트', 'v' + d.site.version, `실험 ${d.site.experiments}개 · ${d.site.languages}개 언어`],
+    e ? ['ElevenLabs 크레딧', Math.round(e.used / e.limit * 100) + '%', `${fmt(e.used)} / ${fmt(e.limit)} · ${e.reset} 초기화`, e.used / e.limit] : null,
+  ].filter(Boolean).map(([k, v, s, m]) => `<div class="card kpi"><span>${k}</span><b>${v}</b><span>${s}</span>${m != null ? `<div class="meter"><i style="width:${Math.min(100, m * 100).toFixed(0)}%;${m > .85 ? 'background:var(--bad)' : m > .65 ? 'background:var(--warn)' : ''}"></i></div>` : ''}</div>`).join('');
+
+  const al = [];
+  const unlinked = S.filter(s => s.youtube && !s.linked);
+  if (unlinked.length) al.push(['w', `게시했지만 사이트 실험 페이지에 아직 안 붙은 영상: ${unlinked.map(s => '#' + s.num + ' ' + esc(s.name)).join(', ')}`]);
+  if (ready.length) al.push(['', `올릴 준비가 끝난 쇼츠 ${ready.length}편 (하루 1편이면 약 ${ready.length}일치): ${ready.slice(0, 4).map(s => '#' + s.num).join(', ')}${ready.length > 4 ? ' …' : ''}`]);
+  const todo = S.filter(s => !s.youtube && !(s.rendered && s.thumbs.length && s.srt));
+  if (todo.length) al.push(['w', `빠진 산출물이 있는 쇼츠: ${todo.map(s => '#' + s.num + '(' + [!s.rendered && '영상', !s.thumbs.length && '섬네일', !s.srt && '자막'].filter(Boolean).join('·') + ')').join(', ')}`]);
+  if (d.site.liveVersion && d.site.liveVersion !== d.site.version) al.push(['w', `배포 버전 차이: 저장소 v${d.site.version} / 사이트 v${d.site.liveVersion} (배포 확인 필요)`]);
+  if (e && e.used / e.limit > .8) al.push(['w', `ElevenLabs 크레딧 ${Math.round(e.used / e.limit * 100)}% 사용 — ${e.reset} 초기화 전까지 아껴 쓰기`]);
+  const orphan = yt.filter(v => !S.some(s => s.youtube === v.id));
+  if (orphan.length) al.push(['', `대본 목록에 없는 채널 영상: ${orphan.map(v => esc(v.title)).join(', ')}`]);
+  if (!al.length) al.push(['', '특이 사항 없음']);
+  $('alerts').innerHTML = al.map(([c, t]) => `<li class="${c}">${t}</li>`).join('');
+
+  const series = ['전체', '게시됨', '게시 대기', ...new Set(S.map(s => s.series))];
+  $('filters').innerHTML = series.map(x => `<button type="button" class="${x === filter ? 'on' : ''}">${esc(x)}</button>`).join('');
+  $('filters').querySelectorAll('button').forEach(b => b.onclick = () => { filter = b.textContent; render(d, yt, ytAt); });
+  const rows = S.filter(s => filter === '전체' || s.series === filter || status(s)[0] === filter);
+  $('rows').innerHTML = rows.map(s => {
+    const [st, cls] = status(s);
+    const step = (on, t, tip) => `<i class="${on ? 'on' : ''}" title="${tip}">${t}</i>`;
+    const exp = s.exp ? `<a href="https://simulatiolab.com/experiments/${s.exp}/" target="_blank" rel="noopener">${esc(s.exp)}</a>` : '';
+    const yl = s.youtube ? ` · <a href="https://www.youtube.com/shorts/${s.youtube}" target="_blank" rel="noopener">YouTube</a>` : '';
+    return `<tr><td>${s.thumb ? `<img class="th" loading="lazy" src="${s.thumb}" alt="">` : ''}</td><td class="num">${s.num}</td>
+      <td><div class="nm">${esc(s.name)}</div><div class="sub">${esc((s.title || '').replace(/ #shorts.*/, ''))}</div><div class="sub">${exp}${yl}</div></td>
+      <td><div>${esc(s.series)}</div><div class="sub">${esc(s.voice || '')}</div></td>
+      <td class="num">${s.length ? s.length + '초' : '–'}</td>
+      <td><span class="st">${step(s.rendered, '영', '완성 영상' + (s.renderedAt ? ' ' + s.renderedAt : ''))}${step(s.thumbs.length, '섬', '섬네일 ' + s.thumbs.length + '장')}${step(s.srt, '자', '자막 ' + s.langs.join(','))}${step(s.youtube, '유', '유튜브 게시')}${step(s.linked, '사', '사이트 연결')}</span></td>
+      <td><span class="pill ${cls}">${st}</span></td>
+      <td class="num">${s.yt ? fmt(s.yt.views) : '–'}</td><td class="num">${s.yt ? fmt(s.yt.likes) : '–'}</td></tr>`;
+  }).join('');
+
+  const max = Math.max(1, ...yt.map(v => v.views));
+  $('views').innerHTML = [...yt].sort((a, b) => b.views - a.views).map(v => `<div class="bar"><span class="lbl"><a href="https://www.youtube.com/shorts/${v.id}" target="_blank" rel="noopener">${esc(v.title.replace(/ #shorts.*/i, ''))}</a></span><span class="num small" style="text-align:right">${fmt(v.views)}</span><span class="trk"><i style="width:${(v.views / max * 100).toFixed(1)}%"></i></span></div>`).join('') || '<div class="muted">게시된 영상 없음</div>';
+  $('ytnote').textContent = `유튜브 공개 피드 기준(최근 15개까지) · 게시일 ${yt.map(v => v.published?.slice(5, 10)).filter(Boolean).sort().slice(0, 1)}부터`;
+
+  const si = d.site;
+  $('site').innerHTML = `<table><tr><td>저장소 버전</td><td class="num">v${esc(si.version)}</td></tr><tr><td>사이트 버전</td><td class="num">${si.liveVersion ? 'v' + esc(si.liveVersion) + (si.liveVersion === si.version ? ' ✓' : ' ⚠') : '–'}</td></tr><tr><td>실험 수</td><td class="num">${si.experiments}개</td></tr><tr><td>언어</td><td class="num">${si.languages}개</td></tr><tr><td>총 커밋</td><td class="num">${fmt(si.commitCount)}</td></tr></table>`;
+  $('commits').innerHTML = si.commits.map(c => `<li><code>${esc(c.hash)}</code><span class="muted">${esc(c.date.slice(5, 16).replace('T', ' '))}</span> ${esc(c.msg)}</li>`).join('');
+}
+load().catch(e => { $('stamp').textContent = '데이터를 불러오지 못했어요: ' + e.message; });
+</script>
+</body>
+</html>
