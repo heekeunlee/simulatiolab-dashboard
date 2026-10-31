@@ -63,6 +63,17 @@ td.date{white-space:nowrap;font-variant-numeric:tabular-nums;font-size:13px}
 .lg{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;color:var(--muted);margin-top:6px}.lg i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px}
 .tip{position:absolute;z-index:5;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 10px;font-size:12px;box-shadow:0 6px 20px rgba(0,0,0,.12);pointer-events:none;min-width:150px;max-width:230px}
 .tip .tr{display:grid;grid-template-columns:10px 1fr auto;gap:6px;align-items:center}.tip .tr i{width:10px;height:10px;border-radius:3px}
+.hm{border-collapse:separate;border-spacing:3px;font-size:12px;width:auto}
+.hm th{font-weight:600;padding:2px 4px;text-align:center;border:0;color:var(--muted)}
+.hm td{border:0;padding:0}
+.hm td.v{position:sticky;left:0;background:var(--card);padding-right:8px;max-width:210px;min-width:150px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:12px}
+.hm td.c{width:44px;height:30px;border-radius:5px;text-align:center;font-size:11px;font-variant-numeric:tabular-nums;cursor:default}
+.hm td.c.pub{box-shadow:inset 0 0 0 2px var(--fg)}
+.hm td.c.na{background:repeating-linear-gradient(135deg,transparent 0 4px,var(--line) 4px 5px)}
+.scale{display:flex;align-items:center;gap:4px;font-size:12px;color:var(--muted);flex-wrap:wrap;margin-top:8px}.scale i{width:18px;height:12px;border-radius:3px;display:inline-block}
+.tg{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
+.tg .card{padding:14px}.tg .k{font-size:12px;color:var(--muted);font-weight:700;letter-spacing:.04em}.tg .pick{font-size:17px;font-weight:700;margin:2px 0 6px}
+.tg .ck{font-size:12px;color:var(--muted);margin-top:6px}
 .sec{font-size:12px;font-weight:700;letter-spacing:.06em;color:var(--muted);text-transform:uppercase;margin:6px 0 -8px}
 </style>
 </head>
@@ -76,6 +87,7 @@ td.date{white-space:nowrap;font-variant-numeric:tabular-nums;font-size:13px}
 <div class="sec">채널 성과</div>
 <section class="kpis" id="kpis"></section>
 <section class="card"><h2>날짜별 조회수</h2><div id="trend" style="position:relative"></div></section>
+<section class="card"><h2>영상 × 날짜 잔디맵</h2><div class="muted small" style="margin:-6px 0 10px">칸 = 그날 늘어난 조회수 · 진할수록 많음 · 테두리 = 게시한 날 · 빗금 = 기록 전</div><div class="tw" id="hmwrap" style="position:relative"></div><div class="scale" id="hmscale"></div></section>
 <section class="card">
   <h2>영상별 조회 분석</h2>
   <div class="tw"><table><thead><tr><th>게시일</th><th>영상</th><th class="num">경과</th><th class="num">조회</th><th class="num" id="dh">24시간 증가</th><th class="num">시간당</th><th class="num">좋아요</th><th class="num">좋아요율</th><th>조회 비중</th></tr></thead><tbody id="ana"></tbody></table></div>
@@ -97,6 +109,11 @@ td.date{white-space:nowrap;font-variant-numeric:tabular-nums;font-size:13px}
 </section>
 
 <div class="sec">성장 전략</div>
+<section class="card"><h2>타겟 전략 한눈에</h2><div class="tg" id="target"></div><div class="legend">데이터 = 우리 채널 숫자로 확인 · 가설 = 장르 일반론, Studio 시청자층 숫자로 확인 필요</div></section>
+<section class="grid2">
+  <div class="card"><h2>다음 2주 업로드 계획 <span class="muted small">(매일 한국 오전 9시)</span></h2><div class="tw"><table><thead><tr><th>날짜</th><th>#</th><th>영상</th><th>상태</th></tr></thead><tbody id="sched"></tbody></table></div></div>
+  <div class="card"><h2>다음에 만들 쇼츠 주제</h2><ul class="alerts" id="next"></ul><div class="legend">사이트에 실험이 이미 있어 바로 제작 가능 · 잘 된 결(일상 역설 + 퀴즈형)에 맞춘 순서</div></div>
+</section>
 <section class="card"><h2>데이터에서 보이는 것 (자동)</h2><ul class="alerts" id="auto"></ul></section>
 <section class="grid2">
   <div class="card"><h2>조회수·피드 노출 전략</h2><p class="small muted" id="sum"></p><ul class="alerts" id="strat"></ul></div>
@@ -248,6 +265,38 @@ function bindTrend(rerender) {
   }
 }
 
+
+const RAMP = [[1, '#cde2fb', '#0b0b0b'], [10, '#9ec5f4', '#0b0b0b'], [50, '#5598e7', '#fff'], [200, '#256abf', '#fff'], [500, '#104281', '#fff']];
+function heatmap(H, yt) {
+  const D = dailyData(H, yt);
+  if (!D) return;
+  const rows = D.rows.slice(-Math.max(range, 7)), vids = [...yt].sort((a, b) => b.published.localeCompare(a.published));
+  const first = D.rows[0].k;
+  const cell = (v, r) => {
+    const pk = kday(new Date(v.published).getTime());
+    if (r.k < pk) return '<td class="c"></td>';
+    if (r.first && r.k === first) { /* 기록 첫날: 시작 이후만 */ }
+    const g = r.gain[v.id] || 0, st = [...RAMP].reverse().find(x => g >= x[0]);
+    const bg = st ? st[1] : 'var(--line)', fg = st ? st[2] : 'var(--muted)';
+    return `<td class="c${pk === r.k ? ' pub' : ''}" style="background:${bg};color:${fg}" data-t="${esc(short(v.title))}|${dlab(r.k)}${r.partial ? ' · 진행 중' : ''}|+${fmt(g)}${pk === r.k ? '|게시한 날' : ''}">${g ? fmt(g) : ''}</td>`;
+  };
+  const pre = rows[0].k > first ? '' : '';
+  $('hmwrap').innerHTML = `<table class="hm"><thead><tr><th></th>${rows.map(r => `<th>${dlab(r.k).replace('(', '<br>(')}</th>`).join('')}<th>합계</th></tr></thead><tbody>${vids.map(v => {
+    const tot = rows.reduce((a, r) => a + (r.gain[v.id] || 0), 0);
+    return `<tr><td class="v" title="${esc(v.title)}"><a href="https://www.youtube.com/shorts/${v.id}" target="_blank" rel="noopener">${esc(short(v.title))}</a></td>${rows.map(r => cell(v, r)).join('')}<td class="num small"><b>+${fmt(tot)}</b></td></tr>`; }).join('')}</tbody></table>${D.rows.length < 2 ? '<div class="legend">기록 첫날이에요. 내일부터 날짜 칸이 하루씩 늘어나요.</div>' : ''}<div id="hmtip" class="tip" hidden></div>`;
+  $('hmscale').innerHTML = '적음 <i style="background:var(--line)"></i>' + RAMP.map(x => `<i style="background:${x[1]}" title="${x[0]}+"></i>`).join('') + ' 많음 <span style="margin-left:8px">(0 · 1+ · 10+ · 50+ · 200+ · 500+)</span>';
+  const tip = $('hmtip'), w = $('hmwrap');
+  w.querySelectorAll('td.c[data-t]').forEach(c => { const f = ev => { const [t, d, g, p] = c.dataset.t.split('|'); tip.innerHTML = `<b>${t}</b><div>${d}</div><div>${g}회${p ? ' · ' + p : ''}</div>`; tip.hidden = false; const r = w.getBoundingClientRect(); let x = ev.clientX - r.left + w.scrollLeft + 12; tip.style.left = Math.min(x, w.scrollWidth - 240) + 'px'; tip.style.top = (ev.clientY - r.top + 12) + 'px'; }; c.onmousemove = f; c.ontouchstart = e => f(e.touches[0]); c.onmouseleave = () => tip.hidden = true; });
+}
+function targets(st, S) {
+  const pc = x => /데이터/.test(x) && !/가설/.test(x) ? 'p-live' : /데이터/.test(x) ? 'p-ready' : 'p-todo';
+  $('target').innerHTML = (st.target || []).map(t => `<div class="card"><div class="k">${esc(t.k)} <span class="pill ${pc(t.status)}" style="float:right">${esc(t.status)}</span></div><div class="pick">${esc(t.pick)}</div><div class="small">${esc(t.why)}</div><div class="ck">확인: ${esc(t.check)}</div></div>`).join('');
+  const byNum = Object.fromEntries(S.map(s => [s.num, s]));
+  $('sched').innerHTML = (st.schedule || []).map(x => { const s = byNum[x.num] || {}; const [t, c] = s.youtube ? ['게시됨', 'p-live'] : s.rendered ? ['대기', 'p-ready'] : ['제작 중', 'p-todo'];
+    return `<tr><td class="date">${esc(x.date)}</td><td class="num">${x.num}</td><td><div class="nm">${esc(s.name || '')}</div><div class="sub">${esc(x.why)}</div></td><td><span class="pill ${c}">${t}</span>${s.yt ? `<div class="sub">${fmt(s.yt.views)}회</div>` : ''}</td></tr>`; }).join('');
+  $('next').innerHTML = (st.nextTopics || []).map((x, i) => `<li><b>${i + 1}. ${esc(x.title)}</b> <a class="small" href="https://simulatiolab.com/experiments/${x.exp}/" target="_blank" rel="noopener">실험 보기</a><div class="small">${esc(x.why)}</div></li>`).join('');
+}
+
 function render(d, yt, ytAt, ch, H, span, st) {
   const S = d.shorts, live = S.filter(s => s.youtube), ready = S.filter(s => !s.youtube && s.rendered && s.thumbs.length && s.srt);
   const views = yt.reduce((a, v) => a + v.views, 0), likes = yt.reduce((a, v) => a + v.likes, 0);
@@ -262,7 +311,7 @@ function render(d, yt, ytAt, ch, H, span, st) {
     ['영상당 평균 조회', fmt(views / Math.max(1, yt.length)), top ? `최고 ${fmt(top.views)} · ${esc(short(top.title)).slice(0, 18)}…` : ''],
     ['좋아요', fmt(likes), `좋아요율 ${(likes / Math.max(1, views) * 100).toFixed(1)}%`],
   ].map(card).join('');
-  const drawTrend = () => { $('trend').innerHTML = trendHTML(H, yt); bindTrend(drawTrend); };
+  const drawTrend = () => { $('trend').innerHTML = trendHTML(H, yt); bindTrend(drawTrend); heatmap(H, yt); };
   drawTrend();
   let rz; window.onresize = () => { clearTimeout(rz); rz = setTimeout(drawTrend, 150); };
   $('dh').textContent = span >= 23 || span < 1 ? '24시간 증가' : `최근 ${Math.round(span)}시간 증가`;
@@ -295,6 +344,7 @@ function render(d, yt, ytAt, ch, H, span, st) {
   if (hours.length) au.push(['', `잘 된 영상의 게시 시각(한국): ${hours.map(h => h + '시').join(', ')}. 다음 영상도 이 시간대에 올려 비교.`]);
   if (ready.length) au.push(['', `올릴 준비가 끝난 영상 ${ready.length}편 = 하루 1편이면 약 ${ready.length}일치. 매일 같은 시간에 하나씩.`]);
   $('auto').innerHTML = au.map(([c, t]) => `<li class="${c}">${t}</li>`).join('') || '<li>데이터가 더 쌓이면 표시돼요.</li>';
+  targets(st, S);
   const tagc = {'확실': 'p-live', '권장': 'p-ready', '실험': 'p-todo'};
   $('sum').textContent = st.summary || '';
   $('strat').innerHTML = (st.strategy || []).map(x => `<li><span class="pill ${tagc[x.tag] || ''}">${esc(x.tag)}</span> <b>${esc(x.title)}</b><div class="small">${esc(x.text)}</div></li>`).join('');
