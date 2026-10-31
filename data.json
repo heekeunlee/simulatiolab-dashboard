@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01 01:16",
+ "generated": "2026-11-01 01:39",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -89,11 +89,11 @@
    "series": "교통",
    "voice": "Brian",
    "length": 34.9,
-   "exp": "traffic",
+   "exp": null,
    "title": "No Crash. No Roadwork. So Why Did Traffic Stop? #shorts",
    "rendered": true,
-   "renderedAt": "10-30 16:15",
-   "sizeMB": 24.4,
+   "renderedAt": "11-01 01:28",
+   "sizeMB": 25.7,
    "thumbs": [
     "05-phantom-jam-en-a.png",
     "05-phantom-jam-en-b.png"
@@ -161,11 +161,11 @@
    "series": "교통",
    "voice": "Brian",
    "length": 33.4,
-   "exp": "inspection",
+   "exp": "bunching",
    "title": "A Bus Comes Every 10 Minutes. How Long Do You Wait? #shorts",
    "rendered": true,
-   "renderedAt": "10-30 16:17",
-   "sizeMB": 22.2,
+   "renderedAt": "11-01 01:39",
+   "sizeMB": 22.3,
    "thumbs": [
     "08-inspection-en-a.png",
     "08-inspection-en-b.png"
@@ -185,11 +185,11 @@
    "series": "사람·심리",
    "voice": "Alice",
    "length": 35.1,
-   "exp": "secretary",
+   "exp": null,
    "title": "You'll Meet 40 People. When Should You Choose? #shorts",
    "rendered": true,
-   "renderedAt": "10-30 16:18",
-   "sizeMB": 23.7,
+   "renderedAt": "11-01 01:28",
+   "sizeMB": 24.6,
    "thumbs": [
     "09-secretary-en-a.png",
     "09-secretary-en-b.png"
@@ -209,11 +209,11 @@
    "series": "사람·심리",
    "voice": "Alice",
    "length": 35.1,
-   "exp": "checkout",
+   "exp": null,
    "title": "4 Lines or 1 Shared Line: Which Is Faster? #shorts",
    "rendered": true,
-   "renderedAt": "10-30 16:19",
-   "sizeMB": 41.0,
+   "renderedAt": "11-01 01:31",
+   "sizeMB": 57.9,
    "thumbs": [
     "10-checkout-en-a.png",
     "10-checkout-en-b.png"
@@ -233,11 +233,11 @@
    "series": "사람·심리",
    "voice": "Alice",
    "length": 34.7,
-   "exp": "regression",
+   "exp": null,
    "title": "Praise the Best, Scold the Worst. Who Improves? #shorts",
    "rendered": true,
-   "renderedAt": "10-30 16:18",
-   "sizeMB": 33.2,
+   "renderedAt": "11-01 01:30",
+   "sizeMB": 41.8,
    "thumbs": [
     "11-regression-en-a.png",
     "11-regression-en-b.png"
@@ -257,11 +257,11 @@
    "series": "경제·사회",
    "voice": "George",
    "length": 33.7,
-   "exp": "wealth",
+   "exp": null,
    "title": "Every Bet Is Fair. So Who Ends Up Rich? #shorts",
    "rendered": true,
-   "renderedAt": "10-30 16:19",
-   "sizeMB": 48.6,
+   "renderedAt": "11-01 01:31",
+   "sizeMB": 57.2,
    "thumbs": [
     "12-wealth-en-a.png",
     "12-wealth-en-b.png"
@@ -281,11 +281,11 @@
    "series": "경제·사회",
    "voice": "George",
    "length": 34.7,
-   "exp": "schelling",
+   "exp": null,
    "title": "Everyone Is Fine Being Outnumbered. Does the Town Still Split? #shorts",
    "rendered": true,
-   "renderedAt": "10-30 16:16",
-   "sizeMB": 53.6,
+   "renderedAt": "11-01 01:33",
+   "sizeMB": 66.7,
    "thumbs": [
     "13-schelling-en-a.png",
     "13-schelling-en-b.png"
@@ -353,11 +353,11 @@
    "series": "자연",
    "voice": "Lily",
    "length": 34.1,
-   "exp": "wildfire",
+   "exp": null,
    "title": "Put Out Every Small Fire. What Happens Next? #shorts",
    "rendered": true,
-   "renderedAt": "10-30 16:19",
-   "sizeMB": 27.6,
+   "renderedAt": "11-01 01:34",
+   "sizeMB": 30.2,
    "thumbs": [
     "16-wildfire-en-a.png",
     "16-wildfire-en-b.png"
@@ -377,11 +377,11 @@
    "series": "교통",
    "voice": "Brian",
    "length": 32.0,
-   "exp": "seating",
+   "exp": null,
    "title": "7 Seats, Nobody Wants a Neighbor. How Many Can Sit? #shorts",
    "rendered": true,
-   "renderedAt": "10-30 16:27",
-   "sizeMB": 34.1,
+   "renderedAt": "11-01 01:33",
+   "sizeMB": 34.0,
    "thumbs": [
     "17-seating-en-a.png",
     "17-seating-en-b.png"
@@ -400,11 +400,11 @@
    "name": "다들 붐빌 거라 피하면 어떻게 될까: 엘 파롤 바 문제",
    "series": "교통",
    "voice": "Brian",
-   "length": 30.8,
-   "exp": "bar",
+   "length": 30.7,
+   "exp": null,
    "title": "100 People, 60 Seats. Will Tonight Be Packed? #shorts",
    "rendered": true,
-   "renderedAt": "10-30 16:26",
+   "renderedAt": "11-01 01:35",
    "sizeMB": 24.7,
    "thumbs": [
     "18-elfarol-en-a.png",
@@ -449,11 +449,11 @@
    "series": "교통",
    "voice": "Brian",
    "length": 28.9,
-   "exp": "queue",
+   "exp": null,
    "title": "If Cutting the Line Pays, Why Doesn't Everyone Cut? #shorts",
    "rendered": true,
-   "renderedAt": "10-30 16:29",
-   "sizeMB": 28.1,
+   "renderedAt": "11-01 01:36",
+   "sizeMB": 28.2,
    "thumbs": [
     "20-queue-en-a.png",
     "20-queue-en-b.png"
@@ -476,7 +476,7 @@
    "exp": "greenwave",
    "title": "70 vs 50 km/h Through 8 Timed Lights. Who Gets There First? #shorts",
    "rendered": true,
-   "renderedAt": "10-30 16:46",
+   "renderedAt": "11-01 01:36",
    "sizeMB": 15.2,
    "thumbs": [
     "21-greenwave-en-a.png",
@@ -497,11 +497,11 @@
    "series": "교통",
    "voice": "Brian",
    "length": 32.4,
-   "exp": "lanechange",
+   "exp": null,
    "title": "Is the Other Lane Really Faster? #shorts",
    "rendered": true,
-   "renderedAt": "10-30 16:46",
-   "sizeMB": 36.0,
+   "renderedAt": "11-01 01:38",
+   "sizeMB": 35.9,
    "thumbs": [
     "22-lanechange-en-a.png",
     "22-lanechange-en-b.png"
@@ -521,10 +521,10 @@
    "series": "교통",
    "voice": "Brian",
    "length": 30.9,
-   "exp": "zipper",
+   "exp": null,
    "title": "Lane Ends Ahead. Merge Early or at the Very End? #shorts",
    "rendered": true,
-   "renderedAt": "10-30 16:50",
+   "renderedAt": "11-01 01:38",
    "sizeMB": 28.2,
    "thumbs": [
     "23-zipper-en-a.png",
@@ -579,7 +579,7 @@
    "id": "lGnrLC4eFzE",
    "title": "Where Would You Add Armor? (Most People Get It Wrong) #shorts",
    "published": "2026-10-29T14:46:12+00:00",
-   "views": 1304,
+   "views": 1303,
    "likes": 20
   },
   {
@@ -603,6 +603,16 @@
   "experiments": 81,
   "languages": 8,
   "commits": [
+   {
+    "hash": "b751bed",
+    "date": "2026-11-01T01:39:47+09:00",
+    "msg": "대기 쇼츠 14편: 끝 화면·설명란·고정 댓글을 짧은 주소(simulatiolab.com/<실험>)로, 다시 렌더 기록"
+   },
+   {
+    "hash": "3ec9d95",
+    "date": "2026-11-01T01:17:03+09:00",
+    "msg": "UX 진단: ①⑦ 완료 반영, 전략 메모에 짧은 주소·쇼츠 링크 사실 추가"
+   },
    {
     "hash": "779de70",
     "date": "2026-11-01T01:14:44+09:00",
@@ -652,19 +662,9 @@
     "hash": "1c5af18",
     "date": "2026-10-31T23:48:09+09:00",
     "msg": "대시보드: 타겟 전략(국가·연령·성별·시간대)·2주 업로드 계획·다음 주제, 영상×날짜 잔디맵"
-   },
-   {
-    "hash": "8002426",
-    "date": "2026-10-31T23:35:51+09:00",
-    "msg": "대시보드: 누적 축 글자 겹침 방지"
-   },
-   {
-    "hash": "04afb48",
-    "date": "2026-10-31T23:35:07+09:00",
-    "msg": "대시보드: 차트를 화면 너비에 맞춰 그림(모바일 글자 크기)"
    }
   ],
-  "commitCount": 203
+  "commitCount": 205
  },
  "eleven": {
   "used": 24633,
