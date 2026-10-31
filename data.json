@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-31 23:00",
+ "generated": "2026-10-31 23:19",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -439,7 +439,7 @@
     "en"
    ],
    "youtube": "yTuOnrvKgNg",
-   "linked": false,
+   "linked": true,
    "thumb": "thumbs/19-strait.jpg"
   },
   {
@@ -544,7 +544,7 @@
    "id": "yTuOnrvKgNg",
    "title": "One Sea Lane Gets Blocked. Do Your Prices Rise Too? #shorts",
    "published": "2026-10-31T00:00:19+00:00",
-   "views": 1354,
+   "views": 1367,
    "likes": 15
   },
   {
@@ -579,7 +579,7 @@
    "id": "lGnrLC4eFzE",
    "title": "Where Would You Add Armor? (Most People Get It Wrong) #shorts",
    "published": "2026-10-29T14:46:12+00:00",
-   "views": 1302,
+   "views": 1303,
    "likes": 20
   },
   {
@@ -598,11 +598,21 @@
   }
  ],
  "site": {
-  "version": "1.8.2",
+  "version": "1.8.3",
   "liveVersion": "1.8.2",
   "experiments": 81,
   "languages": 8,
   "commits": [
+   {
+    "hash": "ae5b0ca",
+    "date": "2026-10-31T23:19:03+09:00",
+    "msg": "막힌 바닷길 쇼츠 유튜브 게시 연결 (strait), ver. 1.8.3"
+   },
+   {
+    "hash": "ef5e19b",
+    "date": "2026-10-31T23:02:16+09:00",
+    "msg": "운영 대시보드: 쇼츠 제작·유튜브 게시·조회수·사이트·크레딧 현황 (tools/dashboard)"
+   },
    {
     "hash": "29deefb",
     "date": "2026-10-30T19:27:19+09:00",
@@ -652,19 +662,9 @@
     "hash": "22118b3",
     "date": "2026-10-30T09:09:59+09:00",
     "msg": "재능 vs 운·버스 몰림 실험: 쇼츠 연결"
-   },
-   {
-    "hash": "e5ea0ed",
-    "date": "2026-10-30T09:05:26+09:00",
-    "msg": "친구 역설 실험: 쇼츠 연결"
-   },
-   {
-    "hash": "2471e24",
-    "date": "2026-10-30T08:30:31+09:00",
-    "msg": "유튜브 채널 배너 영문판 (Simulatio Lab · Rerun the world, see why)"
    }
   ],
-  "commitCount": 184
+  "commitCount": 186
  },
  "eleven": {
   "used": 24633,
