@@ -90,21 +90,13 @@ td.date{white-space:nowrap;font-variant-numeric:tabular-nums;font-size:13px}
 <section class="card"><h2>영상 × 날짜 잔디맵</h2><div class="muted small" style="margin:-6px 0 10px">칸 = 그날 늘어난 조회수 · 진할수록 많음 · 테두리 = 게시한 날 · 빗금 = 기록 전</div><div class="tw" id="hmwrap" style="position:relative"></div><div class="scale" id="hmscale"></div></section>
 <section class="card">
   <h2>영상별 조회 분석</h2>
-  <div class="tw"><table><thead><tr><th>게시일</th><th>영상</th><th class="num">경과</th><th class="num">조회</th><th class="num" id="dh">24시간 증가</th><th class="num">시간당</th><th class="num">좋아요</th><th class="num">좋아요율</th><th>조회 비중</th></tr></thead><tbody id="ana"></tbody></table></div>
+  <div class="tw"><table><thead><tr><th>게시일</th><th>영상</th><th class="num">경과</th><th class="num">조회</th><th class="num" id="dh">24시간 증가</th><th class="num">시간당</th><th class="num">좋아요</th><th class="num">좋아요율</th><th class="num" title="피드에서 넘기지 않고 본 비율">계속 시청</th><th class="num">평균 조회율</th><th class="num">구독</th><th>조회 비중</th></tr></thead><tbody id="ana"></tbody></table></div>
   <div class="legend">유튜브 공개 정보 기준(1시간마다 자동 갱신, 최근 15개 영상). 시간당 = 조회 ÷ 게시 후 경과 시간. 좋아요율 = 좋아요 ÷ 조회.</div>
 </section>
 <section class="card">
-  <h2>YouTube Studio 전용 지표</h2>
-  <div class="studio">
-    <div><b>피드 노출수</b><span>쇼츠 피드에 몇 번 떴는지</span></div>
-    <div><b>본 영상 vs 넘긴 영상</b><span>피드에서 멈춘 비율 (첫 1~2초 성적)</span></div>
-    <div><b>평균 시청 지속률</b><span>100% 넘으면 반복 재생</span></div>
-    <div><b>시청 시간</b><span>수익 조건 계산에는 쇼츠 조회수 별도</span></div>
-    <div><b>트래픽 소스</b><span>쇼츠 피드 · 검색 · 채널 · 외부</span></div>
-    <div><b>시청자 국가·연령</b><span>올리는 시간대 결정 근거</span></div>
-    <div><b>구독 전환</b><span>영상별 구독자 증가</span></div>
-    <div><b>댓글 · 공유</b><span>참여 신호</span></div>
-  </div>
+  <h2>시청자 분석 <span class="muted small" id="stAt"></span></h2>
+  <div class="kpis" id="stk" style="margin-bottom:14px"></div>
+  <div class="tg" id="stbars"></div>
   <div class="legend" id="studionote"></div>
 </section>
 
@@ -144,7 +136,8 @@ const J = u => fetch(u + '?' + Date.now()).then(r => r.ok ? r.json() : null).cat
 let filter = '전체';
 
 async function load() {
-  const [d, y, hist, st] = await Promise.all([J('data.json'), J('yt.json'), J('history.json'), J('strategy.json')]);
+  const [d, y, hist, st, studio] = await Promise.all([J('data.json'), J('yt.json'), J('history.json'), J('strategy.json'), J('studio.json')]);
+  window.STUDIO = studio;
   let yt = d.youtube, ytAt = d.generated + ' (맥미니)', ch = {};
   if (y && y.videos?.length) { yt = y.videos; ytAt = y.updated + ' (자동)'; ch = y.channel || {}; }
   const byId = Object.fromEntries(yt.map(v => [v.id, v]));
@@ -176,24 +169,29 @@ const card = ([k, v, s, m]) => `<div class="card kpi"><span>${k}</span><b>${v}</
 const SER = ['#2a78d6', '#eb6834', '#1baf7a', '#eda100'], OTHER = '#a3a8b3';
 const WD = ['일', '월', '화', '수', '목', '금', '토'];
 const kday = ts => new Date(ts + 9 * 3600e3).toISOString().slice(0, 10);
-const dlab = k => { const d = new Date(k + 'T00:00:00Z'); return `${d.getUTCMonth() + 1}/${d.getUTCDate()}(${WD[d.getUTCDay()]})`; };
+const dlab0 = k => { const d = new Date(k + 'T00:00:00Z'); return `${d.getUTCMonth() + 1}/${d.getUTCDate()}(${WD[d.getUTCDay()]})`; };
 let range = 14, TR = null;
+const dlab = k => dlab0(k);
 
 function dailyData(H, yt) {
-  if (!H.length) return null;
-  const days = [];
-  for (let k = kday(H[0].ts); k <= kday(Date.now()); k = new Date(Date.parse(k) + 864e5).toISOString().slice(0, 10)) days.push(k);
+  const ST = window.STUDIO, sd = ST ? ST.daily : {}, last = ST ? ST.lastDay : null;
+  if (!H.length && !ST) return null;
   const pub = Object.fromEntries(yt.map(v => [v.id, v.published]));
-  const endOf = k => { const pts = H.filter(h => kday(h.ts) <= k); return pts.at(-1); };
-  const ids = [...new Set(H.flatMap(h => Object.keys(h.v)))];
-  let prev = H[0];
-  const rows = days.map(k => {
-    const e = endOf(k), g = {};
-    ids.forEach(id => { const a = prev.v[id] ?? 0, b = e.v[id] ?? a; g[id] = Math.max(0, b - a); });
-    const r = {k, gain: g, total: Object.values(e.v).reduce((a, b) => a + b, 0), partial: k === kday(Date.now()), first: prev === H[0] && k === days[0]};
-    prev = e; return r;
-  });
-  // 색은 영상에 고정: 기록 기간 총 증가 상위 4편을 게시 순서대로 슬롯 1~4
+  const ids = [...new Set([...yt.map(v => v.id), ...H.flatMap(h => Object.keys(h.v)), ...Object.keys(sd)])];
+  const sdays = [...new Set(Object.values(sd).flatMap(o => Object.keys(o)))].sort();
+  const cum = {}; ids.forEach(id => cum[id] = 0);
+  const rows = sdays.map(k => { const g = {}; ids.forEach(id => { g[id] = (sd[id] || {})[k] || 0; cum[id] += g[id]; }); return {k, gain: g, total: Object.values(cum).reduce((a, b) => a + b, 0), studio: true}; });
+  if (H.length) {
+    const startK = last ? new Date(Date.parse(last) + 864e5).toISOString().slice(0, 10) : kday(H[0].ts);
+    let prevV = last ? {...cum} : {...H[0].v};
+    const endOf = k => H.filter(h => kday(h.ts) <= k).at(-1);
+    for (let k = startK; k <= kday(Date.now()); k = new Date(Date.parse(k) + 864e5).toISOString().slice(0, 10)) {
+      const e = endOf(k); if (!e) continue;
+      const g = {}; ids.forEach(id => { const a = prevV[id] ?? 0, b2 = e.v[id] ?? a; g[id] = Math.max(0, b2 - a); });
+      rows.push({k, gain: g, total: Object.values(e.v).reduce((a, b) => a + b, 0), partial: k === kday(Date.now()), bridge: !!last && k === startK});
+      prevV = {...prevV, ...e.v};
+    }
+  }
   const tot = id => rows.reduce((a, r) => a + (r.gain[id] || 0), 0);
   const top = ids.filter(id => tot(id) > 0).sort((a, b) => tot(b) - tot(a)).slice(0, 4).sort((a, b) => (pub[a] || '').localeCompare(pub[b] || ''));
   return {rows, top, ids};
@@ -220,7 +218,7 @@ function trendHTML(H, yt) {
   }).join('');
   const legend = [...D.top.map((id, i) => `<span><i style="background:${SER[i]}"></i>${esc(name[id] || id).slice(0, 34)}</span>`), `<span><i style="background:${OTHER}"></i>나머지 영상</span>`].join('');
   // 누적 선
-  const pts = H.map(h => ({x: h.ts, y: Object.values(h.v).reduce((a, b) => a + b, 0)})).filter(p => kday(p.x) >= rows[0].k);
+  const pts = [...D.rows.filter(r => r.studio).map(r => ({x: Date.parse(r.k + 'T00:00:00+09:00') + 864e5 - 6e4, y: r.total})), ...H.map(h => ({x: h.ts, y: Object.values(h.v).reduce((a, b) => a + b, 0)}))].filter(p => kday(p.x) >= rows[0].k || p.x >= Date.parse(rows[0].k + 'T00:00:00+09:00'));
   const Hl = 170, x0 = Date.parse(rows[0].k + 'T00:00:00+09:00'), x1 = Math.max(x0 + 864e5, Date.parse(rows.at(-1).k + 'T00:00:00+09:00') + 864e5, pts.at(-1).x);
   const ymin = Math.min(...pts.map(p => p.y)), ymax = Math.max(...pts.map(p => p.y)), pad = Math.max(10, (ymax - ymin) * .15);
   const lo = Math.max(0, ymin - pad), hi = ymax + pad;
@@ -236,7 +234,7 @@ function trendHTML(H, yt) {
     <line id="xh" y1="${P.t}" y2="${Hl - P.b}" stroke="var(--muted)" stroke-dasharray="3 3" visibility="hidden"/><circle id="xd" r="5" fill="${SER[0]}" stroke="var(--card)" stroke-width="2" visibility="hidden"/>
     <rect id="lineHit" x="${P.l}" y="${P.t}" width="${W - P.l - P.r}" height="${Hl - P.t - P.b}" fill="transparent"/></svg>`;
   TR = {rows, D, name, pts, LX, LY, W, x0, x1, P};
-  const days = D.rows.length, note = days < 2 ? '기록 첫날이에요. 날짜가 지날수록 막대가 하나씩 늘어나요.' : '';
+  const note = window.STUDIO ? `${dlab(D.rows[0].k)}~${dlab(window.STUDIO.lastDay)}: YouTube Studio 실제 일별 조회(미국 태평양 시간 날짜) · 그 뒤: 1시간마다 자동 기록(한국 날짜, 첫 칸은 Studio 마지막 날 이후 증가분)` : '';
   return `<div class="filters" id="rng">${[7, 14, 30, 90].map(n => `<button type="button" class="${range === n ? 'on' : ''}" data-n="${n}">${n}일</button>`).join('')}</div>
     <div class="chartTitle">하루 동안 늘어난 조회수 <span class="muted small">(오늘은 지금까지 · 흐린 막대)</span></div>
     <svg class="chart" id="barSvg" viewBox="0 0 ${W} ${Hb}" role="img" aria-label="날짜별 조회 증가">${grid}${bars}</svg>
@@ -273,7 +271,7 @@ function heatmap(H, yt) {
   const rows = D.rows.slice(-Math.max(range, 7)), vids = [...yt].sort((a, b) => b.published.localeCompare(a.published));
   const first = D.rows[0].k;
   const cell = (v, r) => {
-    const pk = kday(new Date(v.published).getTime());
+    const pt = new Date(v.published).getTime(), pk = r.studio ? new Date(pt - 7 * 3600e3).toISOString().slice(0, 10) : kday(pt);
     if (r.k < pk) return '<td class="c"></td>';
     if (r.first && r.k === first) { /* 기록 첫날: 시작 이후만 */ }
     const g = r.gain[v.id] || 0, st = [...RAMP].reverse().find(x => g >= x[0]);
@@ -283,10 +281,18 @@ function heatmap(H, yt) {
   const pre = rows[0].k > first ? '' : '';
   $('hmwrap').innerHTML = `<table class="hm"><thead><tr><th></th>${rows.map(r => `<th>${dlab(r.k).replace('(', '<br>(')}</th>`).join('')}<th>합계</th></tr></thead><tbody>${vids.map(v => {
     const tot = rows.reduce((a, r) => a + (r.gain[v.id] || 0), 0);
-    return `<tr><td class="v" title="${esc(v.title)}"><a href="https://www.youtube.com/shorts/${v.id}" target="_blank" rel="noopener">${esc(short(v.title))}</a></td>${rows.map(r => cell(v, r)).join('')}<td class="num small"><b>+${fmt(tot)}</b></td></tr>`; }).join('')}</tbody></table>${D.rows.length < 2 ? '<div class="legend">기록 첫날이에요. 내일부터 날짜 칸이 하루씩 늘어나요.</div>' : ''}<div id="hmtip" class="tip" hidden></div>`;
+    return `<tr><td class="v" title="${esc(v.title)}"><a href="https://www.youtube.com/shorts/${v.id}" target="_blank" rel="noopener">${esc(short(v.title))}</a></td>${rows.map(r => cell(v, r)).join('')}<td class="num small"><b>+${fmt(tot)}</b></td></tr>`; }).join('')}</tbody></table><div id="hmtip" class="tip" hidden></div>`;
   $('hmscale').innerHTML = '적음 <i style="background:var(--line)"></i>' + RAMP.map(x => `<i style="background:${x[1]}" title="${x[0]}+"></i>`).join('') + ' 많음 <span style="margin-left:8px">(0 · 1+ · 10+ · 50+ · 200+ · 500+)</span>';
   const tip = $('hmtip'), w = $('hmwrap');
   w.querySelectorAll('td.c[data-t]').forEach(c => { const f = ev => { const [t, d, g, p] = c.dataset.t.split('|'); tip.innerHTML = `<b>${t}</b><div>${d}</div><div>${g}회${p ? ' · ' + p : ''}</div>`; tip.hidden = false; const r = w.getBoundingClientRect(); let x = ev.clientX - r.left + w.scrollLeft + 12; tip.style.left = Math.min(x, w.scrollWidth - 240) + 'px'; tip.style.top = (ev.clientY - r.top + 12) + 'px'; }; c.onmousemove = f; c.ontouchstart = e => f(e.touches[0]); c.onmouseleave = () => tip.hidden = true; });
+}
+function studioPanel(d) {
+  const T = window.STUDIO; if (!T) { $('stk').innerHTML = '<div class="muted small">Studio 데이터 없음</div>'; return; }
+  $('stAt').textContent = `(YouTube Studio · ${T.period} · ${T.captured} 읽음)`;
+  const t = T.total;
+  $('stk').innerHTML = [['계속 시청함', t.stayed + '%', '피드에서 넘기지 않고 본 비율'], ['평균 조회율', t.avgPct + '%', '영상 길이 대비 평균 시청'], ['평균 시청 시간', t.avgDur, '30~36초 영상 기준'], ['Shorts 피드 유입', T.traffic[0][1] + '%', '나머지: 채널·검색 등'], ['구독 · 댓글 · 공유', `${t.subs} · ${t.comments} · ${t.shares}`, '기간 합계']].map(card).join('');
+  const bars = (title, arr, max) => `<div class="card"><div class="k">${title}</div><div class="bars" style="margin-top:8px">${arr.map(([n, v]) => `<div class="bar"><span class="lbl">${esc(n)}</span><span class="num small" style="text-align:right">${v}%</span><span class="trk"><i style="width:${(v / max * 100).toFixed(0)}%"></i></span></div>`).join('')}</div></div>`;
+  $('stbars').innerHTML = bars('국가 (상위)', T.country.slice(0, 8), T.country[0][1]) + bars('연령', T.age, Math.max(...T.age.map(x => x[1]))) + bars('성별', T.gender, 100) + bars('유입 경로', T.traffic, 100);
 }
 function targets(st, S) {
   const pc = x => /데이터/.test(x) && !/가설/.test(x) ? 'p-live' : /데이터/.test(x) ? 'p-ready' : 'p-todo';
@@ -321,8 +327,9 @@ function render(d, yt, ytAt, ch, H, span, st) {
     <td style="min-width:220px"><a href="https://www.youtube.com/shorts/${v.id}" target="_blank" rel="noopener">${esc(short(v.title))}</a></td>
     <td class="num">${ago(v.age)}</td><td class="num"><b>${fmt(v.views)}</b></td>
     <td class="num">${v.delta == null ? '–' : `<span class="${v.delta > 0 ? 'up' : ''}">+${fmt(v.delta)}</span>`}</td>
-    <td class="num">${v.rate.toFixed(1)}</td><td class="num">${fmt(v.likes)}</td><td class="num">${(v.lr * 100).toFixed(1)}%</td>
+    <td class="num">${v.rate.toFixed(1)}</td><td class="num">${fmt(v.likes)}</td><td class="num">${(v.lr * 100).toFixed(1)}%</td>${(() => { const m = window.STUDIO?.videos?.[v.id]; return m ? `<td class="num"><b style="color:${m.stayed >= 50 ? 'var(--ok)' : m.stayed < 35 ? 'var(--bad)' : 'inherit'}">${m.stayed}%</b></td><td class="num">${m.avgPct}%</td><td class="num">${m.subs ?? '–'}</td>` : '<td class="num">–</td><td class="num">–</td><td class="num">–</td>'; })()}
     <td class="small">${(v.views / Math.max(1, views) * 100).toFixed(0)}%<span class="share"><i style="width:${(v.views / mx * 100).toFixed(0)}%"></i></span></td></tr>`).join('');
+  studioPanel(d);
   $('studionote').innerHTML = esc(st.studio || '') + ` <a href="https://studio.youtube.com/channel/${d.channel.id}/analytics/tab-content/period-default/explore?entity_type=CHANNEL&entity_id=${d.channel.id}&r_flags=" target="_blank" rel="noopener">Studio 열기</a>`;
 
   // 자동 관찰
