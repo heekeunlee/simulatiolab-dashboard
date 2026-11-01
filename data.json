@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01 09:21",
+ "generated": "2026-11-01 09:22",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -539,17 +539,24 @@
     "ko",
     "pt"
    ],
-   "youtube": null,
-   "linked": false,
+   "youtube": "JSnwaI8Edas",
+   "linked": true,
    "thumb": "thumbs/23-zipper.jpg"
   }
  ],
  "youtube": [
   {
+   "id": "JSnwaI8Edas",
+   "title": "Lane Ends Ahead. Merge Early or at the Very End? #shorts",
+   "published": "2026-10-31T23:51:02+00:00",
+   "views": 17,
+   "likes": 0
+  },
+  {
    "id": "yTuOnrvKgNg",
    "title": "One Sea Lane Gets Blocked. Do Your Prices Rise Too? #shorts",
    "published": "2026-10-31T00:00:19+00:00",
-   "views": 1465,
+   "views": 1488,
    "likes": 15
   },
   {
