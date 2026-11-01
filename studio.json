@@ -227,44 +227,61 @@
   ]
  ],
  "realtime": {
-  "captured": "2026-11-01 09:25",
-  "last48h": 3010,
+  "captured": "2026-11-01 10:40",
+  "last48h": 2864,
   "top": [
    [
     "yTuOnrvKgNg",
-    1530
+    1576
    ],
    [
     "lGnrLC4eFzE",
-    1020
+    780
    ],
    [
     "8LKa2AeEOik",
-    425
+    397
    ]
   ],
   "newest": {
    "id": "JSnwaI8Edas",
-   "minutes": 28,
-   "views": 21,
+   "minutes": 124,
+   "views": 94,
+   "last60": 60,
    "traffic": [
     [
      "Shorts 피드",
-     61.9
-    ],
-    [
-     "탐색 기능",
-     28.6
+     83.0
     ],
     [
      "채널 페이지",
-     4.8
+     10.6
     ],
     [
-     "기타",
-     4.8
+     "탐색 기능",
+     6.4
     ]
    ]
+  },
+  "prev": {
+   "captured": "2026-11-01 09:25",
+   "last48h": 3010,
+   "top": [
+    [
+     "yTuOnrvKgNg",
+     1530
+    ],
+    [
+     "lGnrLC4eFzE",
+     1020
+    ],
+    [
+     "8LKa2AeEOik",
+     425
+    ]
+   ],
+   "newestViews": 21,
+   "newestMinutes": 28
   }
  }
 }

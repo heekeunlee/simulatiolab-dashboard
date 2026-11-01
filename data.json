@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01 09:22",
+ "generated": "2026-11-01 10:57",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -539,24 +539,17 @@
     "ko",
     "pt"
    ],
-   "youtube": "JSnwaI8Edas",
-   "linked": true,
+   "youtube": null,
+   "linked": false,
    "thumb": "thumbs/23-zipper.jpg"
   }
  ],
  "youtube": [
   {
-   "id": "JSnwaI8Edas",
-   "title": "Lane Ends Ahead. Merge Early or at the Very End? #shorts",
-   "published": "2026-10-31T23:51:02+00:00",
-   "views": 17,
-   "likes": 0
-  },
-  {
    "id": "yTuOnrvKgNg",
    "title": "One Sea Lane Gets Blocked. Do Your Prices Rise Too? #shorts",
    "published": "2026-10-31T00:00:19+00:00",
-   "views": 1488,
+   "views": 1465,
    "likes": 15
   },
   {
@@ -616,6 +609,11 @@
   "languages": 8,
   "commits": [
    {
+    "hash": "38b7ffb",
+    "date": "2026-11-01T09:22:52+09:00",
+    "msg": "대시보드 빌드: 유튜브 피드 실패 시 다시 시도·지난 값 사용"
+   },
+   {
     "hash": "0189bd1",
     "date": "2026-11-01T09:20:56+09:00",
     "msg": "대시보드: Studio 실시간(48시간)·지퍼 병합 첫 반응, 배운 점 갱신"
@@ -669,14 +667,9 @@
     "hash": "8db27fe",
     "date": "2026-11-01T00:44:56+09:00",
     "msg": "대시보드: 사이트 모바일 UX 진단·개선 페이지(ux.html) 추가"
-   },
-   {
-    "hash": "838c569",
-    "date": "2026-11-01T00:42:29+09:00",
-    "msg": "모바일 빠른 개선: 실험 페이지 방문자 상자 숨김(화면 흔들림 CLS 0.38→0), 터치 영역 44px, 이메일 주소 스팸 봇 수집 방지, ver. 1.8.4"
    }
   ],
-  "commitCount": 209
+  "commitCount": 210
  },
  "eleven": {
   "used": 24633,
