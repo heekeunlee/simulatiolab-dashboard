@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01 11:27",
+ "generated": "2026-11-01 11:31",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -549,14 +549,14 @@
    "id": "JSnwaI8Edas",
    "title": "Lane Ends Ahead. Merge Early or at the Very End? #shorts",
    "published": "2026-10-31T23:51:02+00:00",
-   "views": 124,
+   "views": 127,
    "likes": 3
   },
   {
    "id": "yTuOnrvKgNg",
    "title": "One Sea Lane Gets Blocked. Do Your Prices Rise Too? #shorts",
    "published": "2026-10-31T00:00:19+00:00",
-   "views": 1535,
+   "views": 1536,
    "likes": 16
   },
   {
@@ -616,6 +616,11 @@
   "languages": 8,
   "commits": [
    {
+    "hash": "5e9e90a",
+    "date": "2026-11-01T11:27:46+09:00",
+    "msg": "대시보드: 맨 위에 현황 분석 리포트(11/1 10:40)"
+   },
+   {
     "hash": "5205f53",
     "date": "2026-11-01T10:59:03+09:00",
     "msg": "대시보드 빌드: 피드 실패 시 최신 yt.json을 먼저 받아 사용"
@@ -669,14 +674,9 @@
     "hash": "7bfd3f9",
     "date": "2026-11-01T01:07:51+09:00",
     "msg": "UX 진단 페이지: ②④ 완료 반영(메인 6.2→2.7MB, 건너뛴 뒤 실험 화면 7/7)"
-   },
-   {
-    "hash": "baaa000",
-    "date": "2026-11-01T01:05:49+09:00",
-    "msg": "실험 화면 자동 스크롤: 3D 화면이 늦게 커져도 한 번 더 맞춤, ver. 1.8.6"
    }
   ],
-  "commitCount": 212
+  "commitCount": 213
  },
  "eleven": {
   "used": 24633,
