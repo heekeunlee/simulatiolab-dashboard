@@ -5,13 +5,13 @@ CH = 'UCjTsqCOK6Bf1aVPx_mXgPig'
 KST = timezone(timedelta(hours=9))
 UA = {'User-Agent': 'Mozilla/5.0', 'Accept-Language': 'en-US,en;q=0.9'}
 import time
-def get(u, tries=8):   # 유튜브 피드가 가끔 404·500을 돌려줘서 몇 번 다시 시도한다
+def get(u, tries=16):   # 유튜브 피드가 가끔 404·500을 돌려줘서 몇 번 다시 시도한다
     for i in range(tries):
         try:
             return urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=30).read().decode('utf-8', 'ignore')
         except Exception as e:
             if i == tries - 1: raise
-            time.sleep(6)
+            time.sleep(12)
 un = lambda s: s.replace('&amp;', '&').replace('&#39;', "'").replace('&quot;', '"')
 
 def num(t):
