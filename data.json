@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01 11:32",
+ "generated": "2026-11-01 20:04",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -549,64 +549,64 @@
    "id": "JSnwaI8Edas",
    "title": "Lane Ends Ahead. Merge Early or at the Very End? #shorts",
    "published": "2026-10-31T23:51:02+00:00",
-   "views": 127,
-   "likes": 3
+   "views": 1251,
+   "likes": 15
   },
   {
    "id": "yTuOnrvKgNg",
    "title": "One Sea Lane Gets Blocked. Do Your Prices Rise Too? #shorts",
    "published": "2026-10-31T00:00:19+00:00",
-   "views": 1536,
-   "likes": 16
+   "views": 1639,
+   "likes": 21
   },
   {
    "id": "EzuqP_klgoY",
    "title": "How Do Fireflies Blink in Sync With No Leader? #shorts",
    "published": "2026-10-29T15:11:45+00:00",
-   "views": 17,
-   "likes": 1
+   "views": 21,
+   "likes": 2
   },
   {
    "id": "cQkILvcl008",
    "title": "Why Do Buses Always Come in Pairs? #shorts",
    "published": "2026-10-29T15:06:52+00:00",
    "views": 8,
-   "likes": 2
+   "likes": 3
   },
   {
    "id": "3zXaoMD-jms",
    "title": "The Most Talented Person Almost Never Ends Up the Richest #shorts",
    "published": "2026-10-29T15:00:30+00:00",
-   "views": 11,
+   "views": 13,
    "likes": 2
   },
   {
    "id": "l6zXtQNpIdI",
    "title": "Your Friends Are More Popular Than You (It's Math) #shorts #math",
    "published": "2026-10-29T14:55:09+00:00",
-   "views": 10,
+   "views": 12,
    "likes": 2
   },
   {
    "id": "lGnrLC4eFzE",
    "title": "Where Would You Add Armor? (Most People Get It Wrong) #shorts",
    "published": "2026-10-29T14:46:12+00:00",
-   "views": 1306,
-   "likes": 20
+   "views": 1313,
+   "likes": 23
   },
   {
    "id": "8LKa2AeEOik",
    "title": "Braess's Paradox: Why More Roads Can Mean More Traffic #shorts",
    "published": "2026-10-29T02:44:08+00:00",
-   "views": 1119,
-   "likes": 7
+   "views": 1125,
+   "likes": 8
   },
   {
    "id": "DIUHq6UK9Zs",
    "title": "Why a New Road Made Everyone Slower #shorts",
    "published": "2026-10-29T01:03:39+00:00",
-   "views": 1272,
-   "likes": 10
+   "views": 1278,
+   "likes": 11
   }
  ],
  "site": {
@@ -615,6 +615,11 @@
   "experiments": 81,
   "languages": 8,
   "commits": [
+   {
+    "hash": "2a5b239",
+    "date": "2026-11-01T11:32:24+09:00",
+    "msg": "대시보드: 공개 숫자는 yt.json·data.json 중 최근 것 사용"
+   },
    {
     "hash": "acd7832",
     "date": "2026-11-01T11:31:55+09:00",
@@ -669,14 +674,9 @@
     "hash": "3ec9d95",
     "date": "2026-11-01T01:17:03+09:00",
     "msg": "UX 진단: ①⑦ 완료 반영, 전략 메모에 짧은 주소·쇼츠 링크 사실 추가"
-   },
-   {
-    "hash": "779de70",
-    "date": "2026-11-01T01:14:44+09:00",
-    "msg": "쇼츠→사이트→구독 흐름: 짧은 주소(simulatiolab.com/<실험>), 메인 '방금 본 쇼츠' 줄, 결과 공유·유튜브 구독 버튼(8개 언어), 쇼츠 섬네일 깨짐 수정, ver. 1.8.7"
    }
   ],
-  "commitCount": 214
+  "commitCount": 215
  },
  "eleven": {
   "used": 24633,
