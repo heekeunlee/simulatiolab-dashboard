@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01 20:06",
+ "generated": "2026-11-01 21:04",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -508,7 +508,12 @@
    ],
    "srt": true,
    "langs": [
-    "en"
+    "de",
+    "en",
+    "es",
+    "id",
+    "ko",
+    "pt"
    ],
    "youtube": null,
    "linked": false,
@@ -549,14 +554,14 @@
    "id": "JSnwaI8Edas",
    "title": "Lane Ends Ahead. Merge Early or at the Very End? #shorts",
    "published": "2026-10-31T23:51:02+00:00",
-   "views": 1251,
+   "views": 1311,
    "likes": 15
   },
   {
    "id": "yTuOnrvKgNg",
    "title": "One Sea Lane Gets Blocked. Do Your Prices Rise Too? #shorts",
    "published": "2026-10-31T00:00:19+00:00",
-   "views": 1639,
+   "views": 1684,
    "likes": 21
   },
   {
@@ -598,14 +603,14 @@
    "id": "8LKa2AeEOik",
    "title": "Braess's Paradox: Why More Roads Can Mean More Traffic #shorts",
    "published": "2026-10-29T02:44:08+00:00",
-   "views": 1125,
+   "views": 1127,
    "likes": 8
   },
   {
    "id": "DIUHq6UK9Zs",
    "title": "Why a New Road Made Everyone Slower #shorts",
    "published": "2026-10-29T01:03:39+00:00",
-   "views": 1278,
+   "views": 1280,
    "likes": 11
   }
  ],
@@ -615,6 +620,26 @@
   "experiments": 81,
   "languages": 8,
   "commits": [
+   {
+    "hash": "547abed",
+    "date": "2026-11-01T20:41:29+09:00",
+    "msg": "옆 차선 쇼츠: 한국어·독일어·스페인어·포르투갈어·인도네시아어 자막과 제목·설명 번역"
+   },
+   {
+    "hash": "046416e",
+    "date": "2026-11-01T20:27:39+09:00",
+    "msg": "claude-video 스킬: ElevenLabs 제거 — 무료 음성(edge-tts·macOS say)·코드 합성 음악/효과음으로 교체"
+   },
+   {
+    "hash": "f308606",
+    "date": "2026-11-01T20:21:30+09:00",
+    "msg": "스킬 claude-video: Claude로 코드만으로 영상 만들기(캔버스 렌더·ElevenLabs·믹스·자막) 노하우와 시작용 틀"
+   },
+   {
+    "hash": "875761e",
+    "date": "2026-11-01T20:06:37+09:00",
+    "msg": "대시보드: 11/1 20:08 현황 리포트(지퍼 병합 1,312회), Studio 10/31 일별·시청자층 갱신, 맥미니 1시간 자동 갱신 스크립트"
+   },
    {
     "hash": "2a5b239",
     "date": "2026-11-01T11:32:24+09:00",
@@ -654,29 +679,9 @@
     "hash": "dc7e9f4",
     "date": "2026-11-01T09:18:54+09:00",
     "msg": "지퍼 병합 쇼츠 유튜브 게시 연결 (zipper), ver. 1.8.8"
-   },
-   {
-    "hash": "f5f6ac8",
-    "date": "2026-11-01T08:50:15+09:00",
-    "msg": "지퍼 병합 쇼츠: 한국어·독일어·스페인어·포르투갈어·인도네시아어 자막과 제목·설명 번역"
-   },
-   {
-    "hash": "98da320",
-    "date": "2026-11-01T08:37:41+09:00",
-    "msg": "업로드 계획: 11/1 지퍼 병합, 유령 정체는 11/7로"
-   },
-   {
-    "hash": "b751bed",
-    "date": "2026-11-01T01:39:47+09:00",
-    "msg": "대기 쇼츠 14편: 끝 화면·설명란·고정 댓글을 짧은 주소(simulatiolab.com/<실험>)로, 다시 렌더 기록"
-   },
-   {
-    "hash": "3ec9d95",
-    "date": "2026-11-01T01:17:03+09:00",
-    "msg": "UX 진단: ①⑦ 완료 반영, 전략 메모에 짧은 주소·쇼츠 링크 사실 추가"
    }
   ],
-  "commitCount": 215
+  "commitCount": 219
  },
  "eleven": {
   "used": 24633,
