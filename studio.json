@@ -1,47 +1,58 @@
 {
- "captured": "2026-10-31 23:58",
- "period": "2026-10-03 ~ 2026-10-30 (YouTube Studio, 미국 태평양 시간 날짜)",
- "lastDay": "2026-10-30",
+ "captured": "2026-11-01 20:10",
+ "period": "2026-10-04 ~ 2026-10-31 (YouTube Studio, 미국 태평양 시간 날짜)",
+ "lastDay": "2026-10-31",
  "daily": {
   "lGnrLC4eFzE": {
    "2026-10-29": 831,
-   "2026-10-30": 477
+   "2026-10-30": 477,
+   "2026-10-31": 16
   },
   "DIUHq6UK9Zs": {
    "2026-10-28": 135,
    "2026-10-29": 1137,
-   "2026-10-30": 5
+   "2026-10-30": 5,
+   "2026-10-31": 8
   },
   "8LKa2AeEOik": {
    "2026-10-28": 76,
    "2026-10-29": 850,
-   "2026-10-30": 198
+   "2026-10-30": 198,
+   "2026-10-31": 8
   },
   "yTuOnrvKgNg": {
-   "2026-10-30": 1247
+   "2026-10-30": 1247,
+   "2026-10-31": 411
   },
   "EzuqP_klgoY": {
    "2026-10-29": 13,
-   "2026-10-30": 1
+   "2026-10-30": 1,
+   "2026-10-31": 7
   },
   "cQkILvcl008": {
    "2026-10-29": 6,
-   "2026-10-30": 0
+   "2026-10-30": 0,
+   "2026-10-31": 2
   },
   "3zXaoMD-jms": {
-   "2026-10-29": 8
+   "2026-10-29": 8,
+   "2026-10-31": 5
   },
   "l6zXtQNpIdI": {
-   "2026-10-29": 7
+   "2026-10-29": 7,
+   "2026-10-31": 5
+  },
+  "JSnwaI8Edas": {
+   "2026-10-31": 1299
   }
  },
  "videos": {
   "lGnrLC4eFzE": {
-   "avgPct": 67.0,
+   "avgPct": 67.4,
    "avgDur": "0:24",
    "stayed": 64.4,
    "subs": 1,
-   "comments": 1,
+   "comments": 2,
    "shares": 0
   },
   "DIUHq6UK9Zs": {
@@ -53,15 +64,15 @@
    "shares": 0
   },
   "yTuOnrvKgNg": {
-   "avgPct": 49.1,
+   "avgPct": 51.2,
    "avgDur": "0:16",
-   "stayed": 57.9,
-   "subs": null,
-   "comments": 0,
+   "stayed": 59.2,
+   "subs": 1,
+   "comments": 1,
    "shares": 0
   },
   "8LKa2AeEOik": {
-   "avgPct": 67.1,
+   "avgPct": 67.0,
    "avgDur": "0:24",
    "stayed": 47.7,
    "subs": 1,
@@ -69,44 +80,52 @@
    "shares": 0
   },
   "EzuqP_klgoY": {
-   "avgPct": 76.3,
-   "avgDur": "0:26",
-   "stayed": 53.3,
+   "avgPct": 65.6,
+   "avgDur": "0:22",
+   "stayed": 50.0,
    "subs": 0,
    "comments": 1,
    "shares": 0
   },
   "3zXaoMD-jms": {
-   "avgPct": 47.0,
-   "avgDur": "0:15",
-   "stayed": 45.5,
+   "avgPct": 55.9,
+   "avgDur": "0:19",
+   "stayed": 46.7,
    "subs": 0,
    "comments": 1,
    "shares": 0
   },
   "l6zXtQNpIdI": {
-   "avgPct": 124.8,
-   "avgDur": "0:42",
-   "stayed": 21.4,
+   "avgPct": 84.5,
+   "avgDur": "0:28",
+   "stayed": 31.6,
    "subs": 0,
    "comments": 1,
    "shares": 0
   },
   "cQkILvcl008": {
-   "avgPct": 71.7,
-   "avgDur": "0:25",
-   "stayed": 28.6,
+   "avgPct": 67.1,
+   "avgDur": "0:23",
+   "stayed": 33.3,
    "subs": 0,
    "comments": 1,
+   "shares": 0
+  },
+  "JSnwaI8Edas": {
+   "avgPct": 91.0,
+   "avgDur": "0:28",
+   "stayed": 49.9,
+   "subs": null,
+   "comments": 0,
    "shares": 0
   }
  },
  "total": {
-  "views": 4991,
-  "avgPct": 62.6,
-  "avgDur": "0:21",
-  "stayed": 55.9,
-  "subs": 6,
+  "views": 6752,
+  "avgPct": 66.9,
+  "avgDur": "0:22",
+  "stayed": 55.2,
+  "subs": 8,
   "comments": 7,
   "shares": 0
  },
@@ -135,55 +154,39 @@
  "country": [
   [
    "미국",
-   12.7
-  ],
-  [
-   "인도",
-   3.7
+   13.6
   ],
   [
    "필리핀",
-   3.7
+   5.7
+  ],
+  [
+   "인도",
+   5.6
   ],
   [
    "인도네시아",
-   3.5
-  ],
-  [
-   "영국",
-   3.0
+   5.1
   ],
   [
    "독일",
-   2.8
+   3.2
+  ],
+  [
+   "영국",
+   3.2
+  ],
+  [
+   "캐나다",
+   3.0
   ],
   [
    "대한민국",
-   2.4
+   2.8
   ],
   [
    "호주",
    2.3
-  ],
-  [
-   "캐나다",
-   1.9
-  ],
-  [
-   "폴란드",
-   1.4
-  ],
-  [
-   "네덜란드",
-   1.1
-  ],
-  [
-   "말레이시아",
-   1.1
-  ],
-  [
-   "브라질",
-   1.0
   ]
  ],
  "age": [
@@ -215,73 +218,71 @@
  "gender": [
   [
    "남성",
-   90.1
+   89.7
   ],
   [
    "여성",
-   7.6
+   8.9
   ],
   [
    "지정",
-   2.3
+   1.4
   ]
  ],
  "realtime": {
-  "captured": "2026-11-01 10:40",
-  "last48h": 2864,
+  "captured": "2026-11-01 20:08",
+  "last48h": 3116,
   "top": [
    [
     "yTuOnrvKgNg",
-    1576
+    1696
+   ],
+   [
+    "JSnwaI8Edas",
+    1312
    ],
    [
     "lGnrLC4eFzE",
-    780
-   ],
-   [
-    "8LKa2AeEOik",
-    397
+    60
    ]
   ],
   "newest": {
    "id": "JSnwaI8Edas",
-   "minutes": 124,
-   "views": 94,
-   "last60": 60,
+   "minutes": 673,
+   "views": 1312,
+   "last60": 2,
+   "avgPct": 90.4,
+   "likes": 15,
    "traffic": [
     [
      "Shorts 피드",
-     83.0
+     50.0
     ],
     [
      "채널 페이지",
-     10.6
-    ],
-    [
-     "탐색 기능",
-     6.4
+     50.0
     ]
    ]
   },
   "prev": {
-   "captured": "2026-11-01 09:25",
-   "last48h": 3010,
+   "captured": "2026-11-01 10:40",
+   "last48h": 2864,
    "top": [
     [
      "yTuOnrvKgNg",
-     1530
+     1576
     ],
     [
      "lGnrLC4eFzE",
-     1020
+     780
     ],
     [
      "8LKa2AeEOik",
-     425
+     397
     ]
    ],
-   "newestViews": 21,
-   "newestMinutes": 28
+   "newestViews": 94,
+   "newestMinutes": 124
   }
  }
 }
