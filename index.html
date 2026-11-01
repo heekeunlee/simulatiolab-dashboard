@@ -166,7 +166,8 @@ async function load() {
   const [d, y, hist, st, studio] = await Promise.all([J('data.json'), J('yt.json'), J('history.json'), J('strategy.json'), J('studio.json')]);
   window.STUDIO = studio;
   let yt = d.youtube, ytAt = d.generated + ' (맥미니)', ch = {};
-  if (y && y.videos?.length) { yt = y.videos; ytAt = y.updated + ' (자동)'; ch = y.channel || {}; }
+  if (y) ch = y.channel || {};
+  if (y && y.videos?.length && (y.updated || '') >= (d.generated || '')) { yt = y.videos; ytAt = y.updated + ' (자동)'; }   // 더 최근에 받은 쪽을 쓴다
   const byId = Object.fromEntries(yt.map(v => [v.id, v]));
   const norm = t => (t || '').toLowerCase().replace(/#\w+/g, '').replace(/[^a-z0-9]/g, '');
   const byTitle = Object.fromEntries(yt.map(v => [norm(v.title), v]));
