@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01 23:04",
+ "generated": "2026-11-02 00:04",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -92,8 +92,8 @@
    "exp": null,
    "title": "No Crash. No Roadwork. So Why Did Traffic Stop? #shorts",
    "rendered": true,
-   "renderedAt": "11-01 21:09",
-   "sizeMB": 18.4,
+   "renderedAt": "11-01 23:54",
+   "sizeMB": 21.6,
    "thumbs": [
     "05-phantom-jam-en-a.png",
     "05-phantom-jam-en-b.png"
@@ -380,8 +380,8 @@
    "exp": null,
    "title": "7 Seats, Nobody Wants a Neighbor. How Many Can Sit? #shorts",
    "rendered": true,
-   "renderedAt": "11-01 21:18",
-   "sizeMB": 18.8,
+   "renderedAt": "11-01 23:18",
+   "sizeMB": 18.7,
    "thumbs": [
     "17-seating-en-a.png",
     "17-seating-en-b.png"
@@ -554,14 +554,14 @@
    "id": "JSnwaI8Edas",
    "title": "Lane Ends Ahead. Merge Early or at the Very End? #shorts",
    "published": "2026-10-31T23:51:02+00:00",
-   "views": 1311,
+   "views": 1315,
    "likes": 15
   },
   {
    "id": "yTuOnrvKgNg",
    "title": "One Sea Lane Gets Blocked. Do Your Prices Rise Too? #shorts",
    "published": "2026-10-31T00:00:19+00:00",
-   "views": 1684,
+   "views": 1690,
    "likes": 21
   },
   {
@@ -596,7 +596,7 @@
    "id": "lGnrLC4eFzE",
    "title": "Where Would You Add Armor? (Most People Get It Wrong) #shorts",
    "published": "2026-10-29T14:46:12+00:00",
-   "views": 1313,
+   "views": 1319,
    "likes": 23
   },
   {
@@ -620,6 +620,21 @@
   "experiments": 81,
   "languages": 8,
   "commits": [
+   {
+    "hash": "7acd51c",
+    "date": "2026-11-01T23:54:22+09:00",
+    "msg": "유령 정체 쇼츠: 앞차 미등 뒷모습에서 정체 공개로 이어지는 3D 오프닝 기록, 영상 스킬에 3D→2D 이음 방법 추가"
+   },
+   {
+    "hash": "14d70ac",
+    "date": "2026-11-01T23:36:32+09:00",
+    "msg": "유령 정체 쇼츠: 추적·수렴 줌·회전 리빌 카메라 무빙 기록, 영상 스킬에 카메라 무빙 방법 추가"
+   },
+   {
+    "hash": "0ab3b7d",
+    "date": "2026-11-01T23:18:32+09:00",
+    "msg": "벤치 쇼츠: 0초 첫 장면부터 '7 SEATS.' 문구가 보이게 수정 기록"
+   },
    {
     "hash": "ea4f9f8",
     "date": "2026-11-01T21:23:44+09:00",
@@ -664,24 +679,9 @@
     "hash": "5e9e90a",
     "date": "2026-11-01T11:27:46+09:00",
     "msg": "대시보드: 맨 위에 현황 분석 리포트(11/1 10:40)"
-   },
-   {
-    "hash": "5205f53",
-    "date": "2026-11-01T10:59:03+09:00",
-    "msg": "대시보드 빌드: 피드 실패 시 최신 yt.json을 먼저 받아 사용"
-   },
-   {
-    "hash": "1c5bd2a",
-    "date": "2026-11-01T10:58:04+09:00",
-    "msg": "대시보드: 11/1 10:40 Studio 실시간 재확인(지퍼 병합 2시간 94회·가속), 배운 점 추가"
-   },
-   {
-    "hash": "38b7ffb",
-    "date": "2026-11-01T09:22:52+09:00",
-    "msg": "대시보드 빌드: 유튜브 피드 실패 시 다시 시도·지난 값 사용"
    }
   ],
-  "commitCount": 221
+  "commitCount": 224
  },
  "eleven": {
   "used": 24633,
