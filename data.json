@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01 10:57",
+ "generated": "2026-11-01 10:58",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -539,17 +539,24 @@
     "ko",
     "pt"
    ],
-   "youtube": null,
-   "linked": false,
+   "youtube": "JSnwaI8Edas",
+   "linked": true,
    "thumb": "thumbs/23-zipper.jpg"
   }
  ],
  "youtube": [
   {
+   "id": "JSnwaI8Edas",
+   "title": "Lane Ends Ahead. Merge Early or at the Very End? #shorts",
+   "published": "2026-10-31T23:51:02+00:00",
+   "views": 76,
+   "likes": 1
+  },
+  {
    "id": "yTuOnrvKgNg",
    "title": "One Sea Lane Gets Blocked. Do Your Prices Rise Too? #shorts",
    "published": "2026-10-31T00:00:19+00:00",
-   "views": 1465,
+   "views": 1509,
    "likes": 15
   },
   {
@@ -609,6 +616,11 @@
   "languages": 8,
   "commits": [
    {
+    "hash": "1c5bd2a",
+    "date": "2026-11-01T10:58:04+09:00",
+    "msg": "대시보드: 11/1 10:40 Studio 실시간 재확인(지퍼 병합 2시간 94회·가속), 배운 점 추가"
+   },
+   {
     "hash": "38b7ffb",
     "date": "2026-11-01T09:22:52+09:00",
     "msg": "대시보드 빌드: 유튜브 피드 실패 시 다시 시도·지난 값 사용"
@@ -662,14 +674,9 @@
     "hash": "62811c0",
     "date": "2026-11-01T01:02:20+09:00",
     "msg": "모바일 이번 주 개선: 실험 화면을 숫자 카드보다 먼저·예상/건너뛰기 후 실험 화면으로 자동 스크롤, 메인 경량화(섬네일 WebP·첫 장면 그림만 먼저·휴대폰 예고편 1개), ver. 1.8.5"
-   },
-   {
-    "hash": "8db27fe",
-    "date": "2026-11-01T00:44:56+09:00",
-    "msg": "대시보드: 사이트 모바일 UX 진단·개선 페이지(ux.html) 추가"
    }
   ],
-  "commitCount": 210
+  "commitCount": 211
  },
  "eleven": {
   "used": 24633,
