@@ -96,6 +96,10 @@ td.date{white-space:nowrap;font-variant-numeric:tabular-nums;font-size:13px}
 .tl{list-style:none;margin:0;padding:0 0 0 18px;border-left:2px solid var(--line);display:grid;gap:14px}
 .tl li{position:relative;font-size:14px}.tl li::before{content:"";position:absolute;left:-25px;top:5px;width:10px;height:10px;border-radius:50%;background:var(--accent);border:2px solid var(--card)}
 .tl .act{margin-top:4px;font-weight:600;color:var(--accent)}
+.rp-h{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 12px;align-items:baseline}
+.rp-h h2{margin:0}.rp-tr td.up{color:var(--ok);font-weight:700}.rp-tr td.down{color:var(--bad);font-weight:700}.rp-tr td.flat{color:var(--muted);font-weight:700}
+.rp-pts{margin:14px 0 0;padding-left:22px;display:grid;gap:8px;font-size:14.5px}.rp-pts b{display:block}
+.rp-notes{margin:12px 0 0;padding:10px 14px;border-radius:10px;background:color-mix(in srgb,var(--warn) 12%,transparent);font-size:13px;display:grid;gap:4px;list-style:none}
 .sec{font-size:12px;font-weight:700;letter-spacing:.06em;color:var(--muted);text-transform:uppercase;margin:6px 0 -8px}
 </style>
 </head>
@@ -106,6 +110,8 @@ td.date{white-space:nowrap;font-variant-numeric:tabular-nums;font-size:13px}
   <div class="small muted" id="stamp">불러오는 중…</div>
 </header>
 
+<div class="sec">현황 분석</div>
+<section class="card" id="report"></section>
 <div class="sec">채널 성과</div>
 <section class="kpis" id="kpis"></section>
 <section class="card"><h2>날짜별 조회수</h2><div id="trend" style="position:relative"></div></section>
@@ -404,6 +410,13 @@ function render(d, yt, ytAt, ch, H, span, st) {
   if (hours.length) au.push(['', `잘 된 영상의 게시 시각(한국): ${hours.map(h => h + '시').join(', ')}. 다음 영상도 이 시간대에 올려 비교.`]);
   if (ready.length) au.push(['', `올릴 준비가 끝난 영상 ${ready.length}편 = 하루 1편이면 약 ${ready.length}일치. 매일 같은 시간에 하나씩.`]);
   $('auto').innerHTML = au.map(([c, t]) => `<li class="${c}">${t}</li>`).join('') || '<li>데이터가 더 쌓이면 표시돼요.</li>';
+  const RP = (st.reports || [])[0];
+  if (RP) { const arrow = { up: '🔺', down: '🔻', flat: '→' };
+    $('report').innerHTML = `<div class="rp-h"><h2>${esc(RP.title)}</h2><span class="small muted">YouTube Studio 실시간 · ${esc(RP.at)} 기준</span></div>
+      <div class="tw" style="margin-top:10px"><table class="rp-tr"><thead><tr>${RP.cols.map((c, i) => `<th${i ? ' class="num"' : ''}>${esc(c)}</th>`).join('')}</tr></thead><tbody>${RP.rows.map((r) => `<tr><td>${esc(r[0])}</td><td class="num">${esc(r[1])}</td><td class="num"><b>${esc(r[2])}</b></td><td class="num ${r[3]}">${arrow[r[3]] || ''} ${esc(r[4])}</td></tr>`).join('')}</tbody></table></div>
+      <ol class="rp-pts">${RP.points.map(([a, b]) => `<li><b>${esc(a)}</b>${esc(b)}</li>`).join('')}</ol>
+      ${RP.notes && RP.notes.length ? `<ul class="rp-notes">${RP.notes.map((n) => `<li>⚠️ ${esc(n)}</li>`).join('')}</ul>` : ''}`; }
+  else $('report').hidden = true;
   targets(st, S);
   const tagc = {'확실': 'p-live', '권장': 'p-ready', '실험': 'p-todo'};
   if ($('strat')) $('strat').innerHTML = (st.strategy || []).map(x => `<li><span class="pill ${tagc[x.tag] || ''}">${esc(x.tag)}</span> <b>${esc(x.title)}</b><div class="small">${esc(x.text)}</div></li>`).join('');
