@@ -19,14 +19,37 @@ def num(t):
     m = re.match(r'([\d.]+)([KM]?)', t)
     return int(float(m.group(1)) * {'': 1, 'K': 1e3, 'M': 1e6}[m.group(2)]) if m else None
 
-x = get(f'https://www.youtube.com/feeds/videos.xml?channel_id={CH}')
 vs = []
+try:
+    x = get(f'https://www.youtube.com/feeds/videos.xml?channel_id={CH}')
+except Exception as e:
+    print('feed 실패 → 영상 페이지에서 읽기:', e); x = ''
 for e in re.findall(r'<entry>(.*?)</entry>', x, re.S):
     g = lambda p: (re.search(p, e) or [None, None])[1]
     vs.append({'id': g(r'<yt:videoId>(.*?)<'), 'title': un(g(r'<title>(.*?)<') or ''), 'published': g(r'<published>(.*?)<'),
                'views': int(g(r'views="(\d+)"') or 0), 'likes': int(g(r'starRating count="(\d+)"') or 0)})
 
 old = json.load(open('yt.json')) if os.path.exists('yt.json') else {}
+# 피드가 안 될 때(2026-11-01 유튜브 쪽 404·500이 잦음): 아는 영상 ID마다 영상 페이지의 공개 숫자(조회·좋아요)를 읽는다
+if not vs:
+    known = {v['id']: v for v in old.get('videos', [])}
+    try:
+        for sh in json.load(open('data.json')).get('shorts', []):
+            if sh.get('youtube') and sh['youtube'] not in known: known[sh['youtube']] = {'id': sh['youtube'], 'title': sh.get('title') or '', 'published': None}
+    except Exception: pass
+    for vid, pv in known.items():
+        try:
+            w = get(f'https://www.youtube.com/watch?v={vid}', tries=3)
+            g = lambda p: (re.search(p, w) or [None, None])[1]
+            views, likes = g(r'"viewCount":"(\d+)"'), g(r'"likeCount":"(\d+)"')
+            if views is None: raise ValueError('no viewCount')
+            pub = pv.get('published') or g(r'"publishDate":"([^"]+)"')
+            vs.append({'id': vid, 'title': pv.get('title') or un(g(r'<meta name="title" content="([^"]*)"') or ''), 'published': pub, 'views': int(views), 'likes': int(likes or pv.get('likes') or 0)})
+        except Exception as e:
+            print('영상 페이지 실패', vid, e)
+            if pv.get('views') is not None: vs.append(pv)
+    vs.sort(key=lambda v: v.get('published') or '', reverse=True)
+    print('영상 페이지로 읽음:', len(vs))
 ch = {'subscribers': (old.get('channel') or {}).get('subscribers')}
 try:
     c = get('https://www.youtube.com/@simulatiolab')
