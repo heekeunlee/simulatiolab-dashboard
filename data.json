@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-02 00:04",
+ "generated": "2026-11-02 01:05",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -92,8 +92,8 @@
    "exp": null,
    "title": "No Crash. No Roadwork. So Why Did Traffic Stop? #shorts",
    "rendered": true,
-   "renderedAt": "11-01 23:54",
-   "sizeMB": 21.6,
+   "renderedAt": "11-02 00:11",
+   "sizeMB": 75.5,
    "thumbs": [
     "05-phantom-jam-en-a.png",
     "05-phantom-jam-en-b.png"
@@ -164,8 +164,8 @@
    "exp": "bunching",
    "title": "A Bus Comes Every 10 Minutes. How Long Do You Wait? #shorts",
    "rendered": true,
-   "renderedAt": "11-01 21:11",
-   "sizeMB": 47.5,
+   "renderedAt": "11-02 00:29",
+   "sizeMB": 187.7,
    "thumbs": [
     "08-inspection-en-a.png",
     "08-inspection-en-b.png"
@@ -188,8 +188,8 @@
    "exp": null,
    "title": "You'll Meet 40 People. When Should You Choose? #shorts",
    "rendered": true,
-   "renderedAt": "11-01 21:09",
-   "sizeMB": 17.6,
+   "renderedAt": "11-02 00:24",
+   "sizeMB": 67.3,
    "thumbs": [
     "09-secretary-en-a.png",
     "09-secretary-en-b.png"
@@ -212,8 +212,8 @@
    "exp": null,
    "title": "4 Lines or 1 Shared Line: Which Is Faster? #shorts",
    "rendered": true,
-   "renderedAt": "11-01 21:13",
-   "sizeMB": 26.9,
+   "renderedAt": "11-02 00:27",
+   "sizeMB": 131.5,
    "thumbs": [
     "10-checkout-en-a.png",
     "10-checkout-en-b.png"
@@ -236,8 +236,8 @@
    "exp": null,
    "title": "Praise the Best, Scold the Worst. Who Improves? #shorts",
    "rendered": true,
-   "renderedAt": "11-01 21:13",
-   "sizeMB": 22.8,
+   "renderedAt": "11-02 00:34",
+   "sizeMB": 101.5,
    "thumbs": [
     "11-regression-en-a.png",
     "11-regression-en-b.png"
@@ -260,8 +260,8 @@
    "exp": null,
    "title": "Every Bet Is Fair. So Who Ends Up Rich? #shorts",
    "rendered": true,
-   "renderedAt": "11-01 21:14",
-   "sizeMB": 36.1,
+   "renderedAt": "11-02 00:38",
+   "sizeMB": 124.8,
    "thumbs": [
     "12-wealth-en-a.png",
     "12-wealth-en-b.png"
@@ -284,8 +284,8 @@
    "exp": null,
    "title": "Everyone Is Fine Being Outnumbered. Does the Town Still Split? #shorts",
    "rendered": true,
-   "renderedAt": "11-01 21:17",
-   "sizeMB": 36.5,
+   "renderedAt": "11-02 00:40",
+   "sizeMB": 136.9,
    "thumbs": [
     "13-schelling-en-a.png",
     "13-schelling-en-b.png"
@@ -356,8 +356,8 @@
    "exp": null,
    "title": "Put Out Every Small Fire. What Happens Next? #shorts",
    "rendered": true,
-   "renderedAt": "11-01 21:17",
-   "sizeMB": 22.6,
+   "renderedAt": "11-02 00:40",
+   "sizeMB": 66.3,
    "thumbs": [
     "16-wildfire-en-a.png",
     "16-wildfire-en-b.png"
@@ -380,8 +380,8 @@
    "exp": null,
    "title": "7 Seats, Nobody Wants a Neighbor. How Many Can Sit? #shorts",
    "rendered": true,
-   "renderedAt": "11-01 23:18",
-   "sizeMB": 18.7,
+   "renderedAt": "11-02 00:47",
+   "sizeMB": 88.0,
    "thumbs": [
     "17-seating-en-a.png",
     "17-seating-en-b.png"
@@ -404,8 +404,8 @@
    "exp": null,
    "title": "100 People, 60 Seats. Will Tonight Be Packed? #shorts",
    "rendered": true,
-   "renderedAt": "11-01 21:20",
-   "sizeMB": 17.6,
+   "renderedAt": "11-02 00:48",
+   "sizeMB": 62.1,
    "thumbs": [
     "18-elfarol-en-a.png",
     "18-elfarol-en-b.png"
@@ -452,8 +452,8 @@
    "exp": null,
    "title": "If Cutting the Line Pays, Why Doesn't Everyone Cut? #shorts",
    "rendered": true,
-   "renderedAt": "11-01 21:20",
-   "sizeMB": 21.0,
+   "renderedAt": "11-02 00:47",
+   "sizeMB": 67.4,
    "thumbs": [
     "20-queue-en-a.png",
     "20-queue-en-b.png"
@@ -476,8 +476,8 @@
    "exp": "greenwave",
    "title": "70 vs 50 km/h Through 8 Timed Lights. Who Gets There First? #shorts",
    "rendered": true,
-   "renderedAt": "11-01 21:21",
-   "sizeMB": 12.6,
+   "renderedAt": "11-02 00:51",
+   "sizeMB": 42.7,
    "thumbs": [
     "21-greenwave-en-a.png",
     "21-greenwave-en-b.png"
@@ -568,7 +568,7 @@
    "id": "EzuqP_klgoY",
    "title": "How Do Fireflies Blink in Sync With No Leader? #shorts",
    "published": "2026-10-29T15:11:45+00:00",
-   "views": 21,
+   "views": 23,
    "likes": 2
   },
   {
@@ -621,6 +621,16 @@
   "languages": 8,
   "commits": [
    {
+    "hash": "c1d03be",
+    "date": "2026-11-02T00:58:19+09:00",
+    "msg": "대기 쇼츠 11편 1440p 고화질 업로드판 기록"
+   },
+   {
+    "hash": "858af31",
+    "date": "2026-11-02T00:13:12+09:00",
+    "msg": "유령 정체 쇼츠: 1440p 고화질 업로드판 기록, 영상 스킬에 고화질 업로드 방법 추가"
+   },
+   {
     "hash": "7acd51c",
     "date": "2026-11-01T23:54:22+09:00",
     "msg": "유령 정체 쇼츠: 앞차 미등 뒷모습에서 정체 공개로 이어지는 3D 오프닝 기록, 영상 스킬에 3D→2D 이음 방법 추가"
@@ -669,19 +679,9 @@
     "hash": "2a5b239",
     "date": "2026-11-01T11:32:24+09:00",
     "msg": "대시보드: 공개 숫자는 yt.json·data.json 중 최근 것 사용"
-   },
-   {
-    "hash": "acd7832",
-    "date": "2026-11-01T11:31:55+09:00",
-    "msg": "대시보드 빌드: 피드 실패 시 맥미니에서 영상 페이지로 최신 숫자 받기"
-   },
-   {
-    "hash": "5e9e90a",
-    "date": "2026-11-01T11:27:46+09:00",
-    "msg": "대시보드: 맨 위에 현황 분석 리포트(11/1 10:40)"
    }
   ],
-  "commitCount": 224
+  "commitCount": 226
  },
  "eleven": {
   "used": 24633,
