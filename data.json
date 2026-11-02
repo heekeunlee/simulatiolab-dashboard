@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-02 10:07",
+ "generated": "2026-11-02 11:07",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -92,8 +92,8 @@
    "exp": null,
    "title": "No Crash. No Roadwork. So Why Did Traffic Stop? #shorts",
    "rendered": true,
-   "renderedAt": "11-02 00:11",
-   "sizeMB": 75.5,
+   "renderedAt": "11-02 10:23",
+   "sizeMB": 85.7,
    "thumbs": [
     "05-phantom-jam-en-a.png",
     "05-phantom-jam-en-b.png"
@@ -356,8 +356,8 @@
    "exp": null,
    "title": "Put Out Every Small Fire. What Happens Next? #shorts",
    "rendered": true,
-   "renderedAt": "11-02 08:37",
-   "sizeMB": 79.2,
+   "renderedAt": "11-02 10:23",
+   "sizeMB": 87.6,
    "thumbs": [
     "16-wildfire-en-a.png",
     "16-wildfire-en-b.png"
@@ -628,6 +628,11 @@
   "languages": 8,
   "commits": [
    {
+    "hash": "992539a",
+    "date": "2026-11-02T10:26:51+09:00",
+    "msg": "산불·유령 정체 쇼츠: 3D 오프닝 낮 배경과 자세한 나무 기록, 영상 스킬에 자세한 침엽수·낮 불길 그리는 법 추가"
+   },
+   {
     "hash": "a028f0d",
     "date": "2026-11-02T08:39:05+09:00",
     "msg": "산불 쇼츠: 불타는 숲 근접 시점에서 드론 지도로 이어지는 3D 오프닝 기록, 영상 스킬에 격자 지도 3D 바닥 방법 추가"
@@ -681,14 +686,9 @@
     "hash": "f308606",
     "date": "2026-11-01T20:21:30+09:00",
     "msg": "스킬 claude-video: Claude로 코드만으로 영상 만들기(캔버스 렌더·ElevenLabs·믹스·자막) 노하우와 시작용 틀"
-   },
-   {
-    "hash": "875761e",
-    "date": "2026-11-01T20:06:37+09:00",
-    "msg": "대시보드: 11/1 20:08 현황 리포트(지퍼 병합 1,312회), Studio 10/31 일별·시청자층 갱신, 맥미니 1시간 자동 갱신 스크립트"
    }
   ],
-  "commitCount": 227
+  "commitCount": 228
  },
  "eleven": {
   "used": 24633,
