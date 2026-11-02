@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-02 08:06",
+ "generated": "2026-11-02 09:06",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -356,8 +356,8 @@
    "exp": null,
    "title": "Put Out Every Small Fire. What Happens Next? #shorts",
    "rendered": true,
-   "renderedAt": "11-02 00:40",
-   "sizeMB": 66.3,
+   "renderedAt": "11-02 08:37",
+   "sizeMB": 79.2,
    "thumbs": [
     "16-wildfire-en-a.png",
     "16-wildfire-en-b.png"
@@ -515,7 +515,7 @@
     "ko",
     "pt"
    ],
-   "youtube": null,
+   "youtube": "T2M8Djwwl7A",
    "linked": false,
    "thumb": "thumbs/22-lanechange.jpg"
   },
@@ -550,6 +550,13 @@
   }
  ],
  "youtube": [
+  {
+   "id": "T2M8Djwwl7A",
+   "title": "Is the Other Lane Really Faster? #shorts",
+   "published": "2026-11-02T00:00:34+00:00",
+   "views": 3,
+   "likes": 0
+  },
   {
    "id": "JSnwaI8Edas",
    "title": "Lane Ends Ahead. Merge Early or at the Very End? #shorts",
@@ -621,6 +628,11 @@
   "languages": 8,
   "commits": [
    {
+    "hash": "a028f0d",
+    "date": "2026-11-02T08:39:05+09:00",
+    "msg": "산불 쇼츠: 불타는 숲 근접 시점에서 드론 지도로 이어지는 3D 오프닝 기록, 영상 스킬에 격자 지도 3D 바닥 방법 추가"
+   },
+   {
     "hash": "c1d03be",
     "date": "2026-11-02T00:58:19+09:00",
     "msg": "대기 쇼츠 11편 1440p 고화질 업로드판 기록"
@@ -674,14 +686,9 @@
     "hash": "875761e",
     "date": "2026-11-01T20:06:37+09:00",
     "msg": "대시보드: 11/1 20:08 현황 리포트(지퍼 병합 1,312회), Studio 10/31 일별·시청자층 갱신, 맥미니 1시간 자동 갱신 스크립트"
-   },
-   {
-    "hash": "2a5b239",
-    "date": "2026-11-01T11:32:24+09:00",
-    "msg": "대시보드: 공개 숫자는 yt.json·data.json 중 최근 것 사용"
    }
   ],
-  "commitCount": 226
+  "commitCount": 227
  },
  "eleven": {
   "used": 24633,
