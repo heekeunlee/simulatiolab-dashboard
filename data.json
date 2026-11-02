@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-02 23:41",
+ "generated": "2026-11-03 00:23",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -90,7 +90,7 @@
    "voice": "Brian",
    "length": 34.9,
    "exp": null,
-   "title": "No Crash. No Roadwork. So Why Did Traffic Stop? #shorts",
+   "title": "No Crash. No Roadwork. So Who Started This Jam? #shorts",
    "rendered": true,
    "renderedAt": "11-02 10:23",
    "sizeMB": 85.7,
@@ -100,7 +100,12 @@
    ],
    "srt": true,
    "langs": [
-    "en"
+    "de",
+    "en",
+    "es",
+    "id",
+    "ko",
+    "pt"
    ],
    "youtube": null,
    "linked": false,
@@ -596,7 +601,7 @@
    "id": "l6zXtQNpIdI",
    "title": "Your Friends Are More Popular Than You (It's Math) #shorts #math",
    "published": "2026-10-29T14:55:09+00:00",
-   "views": 8,
+   "views": 7,
    "likes": 3
   },
   {
@@ -627,6 +632,16 @@
   "experiments": 81,
   "languages": 8,
   "commits": [
+   {
+    "hash": "12aefe7",
+    "date": "2026-11-02T23:50:09+09:00",
+    "msg": "유령 정체 쇼츠: 낮 3D 장면 후킹 섬네일 2안, 질문형 제목, 다국어 자막 5개와 언어별 제목·설명"
+   },
+   {
+    "hash": "033e01a",
+    "date": "2026-11-02T23:41:16+09:00",
+    "msg": "대시보드 일정을 업로드 체크리스트 순서와 맞춤"
+   },
    {
     "hash": "9bc5cca",
     "date": "2026-11-02T23:38:45+09:00",
@@ -676,19 +691,9 @@
     "hash": "ea4f9f8",
     "date": "2026-11-01T21:23:44+09:00",
     "msg": "대기 쇼츠 12편 첫 2초 강화(확대 충격·카메라 움직임·효과음) 기록, 영상 스킬에 방법 추가"
-   },
-   {
-    "hash": "4b5601d",
-    "date": "2026-11-01T21:22:19+09:00",
-    "msg": "우상단 숫자를 실험 수·유튜브 쇼츠 조회·시뮬레이션 실행 횟수로(방문자 수는 숨기고 계속 집계), 메인 쇼츠 줄·숫자 칸 자리 미리 잡기(흔들림 감소), ver. 1.8.9"
-   },
-   {
-    "hash": "547abed",
-    "date": "2026-11-01T20:41:29+09:00",
-    "msg": "옆 차선 쇼츠: 한국어·독일어·스페인어·포르투갈어·인도네시아어 자막과 제목·설명 번역"
    }
   ],
-  "commitCount": 230
+  "commitCount": 232
  },
  "eleven": {
   "used": 24633,
