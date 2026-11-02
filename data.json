@@ -596,7 +596,7 @@
    "id": "l6zXtQNpIdI",
    "title": "Your Friends Are More Popular Than You (It's Math) #shorts #math",
    "published": "2026-10-29T14:55:09+00:00",
-   "views": 7,
+   "views": 8,
    "likes": 3
   },
   {
@@ -627,6 +627,11 @@
   "experiments": 81,
   "languages": 8,
   "commits": [
+   {
+    "hash": "275c21b",
+    "date": "2026-11-02T23:38:28+09:00",
+    "msg": "대시보드: 11/2 유튜브 현황 리포트(옆 차선 계속 시청함 34.6%), 일정 11/3 유령 정체·11/4 37% 법칙으로 변경"
+   },
    {
     "hash": "992539a",
     "date": "2026-11-02T10:26:51+09:00",
@@ -681,14 +686,9 @@
     "hash": "046416e",
     "date": "2026-11-01T20:27:39+09:00",
     "msg": "claude-video 스킬: ElevenLabs 제거 — 무료 음성(edge-tts·macOS say)·코드 합성 음악/효과음으로 교체"
-   },
-   {
-    "hash": "f308606",
-    "date": "2026-11-01T20:21:30+09:00",
-    "msg": "스킬 claude-video: Claude로 코드만으로 영상 만들기(캔버스 렌더·ElevenLabs·믹스·자막) 노하우와 시작용 틀"
    }
   ],
-  "commitCount": 228
+  "commitCount": 229
  },
  "eleven": {
   "used": 24633,
