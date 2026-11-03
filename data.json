@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-03 23:57",
+ "generated": "2026-11-04 00:11",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -108,7 +108,7 @@
     "pt"
    ],
    "youtube": "aqtgXFAaDUQ",
-   "linked": false,
+   "linked": true,
    "thumb": "thumbs/05-phantom-jam.jpg"
   },
   {
@@ -526,7 +526,7 @@
     "pt"
    ],
    "youtube": "T2M8Djwwl7A",
-   "linked": false,
+   "linked": true,
    "thumb": "thumbs/22-lanechange.jpg"
   },
   {
@@ -564,7 +564,7 @@
    "id": "aqtgXFAaDUQ",
    "title": "No Crash. No Roadwork. So Who Started This Jam? #shorts",
    "published": "2026-11-03T00:00:29+00:00",
-   "views": 1300,
+   "views": 1312,
    "likes": 9
   },
   {
@@ -578,7 +578,7 @@
    "id": "JSnwaI8Edas",
    "title": "Lane Ends Ahead. Merge Early or at the Very End? #shorts",
    "published": "2026-10-31T23:51:02+00:00",
-   "views": 1342,
+   "views": 1341,
    "likes": 16
   },
   {
@@ -620,7 +620,7 @@
    "id": "lGnrLC4eFzE",
    "title": "Where Would You Add Armor? (Most People Get It Wrong) #shorts",
    "published": "2026-10-29T14:46:12+00:00",
-   "views": 1331,
+   "views": 1332,
    "likes": 23
   },
   {
@@ -639,11 +639,16 @@
   }
  ],
  "site": {
-  "version": "1.8.9",
-  "liveVersion": "1.8.9",
+  "version": "1.9.0",
+  "liveVersion": "1.9.0",
   "experiments": 81,
   "languages": 8,
   "commits": [
+   {
+    "hash": "c0ddd1c",
+    "date": "2026-11-04T00:11:05+09:00",
+    "msg": "유령 정체(traffic)·옆 차선(lanechange) 쇼츠 유튜브 게시 연결, ver. 1.9.0"
+   },
    {
     "hash": "ec3306c",
     "date": "2026-11-03T23:42:46+09:00",
@@ -698,14 +703,9 @@
     "hash": "858af31",
     "date": "2026-11-02T00:13:12+09:00",
     "msg": "유령 정체 쇼츠: 1440p 고화질 업로드판 기록, 영상 스킬에 고화질 업로드 방법 추가"
-   },
-   {
-    "hash": "7acd51c",
-    "date": "2026-11-01T23:54:22+09:00",
-    "msg": "유령 정체 쇼츠: 앞차 미등 뒷모습에서 정체 공개로 이어지는 3D 오프닝 기록, 영상 스킬에 3D→2D 이음 방법 추가"
    }
   ],
-  "commitCount": 235
+  "commitCount": 236
  },
  "eleven": {
   "used": 24633,
