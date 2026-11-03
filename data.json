@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-03 23:32",
+ "generated": "2026-11-03 23:42",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -369,7 +369,12 @@
    ],
    "srt": true,
    "langs": [
-    "en"
+    "de",
+    "en",
+    "es",
+    "id",
+    "ko",
+    "pt"
    ],
    "youtube": null,
    "linked": false,
@@ -566,7 +571,7 @@
    "id": "T2M8Djwwl7A",
    "title": "Is the Other Lane Really Faster? #shorts",
    "published": "2026-11-02T00:00:34+00:00",
-   "views": 1189,
+   "views": 1192,
    "likes": 18
   },
   {
@@ -640,6 +645,11 @@
   "languages": 8,
   "commits": [
    {
+    "hash": "3367dd0",
+    "date": "2026-11-03T23:32:38+09:00",
+    "msg": "대시보드 리포트 시각 바로잡기"
+   },
+   {
     "hash": "1bbe6db",
     "date": "2026-11-03T23:32:23+09:00",
     "msg": "대시보드: 11/3 현황 리포트(유령 정체 계속 시청함 55%, 옆 차선 2차 확산)"
@@ -693,14 +703,9 @@
     "hash": "14d70ac",
     "date": "2026-11-01T23:36:32+09:00",
     "msg": "유령 정체 쇼츠: 추적·수렴 줌·회전 리빌 카메라 무빙 기록, 영상 스킬에 카메라 무빙 방법 추가"
-   },
-   {
-    "hash": "0ab3b7d",
-    "date": "2026-11-01T23:18:32+09:00",
-    "msg": "벤치 쇼츠: 0초 첫 장면부터 '7 SEATS.' 문구가 보이게 수정 기록"
    }
   ],
-  "commitCount": 233
+  "commitCount": 234
  },
  "eleven": {
   "used": 24633,
