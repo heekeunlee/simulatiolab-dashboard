@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-04 20:34",
+ "generated": "2026-11-04 21:34",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -569,8 +569,8 @@
    "id": "rka9lnm6xg0",
    "title": "Put Out Every Small Fire. What Happens Next? #shorts",
    "published": "2026-11-04T00:00:31+00:00",
-   "views": 1059,
-   "likes": 19
+   "views": 1052,
+   "likes": 20
   },
   {
    "id": "aqtgXFAaDUQ",
@@ -583,7 +583,7 @@
    "id": "T2M8Djwwl7A",
    "title": "Is the Other Lane Really Faster? #shorts",
    "published": "2026-11-02T00:00:34+00:00",
-   "views": 1227,
+   "views": 1226,
    "likes": 18
   },
   {
@@ -657,6 +657,21 @@
   "languages": 8,
   "commits": [
    {
+    "hash": "850faef",
+    "date": "2026-11-04T21:30:05+09:00",
+    "msg": "할 일: 인스타그램 계정 추가"
+   },
+   {
+    "hash": "aa98ca1",
+    "date": "2026-11-04T20:55:59+09:00",
+    "msg": "할 일: Reddit 계정 완료, 활동 쌓기 추가"
+   },
+   {
+    "hash": "324f3c9",
+    "date": "2026-11-04T20:49:20+09:00",
+    "msg": "할 일: GeekNews 게시 11/11로 (가입 1주 제한)"
+   },
+   {
     "hash": "cfd5ee8",
     "date": "2026-11-04T19:56:49+09:00",
     "msg": "GeekNews 본문 숫자 넓히기"
@@ -700,24 +715,9 @@
     "hash": "99f7bdd",
     "date": "2026-11-04T15:38:20+09:00",
     "msg": "네이버 수집 요청 목록(82개, 우선순위 순)과 아침 보고에 오늘 차례 3개 자동 포함"
-   },
-   {
-    "hash": "8b21ba3",
-    "date": "2026-11-04T15:35:24+09:00",
-    "msg": "아침 보고: 유튜브 영상별 현황·특이사항(2차 확산·급감·첫 24시간 순위·좋아요 비율·비공개 경고)"
-   },
-   {
-    "hash": "d6ba830",
-    "date": "2026-11-04T15:31:08+09:00",
-    "msg": "아침 보고: Cloudflare 방문·나라별 숫자 반영"
-   },
-   {
-    "hash": "2f37f6d",
-    "date": "2026-11-04T15:15:23+09:00",
-    "msg": "매일 09:00 아침 보고: 숫자 모으기(collect.py)·분석 지시문·실행 스크립트(카톡·메일)"
    }
   ],
-  "commitCount": 257
+  "commitCount": 260
  },
  "eleven": {
   "used": 24633,
