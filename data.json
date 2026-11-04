@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-04 13:14",
+ "generated": "2026-11-04 13:47",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -337,8 +337,8 @@
    "exp": null,
    "title": "No Leader. No Signal. So How Do Fireflies Flash as One? #shorts",
    "rendered": true,
-   "renderedAt": "11-04 13:04",
-   "sizeMB": 60.5,
+   "renderedAt": "11-04 13:37",
+   "sizeMB": 63.3,
    "thumbs": [
     "15-firefly-en-a.png",
     "15-firefly-en-b.png"
@@ -569,8 +569,8 @@
    "id": "rka9lnm6xg0",
    "title": "Put Out Every Small Fire. What Happens Next? #shorts",
    "published": "2026-11-04T00:00:31+00:00",
-   "views": 313,
-   "likes": 6
+   "views": 406,
+   "likes": 10
   },
   {
    "id": "aqtgXFAaDUQ",
@@ -657,6 +657,16 @@
   "languages": 8,
   "commits": [
    {
+    "hash": "93a0b39",
+    "date": "2026-11-04T13:37:31+09:00",
+    "msg": "반딧불이 리마스터: 첫 근접 장면 0.5초 늘림"
+   },
+   {
+    "hash": "0c731f5",
+    "date": "2026-11-04T13:25:05+09:00",
+    "msg": "반딧불이 리마스터: 풀잎 위 반딧불이 근접 오프닝, 섬네일 B 근접 장면으로 교체"
+   },
+   {
     "hash": "1c9cb86",
     "date": "2026-11-04T13:05:44+09:00",
     "msg": "반딧불이 쇼츠 리마스터: 3D 밤숲 오프닝 섬네일 2안, 질문형 제목, 다국어 자막 5개와 언어별 제목·설명"
@@ -705,19 +715,9 @@
     "hash": "275c21b",
     "date": "2026-11-02T23:38:28+09:00",
     "msg": "대시보드: 11/2 유튜브 현황 리포트(옆 차선 계속 시청함 34.6%), 일정 11/3 유령 정체·11/4 37% 법칙으로 변경"
-   },
-   {
-    "hash": "992539a",
-    "date": "2026-11-02T10:26:51+09:00",
-    "msg": "산불·유령 정체 쇼츠: 3D 오프닝 낮 배경과 자세한 나무 기록, 영상 스킬에 자세한 침엽수·낮 불길 그리는 법 추가"
-   },
-   {
-    "hash": "a028f0d",
-    "date": "2026-11-02T08:39:05+09:00",
-    "msg": "산불 쇼츠: 불타는 숲 근접 시점에서 드론 지도로 이어지는 3D 오프닝 기록, 영상 스킬에 격자 지도 3D 바닥 방법 추가"
    }
   ],
-  "commitCount": 238
+  "commitCount": 240
  },
  "eleven": {
   "used": 24633,
