@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-04 12:07",
+ "generated": "2026-11-04 13:14",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -334,18 +334,23 @@
    "series": "자연",
    "voice": "Lily",
    "length": 34.6,
-   "exp": "firefly",
-   "title": "How Do Fireflies Blink in Sync With No Leader? #shorts",
+   "exp": null,
+   "title": "No Leader. No Signal. So How Do Fireflies Flash as One? #shorts",
    "rendered": true,
-   "renderedAt": "10-29 12:43",
-   "sizeMB": 22.1,
+   "renderedAt": "11-04 13:04",
+   "sizeMB": 60.5,
    "thumbs": [
     "15-firefly-en-a.png",
     "15-firefly-en-b.png"
    ],
    "srt": true,
    "langs": [
-    "en"
+    "de",
+    "en",
+    "es",
+    "id",
+    "ko",
+    "pt"
    ],
    "youtube": "EzuqP_klgoY",
    "linked": true,
@@ -564,35 +569,35 @@
    "id": "rka9lnm6xg0",
    "title": "Put Out Every Small Fire. What Happens Next? #shorts",
    "published": "2026-11-04T00:00:31+00:00",
-   "views": 138,
-   "likes": 3
+   "views": 313,
+   "likes": 6
   },
   {
    "id": "aqtgXFAaDUQ",
    "title": "No Crash. No Roadwork. So Who Started This Jam? #shorts",
    "published": "2026-11-03T00:00:29+00:00",
-   "views": 1327,
+   "views": 1330,
    "likes": 9
   },
   {
    "id": "T2M8Djwwl7A",
    "title": "Is the Other Lane Really Faster? #shorts",
    "published": "2026-11-02T00:00:34+00:00",
-   "views": 1211,
+   "views": 1220,
    "likes": 18
   },
   {
    "id": "JSnwaI8Edas",
    "title": "Lane Ends Ahead. Merge Early or at the Very End? #shorts",
    "published": "2026-10-31T23:51:02+00:00",
-   "views": 1351,
+   "views": 1352,
    "likes": 16
   },
   {
    "id": "yTuOnrvKgNg",
    "title": "One Sea Lane Gets Blocked. Do Your Prices Rise Too? #shorts",
    "published": "2026-10-31T00:00:19+00:00",
-   "views": 1750,
+   "views": 1751,
    "likes": 21
   },
   {
@@ -606,7 +611,7 @@
    "id": "cQkILvcl008",
    "title": "Why Do Buses Always Come in Pairs? #shorts",
    "published": "2026-10-29T15:06:52+00:00",
-   "views": 6,
+   "views": 7,
    "likes": 3
   },
   {
@@ -651,6 +656,11 @@
   "experiments": 81,
   "languages": 8,
   "commits": [
+   {
+    "hash": "1c9cb86",
+    "date": "2026-11-04T13:05:44+09:00",
+    "msg": "반딧불이 쇼츠 리마스터: 3D 밤숲 오프닝 섬네일 2안, 질문형 제목, 다국어 자막 5개와 언어별 제목·설명"
+   },
    {
     "hash": "f41ff07",
     "date": "2026-11-04T09:18:49+09:00",
@@ -705,14 +715,9 @@
     "hash": "a028f0d",
     "date": "2026-11-02T08:39:05+09:00",
     "msg": "산불 쇼츠: 불타는 숲 근접 시점에서 드론 지도로 이어지는 3D 오프닝 기록, 영상 스킬에 격자 지도 3D 바닥 방법 추가"
-   },
-   {
-    "hash": "c1d03be",
-    "date": "2026-11-02T00:58:19+09:00",
-    "msg": "대기 쇼츠 11편 1440p 고화질 업로드판 기록"
    }
   ],
-  "commitCount": 237
+  "commitCount": 238
  },
  "eleven": {
   "used": 24633,
