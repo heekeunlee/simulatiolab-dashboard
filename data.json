@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-04 21:34",
+ "generated": "2026-11-04 22:34",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -569,8 +569,8 @@
    "id": "rka9lnm6xg0",
    "title": "Put Out Every Small Fire. What Happens Next? #shorts",
    "published": "2026-11-04T00:00:31+00:00",
-   "views": 1052,
-   "likes": 20
+   "views": 1081,
+   "likes": 19
   },
   {
    "id": "aqtgXFAaDUQ",
@@ -583,7 +583,7 @@
    "id": "T2M8Djwwl7A",
    "title": "Is the Other Lane Really Faster? #shorts",
    "published": "2026-11-02T00:00:34+00:00",
-   "views": 1226,
+   "views": 1228,
    "likes": 18
   },
   {
@@ -657,6 +657,11 @@
   "languages": 8,
   "commits": [
    {
+    "hash": "e729ac8",
+    "date": "2026-11-04T22:23:12+09:00",
+    "msg": "할 일: 인스타 계정 완료, 릴스 매일·2주 점검 추가"
+   },
+   {
     "hash": "850faef",
     "date": "2026-11-04T21:30:05+09:00",
     "msg": "할 일: 인스타그램 계정 추가"
@@ -710,14 +715,9 @@
     "hash": "0c436e3",
     "date": "2026-11-04T15:49:16+09:00",
     "msg": "실험 페이지 화면 밀림(CLS) 줄이기: 예상 퀴즈 자리 미리 잡기·화면 짜기 전 본문 감추기(1.2초 안전장치), ver. 1.9.5"
-   },
-   {
-    "hash": "99f7bdd",
-    "date": "2026-11-04T15:38:20+09:00",
-    "msg": "네이버 수집 요청 목록(82개, 우선순위 순)과 아침 보고에 오늘 차례 3개 자동 포함"
    }
   ],
-  "commitCount": 260
+  "commitCount": 261
  },
  "eleven": {
   "used": 24633,
