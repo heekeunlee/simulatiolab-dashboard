@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-04 08:59",
+ "generated": "2026-11-04 09:19",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -376,8 +376,8 @@
     "ko",
     "pt"
    ],
-   "youtube": null,
-   "linked": false,
+   "youtube": "rka9lnm6xg0",
+   "linked": true,
    "thumb": "thumbs/16-wildfire.jpg"
   },
   {
@@ -561,6 +561,13 @@
  ],
  "youtube": [
   {
+   "id": "rka9lnm6xg0",
+   "title": "Put Out Every Small Fire. What Happens Next? #shorts",
+   "published": "2026-11-04T00:00:31+00:00",
+   "views": 4,
+   "likes": 1
+  },
+  {
    "id": "aqtgXFAaDUQ",
    "title": "No Crash. No Roadwork. So Who Started This Jam? #shorts",
    "published": "2026-11-03T00:00:29+00:00",
@@ -585,7 +592,7 @@
    "id": "yTuOnrvKgNg",
    "title": "One Sea Lane Gets Blocked. Do Your Prices Rise Too? #shorts",
    "published": "2026-10-31T00:00:19+00:00",
-   "views": 1732,
+   "views": 1750,
    "likes": 21
   },
   {
@@ -599,7 +606,7 @@
    "id": "cQkILvcl008",
    "title": "Why Do Buses Always Come in Pairs? #shorts",
    "published": "2026-10-29T15:06:52+00:00",
-   "views": 5,
+   "views": 6,
    "likes": 3
   },
   {
@@ -639,11 +646,16 @@
   }
  ],
  "site": {
-  "version": "1.9.0",
-  "liveVersion": "1.9.0",
+  "version": "1.9.1",
+  "liveVersion": "1.9.1",
   "experiments": 81,
   "languages": 8,
   "commits": [
+   {
+    "hash": "f41ff07",
+    "date": "2026-11-04T09:18:49+09:00",
+    "msg": "산불(wildfire) 쇼츠 유튜브 게시 연결, ver. 1.9.1"
+   },
    {
     "hash": "c0ddd1c",
     "date": "2026-11-04T00:11:05+09:00",
@@ -698,14 +710,9 @@
     "hash": "c1d03be",
     "date": "2026-11-02T00:58:19+09:00",
     "msg": "대기 쇼츠 11편 1440p 고화질 업로드판 기록"
-   },
-   {
-    "hash": "858af31",
-    "date": "2026-11-02T00:13:12+09:00",
-    "msg": "유령 정체 쇼츠: 1440p 고화질 업로드판 기록, 영상 스킬에 고화질 업로드 방법 추가"
    }
   ],
-  "commitCount": 236
+  "commitCount": 237
  },
  "eleven": {
   "used": 24633,
