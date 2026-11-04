@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05 07:35",
+ "generated": "2026-11-05 08:36",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -352,8 +352,8 @@
     "ko",
     "pt"
    ],
-   "youtube": "EzuqP_klgoY",
-   "linked": true,
+   "youtube": null,
+   "linked": false,
    "thumb": "thumbs/15-firefly.jpg"
   },
   {
@@ -599,13 +599,6 @@
    "published": "2026-10-31T00:00:19+00:00",
    "views": 1751,
    "likes": 21
-  },
-  {
-   "id": "EzuqP_klgoY",
-   "title": "How Do Fireflies Blink in Sync With No Leader? #shorts",
-   "published": "2026-10-29T15:11:45+00:00",
-   "views": 18,
-   "likes": 2
   },
   {
    "id": "cQkILvcl008",
