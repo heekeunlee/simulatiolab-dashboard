@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-04 19:34",
+ "generated": "2026-11-04 20:34",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -569,21 +569,21 @@
    "id": "rka9lnm6xg0",
    "title": "Put Out Every Small Fire. What Happens Next? #shorts",
    "published": "2026-11-04T00:00:31+00:00",
-   "views": 1052,
-   "likes": 20
+   "views": 1059,
+   "likes": 19
   },
   {
    "id": "aqtgXFAaDUQ",
    "title": "No Crash. No Roadwork. So Who Started This Jam? #shorts",
    "published": "2026-11-03T00:00:29+00:00",
-   "views": 1336,
+   "views": 1339,
    "likes": 9
   },
   {
    "id": "T2M8Djwwl7A",
    "title": "Is the Other Lane Really Faster? #shorts",
    "published": "2026-11-02T00:00:34+00:00",
-   "views": 1226,
+   "views": 1227,
    "likes": 18
   },
   {
@@ -651,11 +651,31 @@
   }
  ],
  "site": {
-  "version": "1.9.6",
-  "liveVersion": "1.9.6",
+  "version": "1.9.7",
+  "liveVersion": "1.9.7",
   "experiments": 81,
   "languages": 8,
   "commits": [
+   {
+    "hash": "cfd5ee8",
+    "date": "2026-11-04T19:56:49+09:00",
+    "msg": "GeekNews 본문 숫자 넓히기"
+   },
+   {
+    "hash": "6bf2fcb",
+    "date": "2026-11-04T19:54:32+09:00",
+    "msg": "GeekNews 제목 넓히기"
+   },
+   {
+    "hash": "7c28e25",
+    "date": "2026-11-04T19:52:38+09:00",
+    "msg": "할 일: GeekNews 11/5 오전 게시"
+   },
+   {
+    "hash": "70899ee",
+    "date": "2026-11-04T19:48:16+09:00",
+    "msg": "소개 페이지에서 사는 곳(수원) 빼기(8개 언어), GeekNews 초안 다듬기, ver. 1.9.7"
+   },
    {
     "hash": "51fa798",
     "date": "2026-11-04T16:16:41+09:00",
@@ -695,29 +715,9 @@
     "hash": "2f37f6d",
     "date": "2026-11-04T15:15:23+09:00",
     "msg": "매일 09:00 아침 보고: 숫자 모으기(collect.py)·분석 지시문·실행 스크립트(카톡·메일)"
-   },
-   {
-    "hash": "1ff14ad",
-    "date": "2026-11-04T15:00:20+09:00",
-    "msg": "IndexNow: 버전 번호만 바뀐 페이지는 알리지 않기(배포마다 84쪽 전부 알리던 문제)"
-   },
-   {
-    "hash": "20be226",
-    "date": "2026-11-04T14:57:36+09:00",
-    "msg": "관리자 화면에 Cloudflare Web Analytics 바로가기, ver. 1.9.3"
-   },
-   {
-    "hash": "3dfb2ae",
-    "date": "2026-11-04T14:48:47+09:00",
-    "msg": "홈·추천·영상 썸네일 그림에 설명(alt) 채우기(Bing 지적 245개), ver. 1.9.2"
-   },
-   {
-    "hash": "434a389",
-    "date": "2026-11-04T14:19:09+09:00",
-    "msg": "반딧불이 리마스터: 첫 화면 문구를 질문형(HOW DO FIREFLIES FLASH AS ONE?)으로"
    }
   ],
-  "commitCount": 253
+  "commitCount": 257
  },
  "eleven": {
   "used": 24633,
