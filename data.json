@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-04 13:47",
+ "generated": "2026-11-04 14:22",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -337,8 +337,8 @@
    "exp": null,
    "title": "No Leader. No Signal. So How Do Fireflies Flash as One? #shorts",
    "rendered": true,
-   "renderedAt": "11-04 13:37",
-   "sizeMB": 63.3,
+   "renderedAt": "11-04 14:18",
+   "sizeMB": 63.6,
    "thumbs": [
     "15-firefly-en-a.png",
     "15-firefly-en-b.png"
@@ -569,8 +569,8 @@
    "id": "rka9lnm6xg0",
    "title": "Put Out Every Small Fire. What Happens Next? #shorts",
    "published": "2026-11-04T00:00:31+00:00",
-   "views": 406,
-   "likes": 10
+   "views": 468,
+   "likes": 13
   },
   {
    "id": "aqtgXFAaDUQ",
@@ -657,6 +657,16 @@
   "languages": 8,
   "commits": [
    {
+    "hash": "434a389",
+    "date": "2026-11-04T14:19:09+09:00",
+    "msg": "반딧불이 리마스터: 첫 화면 문구를 질문형(HOW DO FIREFLIES FLASH AS ONE?)으로"
+   },
+   {
+    "hash": "52cbc5f",
+    "date": "2026-11-04T13:47:45+09:00",
+    "msg": "대시보드 일정: 반딧불이 리마스터 11/5, 이후 하루씩 밀림"
+   },
+   {
     "hash": "93a0b39",
     "date": "2026-11-04T13:37:31+09:00",
     "msg": "반딧불이 리마스터: 첫 근접 장면 0.5초 늘림"
@@ -705,19 +715,9 @@
     "hash": "033e01a",
     "date": "2026-11-02T23:41:16+09:00",
     "msg": "대시보드 일정을 업로드 체크리스트 순서와 맞춤"
-   },
-   {
-    "hash": "9bc5cca",
-    "date": "2026-11-02T23:38:45+09:00",
-    "msg": "대시보드 리포트 시각 바로잡기"
-   },
-   {
-    "hash": "275c21b",
-    "date": "2026-11-02T23:38:28+09:00",
-    "msg": "대시보드: 11/2 유튜브 현황 리포트(옆 차선 계속 시청함 34.6%), 일정 11/3 유령 정체·11/4 37% 법칙으로 변경"
    }
   ],
-  "commitCount": 240
+  "commitCount": 242
  },
  "eleven": {
   "used": 24633,
