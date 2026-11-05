@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05 12:47",
+ "generated": "2026-11-05 13:55",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -353,7 +353,7 @@
     "pt"
    ],
    "youtube": "xMI2SPKrUcg",
-   "linked": false,
+   "linked": true,
    "thumb": "thumbs/15-firefly.jpg"
   },
   {
@@ -569,14 +569,14 @@
    "id": "xMI2SPKrUcg",
    "title": "No Leader. No Signal. So How Do Fireflies Flash as One? #shorts",
    "published": "2026-11-05T00:00:15+00:00",
-   "views": 70,
-   "likes": 2
+   "views": 121,
+   "likes": 3
   },
   {
    "id": "rka9lnm6xg0",
    "title": "Put Out Every Small Fire. What Happens Next? #shorts",
    "published": "2026-11-04T00:00:31+00:00",
-   "views": 1092,
+   "views": 1093,
    "likes": 19
   },
   {
@@ -651,11 +651,26 @@
   }
  ],
  "site": {
-  "version": "1.9.7",
-  "liveVersion": "1.9.7",
+  "version": "1.9.8",
+  "liveVersion": "1.9.8",
   "experiments": 81,
   "languages": 8,
   "commits": [
+   {
+    "hash": "b78ad72",
+    "date": "2026-11-05T13:52:30+09:00",
+    "msg": "할 일: 네이버 블로그 준비, 조회수·수익화 다시 이야기(11/20)"
+   },
+   {
+    "hash": "ee2bb0d",
+    "date": "2026-11-05T13:14:45+09:00",
+    "msg": "할 일: 반딧불 옛 영상 비공개 확인"
+   },
+   {
+    "hash": "f952eeb",
+    "date": "2026-11-05T13:14:01+09:00",
+    "msg": "반딧불 리마스터 쇼츠(xMI2SPKrUcg) 연결, 할 일 갱신, ver. 1.9.8"
+   },
    {
     "hash": "e729ac8",
     "date": "2026-11-04T22:23:12+09:00",
@@ -700,24 +715,9 @@
     "hash": "51fa798",
     "date": "2026-11-04T16:16:41+09:00",
     "msg": "GeekNews 소개 글 초안, 할 일 갱신"
-   },
-   {
-    "hash": "b5a5ec7",
-    "date": "2026-11-04T16:12:07+09:00",
-    "msg": "아침 보고에 할 일 목록(todo.json: 밀린 일·오늘·3일 안·이번 주) 매일 알림"
-   },
-   {
-    "hash": "beb369a",
-    "date": "2026-11-04T15:58:23+09:00",
-    "msg": "AI 검색(GEO) 대비: 실험 81개 구조 데이터(학습 자료·웹앱), 예상 퀴즈 58개 질문·답(FAQPage 한·영)과 접힌 '정답과 해설' 칸, ver. 1.9.6"
-   },
-   {
-    "hash": "0c436e3",
-    "date": "2026-11-04T15:49:16+09:00",
-    "msg": "실험 페이지 화면 밀림(CLS) 줄이기: 예상 퀴즈 자리 미리 잡기·화면 짜기 전 본문 감추기(1.2초 안전장치), ver. 1.9.5"
    }
   ],
-  "commitCount": 261
+  "commitCount": 264
  },
  "eleven": {
   "used": 24633,
