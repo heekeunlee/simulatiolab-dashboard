@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-06 00:11",
+ "generated": "2026-11-06 01:11",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -193,8 +193,8 @@
    "exp": null,
    "title": "You're Choosing Too Early. Math Proves It. #shorts",
    "rendered": true,
-   "renderedAt": "11-05 23:45",
-   "sizeMB": 67.7,
+   "renderedAt": "11-06 00:23",
+   "sizeMB": 66.7,
    "thumbs": [
     "09-secretary-en-a.png",
     "09-secretary-en-b.png",
@@ -571,8 +571,8 @@
    "id": "xMI2SPKrUcg",
    "title": "No Leader. No Signal. So How Do Fireflies Flash as One? #shorts",
    "published": "2026-11-05T00:00:15+00:00",
-   "views": 727,
-   "likes": 13
+   "views": 795,
+   "likes": 15
   },
   {
    "id": "rka9lnm6xg0",
@@ -585,14 +585,14 @@
    "id": "aqtgXFAaDUQ",
    "title": "No Crash. No Roadwork. So Who Started This Jam? #shorts",
    "published": "2026-11-03T00:00:29+00:00",
-   "views": 1361,
+   "views": 1367,
    "likes": 10
   },
   {
    "id": "T2M8Djwwl7A",
    "title": "Is the Other Lane Really Faster? #shorts",
    "published": "2026-11-02T00:00:34+00:00",
-   "views": 1242,
+   "views": 1243,
    "likes": 19
   },
   {
@@ -659,6 +659,11 @@
   "languages": 8,
   "commits": [
    {
+    "hash": "01a5435",
+    "date": "2026-11-06T00:24:16+09:00",
+    "msg": "37% 법칙: 카드 새 디자인(아바타·♥점수·지금 만나는 사람 크게), 잔 '땡' 소리"
+   },
+   {
     "hash": "f98bce4",
     "date": "2026-11-05T23:42:02+09:00",
     "msg": "37% 법칙 맞선 3D 오프닝 기록, 고정 댓글 갱신"
@@ -712,14 +717,9 @@
     "hash": "b78ad72",
     "date": "2026-11-05T13:52:30+09:00",
     "msg": "할 일: 네이버 블로그 준비, 조회수·수익화 다시 이야기(11/20)"
-   },
-   {
-    "hash": "ee2bb0d",
-    "date": "2026-11-05T13:14:45+09:00",
-    "msg": "할 일: 반딧불 옛 영상 비공개 확인"
    }
   ],
-  "commitCount": 274
+  "commitCount": 275
  },
  "eleven": {
   "used": 24633,
