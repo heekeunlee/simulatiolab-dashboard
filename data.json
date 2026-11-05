@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-06 07:12",
+ "generated": "2026-11-06 08:19",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -199,11 +199,18 @@
     "09-secretary-en-a.png",
     "09-secretary-en-b.png",
     "09-secretary-en-c.png",
-    "09-secretary-en-d.png"
+    "09-secretary-en-d.png",
+    "09-secretary-en-e.png",
+    "09-secretary-en-f.png"
    ],
    "srt": true,
    "langs": [
-    "en"
+    "de",
+    "en",
+    "es",
+    "id",
+    "ko",
+    "pt"
    ],
    "youtube": null,
    "linked": false,
@@ -571,14 +578,14 @@
    "id": "xMI2SPKrUcg",
    "title": "No Leader. No Signal. So How Do Fireflies Flash as One? #shorts",
    "published": "2026-11-05T00:00:15+00:00",
-   "views": 946,
+   "views": 945,
    "likes": 15
   },
   {
    "id": "rka9lnm6xg0",
    "title": "Put Out Every Small Fire. What Happens Next? #shorts",
    "published": "2026-11-04T00:00:31+00:00",
-   "views": 1101,
+   "views": 1103,
    "likes": 19
   },
   {
@@ -592,7 +599,7 @@
    "id": "T2M8Djwwl7A",
    "title": "Is the Other Lane Really Faster? #shorts",
    "published": "2026-11-02T00:00:34+00:00",
-   "views": 1246,
+   "views": 1247,
    "likes": 19
   },
   {
@@ -659,6 +666,21 @@
   "languages": 8,
   "commits": [
    {
+    "hash": "44551aa",
+    "date": "2026-11-06T07:50:28+09:00",
+    "msg": "37% 법칙 섬네일 E 세밀화판(촛불 레스토랑·잔 부딪힘·보케, 2배 해상도로 그림)"
+   },
+   {
+    "hash": "a792590",
+    "date": "2026-11-06T07:46:06+09:00",
+    "msg": "37% 법칙 맞선 장면 섬네일 2안(e: DON'T SAY YES YET 2.5%, f: FIRST DATE = THE ONE?)"
+   },
+   {
+    "hash": "2f21167",
+    "date": "2026-11-06T07:40:48+09:00",
+    "msg": "37% 법칙 다국어 자막 5개(ko·de·es·pt·id)·제목·설명"
+   },
+   {
     "hash": "01a5435",
     "date": "2026-11-06T00:24:16+09:00",
     "msg": "37% 법칙: 카드 새 디자인(아바타·♥점수·지금 만나는 사람 크게), 잔 '땡' 소리"
@@ -702,24 +724,9 @@
     "hash": "2fa52c3",
     "date": "2026-11-05T14:34:33+09:00",
     "msg": "블로그 1편 붙여넣기용 깨끗한 본문(html·txt)"
-   },
-   {
-    "hash": "a3a376a",
-    "date": "2026-11-05T14:21:04+09:00",
-    "msg": "블로그 1편 일상·철학 버전 초안, 밀도 그래프 사진"
-   },
-   {
-    "hash": "0dc2a79",
-    "date": "2026-11-05T14:03:42+09:00",
-    "msg": "네이버 블로그 1편 초안(회의실의 유령 정체)과 사진 4장"
-   },
-   {
-    "hash": "b78ad72",
-    "date": "2026-11-05T13:52:30+09:00",
-    "msg": "할 일: 네이버 블로그 준비, 조회수·수익화 다시 이야기(11/20)"
    }
   ],
-  "commitCount": 275
+  "commitCount": 278
  },
  "eleven": {
   "used": 24633,
