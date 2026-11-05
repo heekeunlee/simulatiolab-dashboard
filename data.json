@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05 15:02",
+ "generated": "2026-11-05 16:10",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -569,7 +569,7 @@
    "id": "xMI2SPKrUcg",
    "title": "No Leader. No Signal. So How Do Fireflies Flash as One? #shorts",
    "published": "2026-11-05T00:00:15+00:00",
-   "views": 148,
+   "views": 181,
    "likes": 4
   },
   {
@@ -583,14 +583,14 @@
    "id": "aqtgXFAaDUQ",
    "title": "No Crash. No Roadwork. So Who Started This Jam? #shorts",
    "published": "2026-11-03T00:00:29+00:00",
-   "views": 1350,
+   "views": 1353,
    "likes": 9
   },
   {
    "id": "T2M8Djwwl7A",
    "title": "Is the Other Lane Really Faster? #shorts",
    "published": "2026-11-02T00:00:34+00:00",
-   "views": 1235,
+   "views": 1237,
    "likes": 18
   },
   {
@@ -657,6 +657,11 @@
   "languages": 8,
   "commits": [
    {
+    "hash": "75d0dd9",
+    "date": "2026-11-05T15:07:55+09:00",
+    "msg": "블로그 1편 인문·사유형 다시 쓰기(앞에는 아무것도 없었다)"
+   },
+   {
     "hash": "7ab10e5",
     "date": "2026-11-05T15:00:25+09:00",
     "msg": "블로그 1편: 멈춘 차 비율을 사진과 맞춤(네 대 중 한 대)"
@@ -710,14 +715,9 @@
     "hash": "324f3c9",
     "date": "2026-11-04T20:49:20+09:00",
     "msg": "할 일: GeekNews 게시 11/11로 (가입 1주 제한)"
-   },
-   {
-    "hash": "cfd5ee8",
-    "date": "2026-11-04T19:56:49+09:00",
-    "msg": "GeekNews 본문 숫자 넓히기"
    }
   ],
-  "commitCount": 268
+  "commitCount": 269
  },
  "eleven": {
   "used": 24633,
