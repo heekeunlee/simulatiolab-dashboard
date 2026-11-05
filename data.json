@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05 13:55",
+ "generated": "2026-11-05 15:02",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -569,8 +569,8 @@
    "id": "xMI2SPKrUcg",
    "title": "No Leader. No Signal. So How Do Fireflies Flash as One? #shorts",
    "published": "2026-11-05T00:00:15+00:00",
-   "views": 121,
-   "likes": 3
+   "views": 148,
+   "likes": 4
   },
   {
    "id": "rka9lnm6xg0",
@@ -657,6 +657,26 @@
   "languages": 8,
   "commits": [
    {
+    "hash": "7ab10e5",
+    "date": "2026-11-05T15:00:25+09:00",
+    "msg": "블로그 1편: 멈춘 차 비율을 사진과 맞춤(네 대 중 한 대)"
+   },
+   {
+    "hash": "2fa52c3",
+    "date": "2026-11-05T14:34:33+09:00",
+    "msg": "블로그 1편 붙여넣기용 깨끗한 본문(html·txt)"
+   },
+   {
+    "hash": "a3a376a",
+    "date": "2026-11-05T14:21:04+09:00",
+    "msg": "블로그 1편 일상·철학 버전 초안, 밀도 그래프 사진"
+   },
+   {
+    "hash": "0dc2a79",
+    "date": "2026-11-05T14:03:42+09:00",
+    "msg": "네이버 블로그 1편 초안(회의실의 유령 정체)과 사진 4장"
+   },
+   {
     "hash": "b78ad72",
     "date": "2026-11-05T13:52:30+09:00",
     "msg": "할 일: 네이버 블로그 준비, 조회수·수익화 다시 이야기(11/20)"
@@ -695,29 +715,9 @@
     "hash": "cfd5ee8",
     "date": "2026-11-04T19:56:49+09:00",
     "msg": "GeekNews 본문 숫자 넓히기"
-   },
-   {
-    "hash": "6bf2fcb",
-    "date": "2026-11-04T19:54:32+09:00",
-    "msg": "GeekNews 제목 넓히기"
-   },
-   {
-    "hash": "7c28e25",
-    "date": "2026-11-04T19:52:38+09:00",
-    "msg": "할 일: GeekNews 11/5 오전 게시"
-   },
-   {
-    "hash": "70899ee",
-    "date": "2026-11-04T19:48:16+09:00",
-    "msg": "소개 페이지에서 사는 곳(수원) 빼기(8개 언어), GeekNews 초안 다듬기, ver. 1.9.7"
-   },
-   {
-    "hash": "51fa798",
-    "date": "2026-11-04T16:16:41+09:00",
-    "msg": "GeekNews 소개 글 초안, 할 일 갱신"
    }
   ],
-  "commitCount": 264
+  "commitCount": 268
  },
  "eleven": {
   "used": 24633,
