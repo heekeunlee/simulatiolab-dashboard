@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-06 09:19",
+ "generated": "2026-11-06 10:25",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -460,7 +460,12 @@
    ],
    "srt": true,
    "langs": [
-    "en"
+    "de",
+    "en",
+    "es",
+    "id",
+    "ko",
+    "pt"
    ],
    "youtube": "yTuOnrvKgNg",
    "linked": true,
@@ -578,21 +583,21 @@
    "id": "j2kx61evKk4",
    "title": "You're Choosing Too Early. Math Proves It. #shorts설명Meet 40 people one at",
    "published": "2026-11-06T00:00:21+00:00",
-   "views": 4,
-   "likes": 0
+   "views": 9,
+   "likes": 1
   },
   {
    "id": "xMI2SPKrUcg",
    "title": "No Leader. No Signal. So How Do Fireflies Flash as One? #shorts",
    "published": "2026-11-05T00:00:15+00:00",
-   "views": 946,
+   "views": 952,
    "likes": 15
   },
   {
    "id": "rka9lnm6xg0",
    "title": "Put Out Every Small Fire. What Happens Next? #shorts",
    "published": "2026-11-04T00:00:31+00:00",
-   "views": 1101,
+   "views": 1103,
    "likes": 19
   },
   {
@@ -667,11 +672,21 @@
   }
  ],
  "site": {
-  "version": "1.9.8",
-  "liveVersion": "1.9.8",
+  "version": "1.9.9",
+  "liveVersion": "1.9.9",
   "experiments": 81,
   "languages": 8,
   "commits": [
+   {
+    "hash": "5e0f4f9",
+    "date": "2026-11-06T09:31:07+09:00",
+    "msg": "해협 봉쇄 쇼츠 다국어 자막 5개·제목·설명"
+   },
+   {
+    "hash": "9372ecf",
+    "date": "2026-11-06T09:26:27+09:00",
+    "msg": "37% 법칙 쇼츠 영상 연결(j2kx61evKk4), 1.9.9"
+   },
    {
     "hash": "d4f8e27",
     "date": "2026-11-06T08:47:46+09:00",
@@ -721,19 +736,9 @@
     "hash": "820e4a8",
     "date": "2026-11-05T23:25:15+09:00",
     "msg": "37% 법칙: 제목 1번(You're Choosing Too Early)·섬네일 c 확정"
-   },
-   {
-    "hash": "eb162ea",
-    "date": "2026-11-05T23:19:16+09:00",
-    "msg": "37% 법칙 섬네일 자극형 2안(c: 너무 일찍 골랐다 2.5%, d: 처음 15명 거절 15배)"
-   },
-   {
-    "hash": "75d0dd9",
-    "date": "2026-11-05T15:07:55+09:00",
-    "msg": "블로그 1편 인문·사유형 다시 쓰기(앞에는 아무것도 없었다)"
    }
   ],
-  "commitCount": 280
+  "commitCount": 282
  },
  "eleven": {
   "used": 24633,
