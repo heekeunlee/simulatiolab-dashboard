@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-06 21:00",
+ "generated": "2026-11-06 22:01",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -328,8 +328,8 @@
    "exp": "talent-vs-luck",
    "title": "The Most Talented Person Almost Never Ends Up the Richest #shorts",
    "rendered": true,
-   "renderedAt": "11-06 21:00",
-   "sizeMB": 205.5,
+   "renderedAt": "11-06 21:06",
+   "sizeMB": 196.8,
    "thumbs": [
     "14-talent-vs-luck-en-3d.png",
     "14-talent-vs-luck-en-a.png",
@@ -590,7 +590,7 @@
    "id": "j2kx61evKk4",
    "title": "You're Choosing Too Early. Math Proves It. #shorts설명Meet 40 people one at",
    "published": "2026-11-06T00:00:21+00:00",
-   "views": 23,
+   "views": 22,
    "likes": 1
   },
   {
@@ -685,6 +685,11 @@
   "languages": 8,
   "commits": [
    {
+    "hash": "88cc52e",
+    "date": "2026-11-06T21:08:37+09:00",
+    "msg": "재능 vs 운 리마스터 밝은 톤(하늘·흰 바닥·파스텔 기둥), 섬네일 교체"
+   },
+   {
     "hash": "3e57278",
     "date": "2026-11-06T20:37:17+09:00",
     "msg": "재능 vs 운 3D 리마스터: 첫 문구 THE MOST TALENTED/WENT BROKE, 빛기둥 세계·카메라 무빙, 섬네일 3d"
@@ -738,14 +743,9 @@
     "hash": "01a5435",
     "date": "2026-11-06T00:24:16+09:00",
     "msg": "37% 법칙: 카드 새 디자인(아바타·♥점수·지금 만나는 사람 크게), 잔 '땡' 소리"
-   },
-   {
-    "hash": "f98bce4",
-    "date": "2026-11-05T23:42:02+09:00",
-    "msg": "37% 법칙 맞선 3D 오프닝 기록, 고정 댓글 갱신"
    }
   ],
-  "commitCount": 285
+  "commitCount": 286
  },
  "eleven": {
   "used": 24633,
