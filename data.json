@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-06 20:00",
+ "generated": "2026-11-06 21:00",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -283,7 +283,12 @@
    ],
    "srt": true,
    "langs": [
-    "en"
+    "de",
+    "en",
+    "es",
+    "id",
+    "ko",
+    "pt"
    ],
    "youtube": null,
    "linked": false,
@@ -323,9 +328,10 @@
    "exp": "talent-vs-luck",
    "title": "The Most Talented Person Almost Never Ends Up the Richest #shorts",
    "rendered": true,
-   "renderedAt": "10-29 13:22",
-   "sizeMB": 32.7,
+   "renderedAt": "11-06 21:00",
+   "sizeMB": 205.5,
    "thumbs": [
+    "14-talent-vs-luck-en-3d.png",
     "14-talent-vs-luck-en-a.png",
     "14-talent-vs-luck-en-b.png"
    ],
@@ -584,7 +590,7 @@
    "id": "j2kx61evKk4",
    "title": "You're Choosing Too Early. Math Proves It. #shorts설명Meet 40 people one at",
    "published": "2026-11-06T00:00:21+00:00",
-   "views": 20,
+   "views": 23,
    "likes": 1
   },
   {
@@ -633,7 +639,7 @@
    "id": "cQkILvcl008",
    "title": "Why Do Buses Always Come in Pairs? #shorts",
    "published": "2026-10-29T15:06:52+00:00",
-   "views": 12,
+   "views": 13,
    "likes": 3
   },
   {
@@ -678,6 +684,16 @@
   "experiments": 81,
   "languages": 8,
   "commits": [
+   {
+    "hash": "3e57278",
+    "date": "2026-11-06T20:37:17+09:00",
+    "msg": "재능 vs 운 3D 리마스터: 첫 문구 THE MOST TALENTED/WENT BROKE, 빛기둥 세계·카메라 무빙, 섬네일 3d"
+   },
+   {
+    "hash": "2a73a20",
+    "date": "2026-11-06T20:10:00+09:00",
+    "msg": "부의 쏠림 쇼츠 다국어 자막 5개·제목·설명"
+   },
    {
     "hash": "1ae43c1",
     "date": "2026-11-06T17:29:12+09:00",
@@ -727,19 +743,9 @@
     "hash": "f98bce4",
     "date": "2026-11-05T23:42:02+09:00",
     "msg": "37% 법칙 맞선 3D 오프닝 기록, 고정 댓글 갱신"
-   },
-   {
-    "hash": "2451caa",
-    "date": "2026-11-05T23:37:17+09:00",
-    "msg": "일정 되돌림: 11/6 37% 법칙(맞선 3D 오프닝)"
-   },
-   {
-    "hash": "3001892",
-    "date": "2026-11-05T23:35:46+09:00",
-    "msg": "업로드 일정 조정: 11/6 부의 쏠림, 37% 법칙은 맞선 3D 인트로로 11/9"
    }
   ],
-  "commitCount": 283
+  "commitCount": 285
  },
  "eleven": {
   "used": 24633,
