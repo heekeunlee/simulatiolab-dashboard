@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-06 17:00",
+ "generated": "2026-11-06 18:00",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -274,9 +274,10 @@
    "exp": null,
    "title": "Every Bet Is Fair. So Who Ends Up Rich? #shorts",
    "rendered": true,
-   "renderedAt": "11-02 00:38",
-   "sizeMB": 124.8,
+   "renderedAt": "11-06 17:28",
+   "sizeMB": 149.0,
    "thumbs": [
+    "12-wealth-en-3d.png",
     "12-wealth-en-a.png",
     "12-wealth-en-b.png"
    ],
@@ -604,7 +605,7 @@
    "id": "aqtgXFAaDUQ",
    "title": "No Crash. No Roadwork. So Who Started This Jam? #shorts",
    "published": "2026-11-03T00:00:29+00:00",
-   "views": 1377,
+   "views": 1378,
    "likes": 10
   },
   {
@@ -678,6 +679,11 @@
   "languages": 8,
   "commits": [
    {
+    "hash": "1ae43c1",
+    "date": "2026-11-06T17:29:12+09:00",
+    "msg": "부의 쏠림 3D판: 첫 문구 NOBODY CHEATED/HALF WENT BROKE, 동전 기둥 3D·카메라 무빙, 섬네일 3d"
+   },
+   {
     "hash": "5e0f4f9",
     "date": "2026-11-06T09:31:07+09:00",
     "msg": "해협 봉쇄 쇼츠 다국어 자막 5개·제목·설명"
@@ -731,14 +737,9 @@
     "hash": "3001892",
     "date": "2026-11-05T23:35:46+09:00",
     "msg": "업로드 일정 조정: 11/6 부의 쏠림, 37% 법칙은 맞선 3D 인트로로 11/9"
-   },
-   {
-    "hash": "820e4a8",
-    "date": "2026-11-05T23:25:15+09:00",
-    "msg": "37% 법칙: 제목 1번(You're Choosing Too Early)·섬네일 c 확정"
    }
   ],
-  "commitCount": 282
+  "commitCount": 283
  },
  "eleven": {
   "used": 24633,
