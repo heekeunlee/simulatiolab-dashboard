@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-06 08:19",
+ "generated": "2026-11-06 09:19",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -193,7 +193,7 @@
    "exp": null,
    "title": "You're Choosing Too Early. Math Proves It. #shorts",
    "rendered": true,
-   "renderedAt": "11-06 00:23",
+   "renderedAt": "11-06 08:47",
    "sizeMB": 66.7,
    "thumbs": [
     "09-secretary-en-a.png",
@@ -575,17 +575,24 @@
  ],
  "youtube": [
   {
+   "id": "j2kx61evKk4",
+   "title": "You're Choosing Too Early. Math Proves It. #shorts설명Meet 40 people one at",
+   "published": "2026-11-06T00:00:21+00:00",
+   "views": 4,
+   "likes": 0
+  },
+  {
    "id": "xMI2SPKrUcg",
    "title": "No Leader. No Signal. So How Do Fireflies Flash as One? #shorts",
    "published": "2026-11-05T00:00:15+00:00",
-   "views": 945,
+   "views": 946,
    "likes": 15
   },
   {
    "id": "rka9lnm6xg0",
    "title": "Put Out Every Small Fire. What Happens Next? #shorts",
    "published": "2026-11-04T00:00:31+00:00",
-   "views": 1103,
+   "views": 1101,
    "likes": 19
   },
   {
@@ -666,6 +673,16 @@
   "languages": 8,
   "commits": [
    {
+    "hash": "d4f8e27",
+    "date": "2026-11-06T08:47:46+09:00",
+    "msg": "37% 법칙: 게시본은 3D 인트로판(세밀화판은 보관)"
+   },
+   {
+    "hash": "b92e668",
+    "date": "2026-11-06T08:27:02+09:00",
+    "msg": "37% 법칙: 인트로 근접 장면을 섬네일과 같은 세밀화로"
+   },
+   {
     "hash": "44551aa",
     "date": "2026-11-06T07:50:28+09:00",
     "msg": "37% 법칙 섬네일 E 세밀화판(촛불 레스토랑·잔 부딪힘·보케, 2배 해상도로 그림)"
@@ -714,19 +731,9 @@
     "hash": "75d0dd9",
     "date": "2026-11-05T15:07:55+09:00",
     "msg": "블로그 1편 인문·사유형 다시 쓰기(앞에는 아무것도 없었다)"
-   },
-   {
-    "hash": "7ab10e5",
-    "date": "2026-11-05T15:00:25+09:00",
-    "msg": "블로그 1편: 멈춘 차 비율을 사진과 맞춤(네 대 중 한 대)"
-   },
-   {
-    "hash": "2fa52c3",
-    "date": "2026-11-05T14:34:33+09:00",
-    "msg": "블로그 1편 붙여넣기용 깨끗한 본문(html·txt)"
    }
   ],
-  "commitCount": 278
+  "commitCount": 280
  },
  "eleven": {
   "used": 24633,
