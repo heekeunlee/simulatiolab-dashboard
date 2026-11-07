@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-07 12:18",
+ "generated": "2026-11-07 13:26",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -592,8 +592,8 @@
    "id": "6ovJqQ_BFto",
    "title": "Every Bet Is Fair. So Who Ends Up Rich? #shorts",
    "published": "2026-11-07T00:00:29+00:00",
-   "views": 7,
-   "likes": 1
+   "views": 149,
+   "likes": 4
   },
   {
    "id": "j2kx61evKk4",
@@ -688,11 +688,21 @@
   }
  ],
  "site": {
-  "version": "2.0.2",
-  "liveVersion": "2.0.1",
+  "version": "2.0.4",
+  "liveVersion": "2.0.3",
   "experiments": 81,
   "languages": 8,
   "commits": [
+   {
+    "hash": "9732b1b",
+    "date": "2026-11-07T13:09:25+09:00",
+    "msg": "언어별 진짜 주소 /vi/·/pt/ 추가(정적 HTML 84쪽씩), 언어 고정·링크·hreflang(pt-BR)·사이트맵, hagwon 해설 번역 보충, ver 2.0.3"
+   },
+   {
+    "hash": "29e8e9f",
+    "date": "2026-11-07T12:22:52+09:00",
+    "msg": "원문 수정 문장 8개 재번역 반영, 8개 언어 전면 검수 완료, ver 2.0.2"
+   },
    {
     "hash": "c065ecb",
     "date": "2026-11-07T12:16:27+09:00",
@@ -742,19 +752,9 @@
     "hash": "5e0f4f9",
     "date": "2026-11-06T09:31:07+09:00",
     "msg": "해협 봉쇄 쇼츠 다국어 자막 5개·제목·설명"
-   },
-   {
-    "hash": "9372ecf",
-    "date": "2026-11-06T09:26:27+09:00",
-    "msg": "37% 법칙 쇼츠 영상 연결(j2kx61evKk4), 1.9.9"
-   },
-   {
-    "hash": "d4f8e27",
-    "date": "2026-11-06T08:47:46+09:00",
-    "msg": "37% 법칙: 게시본은 3D 인트로판(세밀화판은 보관)"
    }
   ],
-  "commitCount": 291
+  "commitCount": 293
  },
  "eleven": {
   "used": 24633,
