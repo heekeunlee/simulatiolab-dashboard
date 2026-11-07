@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-08 07:50",
+ "generated": "2026-11-08 08:52",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -212,8 +212,8 @@
     "ko",
     "pt"
    ],
-   "youtube": null,
-   "linked": false,
+   "youtube": "j2kx61evKk4",
+   "linked": true,
    "thumb": "thumbs/09-secretary.jpg"
   },
   {
@@ -512,10 +512,10 @@
    "voice": "Brian",
    "length": 32.3,
    "exp": "greenwave",
-   "title": "70 vs 50 km/h Through 8 Timed Lights. Who Gets There First? #shorts",
+   "title": "Fast Car vs Slow Car Through 8 Timed Lights. Who Wins? #shorts (2026-11-08 변경: 미국 시청자가 km/h에 익숙하지 않아 숫자를 뺌)",
    "rendered": true,
-   "renderedAt": "11-02 00:51",
-   "sizeMB": 42.7,
+   "renderedAt": "11-08 08:47",
+   "sizeMB": 44.4,
    "thumbs": [
     "21-greenwave-en-a.png",
     "21-greenwave-en-b.png"
@@ -617,9 +617,9 @@
   },
   {
    "id": "j2kx61evKk4",
-   "title": "You're Choosing Too Early. Math Proves It. #shorts설명Meet 40 people one at",
+   "title": "You're Choosing Too Early. Math Proves It. #shorts",
    "published": "2026-11-06T00:00:21+00:00",
-   "views": 55,
+   "views": 70,
    "likes": 2
   },
   {
@@ -777,7 +777,7 @@
   "commitCount": 295
  },
  "eleven": {
-  "used": 34707,
+  "used": 36132,
   "limit": 40000,
   "tier": "starter",
   "reset": "2026-11-25"
