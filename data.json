@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-07 13:26",
+ "generated": "2026-11-07 14:33",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -585,6 +585,26 @@
    "youtube": "JSnwaI8Edas",
    "linked": true,
    "thumb": "thumbs/23-zipper.jpg"
+  },
+  {
+   "num": 24,
+   "base": "24-strait-ko",
+   "name": "안 쓰는 바닷길이 막혔다, 내 물가도 오를까",
+   "series": "기타",
+   "voice": null,
+   "length": 36.0,
+   "exp": "strait",
+   "title": "안 쓰는 바닷길이 막혔다. 내 물가도 오를까? #shorts",
+   "rendered": false,
+   "renderedAt": null,
+   "sizeMB": null,
+   "thumbs": [],
+   "srt": false,
+   "langs": [
+    "ko"
+   ],
+   "youtube": null,
+   "linked": false
   }
  ],
  "youtube": [
@@ -592,8 +612,8 @@
    "id": "6ovJqQ_BFto",
    "title": "Every Bet Is Fair. So Who Ends Up Rich? #shorts",
    "published": "2026-11-07T00:00:29+00:00",
-   "views": 149,
-   "likes": 4
+   "views": 166,
+   "likes": 5
   },
   {
    "id": "j2kx61evKk4",
@@ -613,7 +633,7 @@
    "id": "rka9lnm6xg0",
    "title": "Put Out Every Small Fire. What Happens Next? #shorts",
    "published": "2026-11-04T00:00:31+00:00",
-   "views": 1106,
+   "views": 1105,
    "likes": 19
   },
   {
@@ -688,76 +708,76 @@
   }
  ],
  "site": {
-  "version": "2.0.4",
-  "liveVersion": "2.0.3",
+  "version": "2.0.5",
+  "liveVersion": "2.0.5",
   "experiments": 81,
   "languages": 8,
   "commits": [
    {
-    "hash": "9732b1b",
+    "hash": "66e67fc8",
+    "date": "2026-11-07T14:09:31+09:00",
+    "msg": "방문자 나라를 Cloudflare 함수(/api/country)로 먼저 알아내 '알 수 없음(ZZ)' 줄이기, 아침 보고에 일본 방문 수 추가, ver 2.0.5"
+   },
+   {
+    "hash": "e0880e48",
+    "date": "2026-11-07T13:41:57+09:00",
+    "msg": "나머지 7개 언어(en es fr ja ru zh de)도 진짜 주소 /en/ … /de/ 추가(정적 HTML 84쪽씩), ver 2.0.4"
+   },
+   {
+    "hash": "9732b1b3",
     "date": "2026-11-07T13:09:25+09:00",
     "msg": "언어별 진짜 주소 /vi/·/pt/ 추가(정적 HTML 84쪽씩), 언어 고정·링크·hreflang(pt-BR)·사이트맵, hagwon 해설 번역 보충, ver 2.0.3"
    },
    {
-    "hash": "29e8e9f",
+    "hash": "29e8e9f1",
     "date": "2026-11-07T12:22:52+09:00",
     "msg": "원문 수정 문장 8개 재번역 반영, 8개 언어 전면 검수 완료, ver 2.0.2"
    },
    {
-    "hash": "c065ecb",
+    "hash": "c065ecb7",
     "date": "2026-11-07T12:16:27+09:00",
     "msg": "독일어 검수 마지막 묶음(de_n27~29) 반영"
    },
    {
-    "hash": "a418bcb",
+    "hash": "a418bcb8",
     "date": "2026-11-07T12:15:22+09:00",
     "msg": "8개 언어 전면 검수 반영(es·fr·ja·ru·zh·de 4,172곳 추가), 원문 오류 수정, 이어하기 메모"
    },
    {
-    "hash": "b9004e6",
+    "hash": "b9004e64",
     "date": "2026-11-07T12:06:20+09:00",
     "msg": "사이트 베트남어·브라질 포르투갈어 추가(10개 언어), 한국어·영어 원문 검수, vi·pt·es 전면 검수 반영(2,311곳), 빠진 번역 176문장, 학원 '합의 상한' 통일, ver 2.0.1"
    },
    {
-    "hash": "2f03588",
+    "hash": "2f03588a",
     "date": "2026-11-07T09:26:05+09:00",
     "msg": "부의 쏠림 쇼츠 프랑스어·베트남어 자막·제목·설명"
    },
    {
-    "hash": "3029e64",
+    "hash": "3029e64d",
     "date": "2026-11-07T09:16:28+09:00",
     "msg": "부의 쏠림 쇼츠 영상 연결(6ovJqQ_BFto), 2.0.0"
    },
    {
-    "hash": "88cc52e",
+    "hash": "88cc52ef",
     "date": "2026-11-06T21:08:37+09:00",
     "msg": "재능 vs 운 리마스터 밝은 톤(하늘·흰 바닥·파스텔 기둥), 섬네일 교체"
    },
    {
-    "hash": "3e57278",
+    "hash": "3e57278f",
     "date": "2026-11-06T20:37:17+09:00",
     "msg": "재능 vs 운 3D 리마스터: 첫 문구 THE MOST TALENTED/WENT BROKE, 빛기둥 세계·카메라 무빙, 섬네일 3d"
    },
    {
-    "hash": "2a73a20",
+    "hash": "2a73a207",
     "date": "2026-11-06T20:10:00+09:00",
     "msg": "부의 쏠림 쇼츠 다국어 자막 5개·제목·설명"
-   },
-   {
-    "hash": "1ae43c1",
-    "date": "2026-11-06T17:29:12+09:00",
-    "msg": "부의 쏠림 3D판: 첫 문구 NOBODY CHEATED/HALF WENT BROKE, 동전 기둥 3D·카메라 무빙, 섬네일 3d"
-   },
-   {
-    "hash": "5e0f4f9",
-    "date": "2026-11-06T09:31:07+09:00",
-    "msg": "해협 봉쇄 쇼츠 다국어 자막 5개·제목·설명"
    }
   ],
-  "commitCount": 293
+  "commitCount": 295
  },
  "eleven": {
-  "used": 24633,
+  "used": 25251,
   "limit": 40000,
   "tier": "starter",
   "reset": "2026-11-25"
