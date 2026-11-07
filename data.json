@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-07 20:49",
+ "generated": "2026-11-07 21:49",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -592,7 +592,7 @@
    "name": "안 쓰는 바닷길이 막혔다, 내 물가도 오를까",
    "series": "기타",
    "voice": null,
-   "length": 36.0,
+   "length": 34.4,
    "exp": "strait",
    "title": "안 쓰는 바닷길이 막혔다. 내 물가도 오를까? #shorts",
    "rendered": false,
@@ -612,8 +612,8 @@
    "id": "6ovJqQ_BFto",
    "title": "Every Bet Is Fair. So Who Ends Up Rich? #shorts",
    "published": "2026-11-07T00:00:29+00:00",
-   "views": 579,
-   "likes": 9
+   "views": 711,
+   "likes": 10
   },
   {
    "id": "j2kx61evKk4",
@@ -777,7 +777,7 @@
   "commitCount": 295
  },
  "eleven": {
-  "used": 25603,
+  "used": 25863,
   "limit": 40000,
   "tier": "starter",
   "reset": "2026-11-25"
