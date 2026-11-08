@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-08 21:31",
+ "generated": "2026-11-08 22:13",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -737,6 +737,11 @@
   "languages": 8,
   "commits": [
    {
+    "hash": "0bd470c6",
+    "date": "2026-11-08T22:11:15+09:00",
+    "msg": "아침 보고: Cloudflare 방문 합계가 0으로 오면 나라별 합으로 보정"
+   },
+   {
     "hash": "3cd28f5b",
     "date": "2026-11-08T11:30:57+09:00",
     "msg": "영상 문서·섬네일: 한국어 롱폼 25(보이지 않는 구멍), 쇼츠 26(추격국, 사이트 3D판), 쇼츠 21 녹색 물결 3D·mph 갱신, 한국어 쇼츠 24, 인계 메모"
@@ -790,14 +795,9 @@
     "hash": "88cc52ef",
     "date": "2026-11-06T21:08:37+09:00",
     "msg": "재능 vs 운 리마스터 밝은 톤(하늘·흰 바닥·파스텔 기둥), 섬네일 교체"
-   },
-   {
-    "hash": "3e57278f",
-    "date": "2026-11-06T20:37:17+09:00",
-    "msg": "재능 vs 운 3D 리마스터: 첫 문구 THE MOST TALENTED/WENT BROKE, 빛기둥 세계·카메라 무빙, 섬네일 3d"
    }
   ],
-  "commitCount": 296
+  "commitCount": 297
  },
  "eleven": {
   "used": 36780,
