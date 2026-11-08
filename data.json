@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-08 08:52",
+ "generated": "2026-11-08 09:56",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -514,8 +514,8 @@
    "exp": "greenwave",
    "title": "Fast Car vs Slow Car Through 8 Timed Lights. Who Wins? #shorts (2026-11-08 변경: 미국 시청자가 km/h에 익숙하지 않아 숫자를 뺌)",
    "rendered": true,
-   "renderedAt": "11-08 08:47",
-   "sizeMB": 44.4,
+   "renderedAt": "11-08 09:34",
+   "sizeMB": 200.4,
    "thumbs": [
     "21-greenwave-en-a.png",
     "21-greenwave-en-b.png"
@@ -605,6 +605,29 @@
    ],
    "youtube": null,
    "linked": false
+  },
+  {
+   "num": 26,
+   "base": "26-powershift",
+   "name": "추격하는 나라와 지키는 나라, 힘이 비슷해질 때 왜 위험할까",
+   "series": "역사·통계",
+   "voice": "Daniel",
+   "length": 34.2,
+   "exp": null,
+   "title": "When the Underdog Catches Up, War Risk Jumps 91×. Why? #shorts",
+   "rendered": true,
+   "renderedAt": "11-08 09:24",
+   "sizeMB": 26.8,
+   "thumbs": [
+    "26-powershift-en-a.png"
+   ],
+   "srt": true,
+   "langs": [
+    "en"
+   ],
+   "youtube": null,
+   "linked": false,
+   "thumb": "thumbs/26-powershift.jpg"
   }
  ],
  "youtube": [
@@ -612,14 +635,14 @@
    "id": "6ovJqQ_BFto",
    "title": "Every Bet Is Fair. So Who Ends Up Rich? #shorts",
    "published": "2026-11-07T00:00:29+00:00",
-   "views": 996,
+   "views": 994,
    "likes": 10
   },
   {
    "id": "j2kx61evKk4",
    "title": "You're Choosing Too Early. Math Proves It. #shorts",
    "published": "2026-11-06T00:00:21+00:00",
-   "views": 70,
+   "views": 58,
    "likes": 2
   },
   {
@@ -777,7 +800,7 @@
   "commitCount": 295
  },
  "eleven": {
-  "used": 36132,
+  "used": 36780,
   "limit": 40000,
   "tier": "starter",
   "reset": "2026-11-25"
