@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-08 11:00",
+ "generated": "2026-11-08 12:08",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -642,28 +642,28 @@
    "id": "j2kx61evKk4",
    "title": "You're Choosing Too Early. Math Proves It. #shorts",
    "published": "2026-11-06T00:00:21+00:00",
-   "views": 83,
+   "views": 66,
    "likes": 2
   },
   {
    "id": "xMI2SPKrUcg",
    "title": "No Leader. No Signal. So How Do Fireflies Flash as One? #shorts",
    "published": "2026-11-05T00:00:15+00:00",
-   "views": 964,
+   "views": 965,
    "likes": 15
   },
   {
    "id": "rka9lnm6xg0",
    "title": "Put Out Every Small Fire. What Happens Next? #shorts",
    "published": "2026-11-04T00:00:31+00:00",
-   "views": 1113,
+   "views": 1112,
    "likes": 19
   },
   {
    "id": "aqtgXFAaDUQ",
    "title": "No Crash. No Roadwork. So Who Started This Jam? #shorts",
    "published": "2026-11-03T00:00:29+00:00",
-   "views": 1389,
+   "views": 1387,
    "likes": 10
   },
   {
@@ -712,7 +712,7 @@
    "id": "lGnrLC4eFzE",
    "title": "Where Would You Add Armor? (Most People Get It Wrong) #shorts",
    "published": "2026-10-29T14:46:12+00:00",
-   "views": 1337,
+   "views": 1334,
    "likes": 23
   },
   {
@@ -736,6 +736,11 @@
   "experiments": 81,
   "languages": 8,
   "commits": [
+   {
+    "hash": "3cd28f5b",
+    "date": "2026-11-08T11:30:57+09:00",
+    "msg": "영상 문서·섬네일: 한국어 롱폼 25(보이지 않는 구멍), 쇼츠 26(추격국, 사이트 3D판), 쇼츠 21 녹색 물결 3D·mph 갱신, 한국어 쇼츠 24, 인계 메모"
+   },
    {
     "hash": "66e67fc8",
     "date": "2026-11-07T14:09:31+09:00",
@@ -790,14 +795,9 @@
     "hash": "3e57278f",
     "date": "2026-11-06T20:37:17+09:00",
     "msg": "재능 vs 운 3D 리마스터: 첫 문구 THE MOST TALENTED/WENT BROKE, 빛기둥 세계·카메라 무빙, 섬네일 3d"
-   },
-   {
-    "hash": "2a73a207",
-    "date": "2026-11-06T20:10:00+09:00",
-    "msg": "부의 쏠림 쇼츠 다국어 자막 5개·제목·설명"
    }
   ],
-  "commitCount": 295
+  "commitCount": 296
  },
  "eleven": {
   "used": 36780,
