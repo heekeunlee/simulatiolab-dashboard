@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-09 08:48",
+ "generated": "2026-11-09 09:34",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -522,7 +522,14 @@
    ],
    "srt": true,
    "langs": [
-    "en"
+    "en",
+    "es",
+    "fr",
+    "id",
+    "ja",
+    "ko",
+    "pt",
+    "vi"
    ],
    "youtube": null,
    "linked": false,
@@ -619,11 +626,20 @@
    "renderedAt": "11-08 10:46",
    "sizeMB": 104.8,
    "thumbs": [
-    "26-powershift-en-a.png"
+    "26-powershift-en-a.png",
+    "26-powershift-en-b.png"
    ],
    "srt": true,
    "langs": [
-    "en"
+    "de",
+    "en",
+    "es",
+    "fr",
+    "id",
+    "ja",
+    "ko",
+    "pt",
+    "vi"
    ],
    "youtube": null,
    "linked": false,
@@ -631,6 +647,13 @@
   }
  ],
  "youtube": [
+  {
+   "id": "1HBnFlR6kw8",
+   "title": "Almost Equal Rivals Are 91× More Likely to Clash. Why? #shorts",
+   "published": "2026-11-09T00:10:39+00:00",
+   "views": 8,
+   "likes": 0
+  },
   {
    "id": "6ovJqQ_BFto",
    "title": "Every Bet Is Fair. So Who Ends Up Rich? #shorts",
@@ -684,7 +707,7 @@
    "id": "yTuOnrvKgNg",
    "title": "One Sea Lane Gets Blocked. Do Your Prices Rise Too? #shorts",
    "published": "2026-10-31T00:00:19+00:00",
-   "views": 1763,
+   "views": 1760,
    "likes": 21
   },
   {
@@ -737,6 +760,31 @@
   "languages": 8,
   "commits": [
    {
+    "hash": "2d222d3d",
+    "date": "2026-11-09T09:19:40+09:00",
+    "msg": "쇼츠 21 녹색 물결: 9개 언어 기본 세트 자막(ko ja zh-Hant es pt id vi fr)과 제목·설명"
+   },
+   {
+    "hash": "af6264de",
+    "date": "2026-11-09T09:14:45+09:00",
+    "msg": "할 일: 쇼츠 26 게시 완료(11/9 09:10)"
+   },
+   {
+    "hash": "09e6a075",
+    "date": "2026-11-09T08:55:21+09:00",
+    "msg": "쇼츠 26: 베트남어·프랑스어 자막과 제목·설명 추가"
+   },
+   {
+    "hash": "78f1c6c8",
+    "date": "2026-11-09T08:53:41+09:00",
+    "msg": "쇼츠 26: 후킹 제목·고정 댓글, 섬네일 b(×91), 다국어 자막 6개(ko ja de es pt id)·번역 제목·설명"
+   },
+   {
+    "hash": "d4ee7a69",
+    "date": "2026-11-09T08:48:49+09:00",
+    "msg": "업로드 순서 바꿈: 11/9 쇼츠 26(추격국), 11/10 쇼츠 21(녹색 물결)"
+   },
+   {
     "hash": "0b3eeff6",
     "date": "2026-11-08T22:50:47+09:00",
     "msg": "롱폼 25: 새 제목에 맞춘 섬네일(망한 사람은 말이 없다 / 성공담엔 구멍이 있다), 기다림 줄인 8:11판 챕터·자막 시각"
@@ -770,34 +818,9 @@
     "hash": "e0880e48",
     "date": "2026-11-07T13:41:57+09:00",
     "msg": "나머지 7개 언어(en es fr ja ru zh de)도 진짜 주소 /en/ … /de/ 추가(정적 HTML 84쪽씩), ver 2.0.4"
-   },
-   {
-    "hash": "9732b1b3",
-    "date": "2026-11-07T13:09:25+09:00",
-    "msg": "언어별 진짜 주소 /vi/·/pt/ 추가(정적 HTML 84쪽씩), 언어 고정·링크·hreflang(pt-BR)·사이트맵, hagwon 해설 번역 보충, ver 2.0.3"
-   },
-   {
-    "hash": "29e8e9f1",
-    "date": "2026-11-07T12:22:52+09:00",
-    "msg": "원문 수정 문장 8개 재번역 반영, 8개 언어 전면 검수 완료, ver 2.0.2"
-   },
-   {
-    "hash": "c065ecb7",
-    "date": "2026-11-07T12:16:27+09:00",
-    "msg": "독일어 검수 마지막 묶음(de_n27~29) 반영"
-   },
-   {
-    "hash": "a418bcb8",
-    "date": "2026-11-07T12:15:22+09:00",
-    "msg": "8개 언어 전면 검수 반영(es·fr·ja·ru·zh·de 4,172곳 추가), 원문 오류 수정, 이어하기 메모"
-   },
-   {
-    "hash": "b9004e64",
-    "date": "2026-11-07T12:06:20+09:00",
-    "msg": "사이트 베트남어·브라질 포르투갈어 추가(10개 언어), 한국어·영어 원문 검수, vi·pt·es 전면 검수 반영(2,311곳), 빠진 번역 176문장, 학원 '합의 상한' 통일, ver 2.0.1"
    }
   ],
-  "commitCount": 300
+  "commitCount": 305
  },
  "eleven": {
   "used": 36780,
