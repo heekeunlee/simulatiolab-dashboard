@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-09 16:05",
+ "generated": "2026-11-09 16:25",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -758,10 +758,15 @@
  ],
  "site": {
   "version": "2.0.5",
-  "liveVersion": null,
+  "liveVersion": "2.0.5",
   "experiments": 81,
   "languages": 8,
   "commits": [
+   {
+    "hash": "34849fec",
+    "date": "2026-11-09T16:21:19+09:00",
+    "msg": "롱폼 25 쉬운판: 대본·챕터·자막 갱신, 섬네일 b안 교체, 게시 11/10 18:00으로"
+   },
    {
     "hash": "a2aacf2b",
     "date": "2026-11-09T11:35:36+09:00",
@@ -816,14 +821,14 @@
     "hash": "6f4c4ba9",
     "date": "2026-11-08T22:44:35+09:00",
     "msg": "롱폼 25 제목 변경: 성공한 사람 말만 들으면 속는 이유 (feat. 2차 대전 폭격기), 설명란 첫 줄 추가"
-   },
-   {
-    "hash": "7aa3bd6c",
-    "date": "2026-11-08T22:13:47+09:00",
-    "msg": "업로드 일정 조정: 11/8 쇼츠 26을 11/10로, 11/9 18시 한국어 롱폼 25, 할 일 갱신"
    }
   ],
-  "commitCount": 309
+  "commitCount": 310
  },
- "eleven": null
+ "eleven": {
+  "used": 38051,
+  "limit": 40000,
+  "tier": "starter",
+  "reset": "2026-11-25"
+ }
 }
