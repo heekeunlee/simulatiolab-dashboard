@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-09 17:05",
+ "generated": "2026-11-09 18:05",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -654,14 +654,14 @@
    "id": "1HBnFlR6kw8",
    "title": "Almost Equal Rivals Are 91× More Likely to Clash. Why? #shorts",
    "published": "2026-11-09T00:10:39+00:00",
-   "views": 271,
+   "views": 272,
    "likes": 4
   },
   {
    "id": "6ovJqQ_BFto",
    "title": "Every Bet Is Fair. So Who Ends Up Rich? #shorts",
    "published": "2026-11-07T00:00:29+00:00",
-   "views": 994,
+   "views": 995,
    "likes": 10
   },
   {
@@ -763,6 +763,16 @@
   "languages": 8,
   "commits": [
    {
+    "hash": "e5af477e",
+    "date": "2026-11-09T17:25:30+09:00",
+    "msg": "롱폼 25 업로드 문서: 최종 화면 안내 갱신"
+   },
+   {
+    "hash": "024adede",
+    "date": "2026-11-09T17:25:23+09:00",
+    "msg": "롱폼 25: 비유 장면 4개·마지막 화면 3D 디오라마로, 다음 실험 예고 삭제"
+   },
+   {
     "hash": "ee96331c",
     "date": "2026-11-09T16:44:48+09:00",
     "msg": "롱폼 25 쉬운판 완성: 8분 7초(중간 광고 5:17), 챕터·자막 갱신"
@@ -811,22 +821,12 @@
     "hash": "78f1c6c8",
     "date": "2026-11-09T08:53:41+09:00",
     "msg": "쇼츠 26: 후킹 제목·고정 댓글, 섬네일 b(×91), 다국어 자막 6개(ko ja de es pt id)·번역 제목·설명"
-   },
-   {
-    "hash": "d4ee7a69",
-    "date": "2026-11-09T08:48:49+09:00",
-    "msg": "업로드 순서 바꿈: 11/9 쇼츠 26(추격국), 11/10 쇼츠 21(녹색 물결)"
-   },
-   {
-    "hash": "0b3eeff6",
-    "date": "2026-11-08T22:50:47+09:00",
-    "msg": "롱폼 25: 새 제목에 맞춘 섬네일(망한 사람은 말이 없다 / 성공담엔 구멍이 있다), 기다림 줄인 8:11판 챕터·자막 시각"
    }
   ],
-  "commitCount": 311
+  "commitCount": 313
  },
  "eleven": {
-  "used": 38051,
+  "used": 38063,
   "limit": 40000,
   "tier": "starter",
   "reset": "2026-11-25"
