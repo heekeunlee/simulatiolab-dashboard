@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-09 10:34",
+ "generated": "2026-11-09 11:39",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -514,8 +514,8 @@
    "exp": "greenwave",
    "title": "Fast Car vs Slow Car Through 8 Timed Lights. Who Wins? #shorts (2026-11-08 변경: 미국 시청자가 km/h에 익숙하지 않아 숫자를 뺌)",
    "rendered": true,
-   "renderedAt": "11-09 09:54",
-   "sizeMB": 261.5,
+   "renderedAt": "11-09 11:34",
+   "sizeMB": 291.3,
    "thumbs": [
     "21-greenwave-en-a.png",
     "21-greenwave-en-b.png",
@@ -654,7 +654,7 @@
    "id": "1HBnFlR6kw8",
    "title": "Almost Equal Rivals Are 91× More Likely to Clash. Why? #shorts",
    "published": "2026-11-09T00:10:39+00:00",
-   "views": 22,
+   "views": 58,
    "likes": 1
   },
   {
@@ -675,7 +675,7 @@
    "id": "xMI2SPKrUcg",
    "title": "No Leader. No Signal. So How Do Fireflies Flash as One? #shorts",
    "published": "2026-11-05T00:00:15+00:00",
-   "views": 964,
+   "views": 968,
    "likes": 15
   },
   {
@@ -763,6 +763,16 @@
   "languages": 8,
   "commits": [
    {
+    "hash": "a2aacf2b",
+    "date": "2026-11-09T11:35:36+09:00",
+    "msg": "쇼츠 21: 디오라마 세밀화(건물·도로·신호등·차) + 섬네일 A안 갱신"
+   },
+   {
+    "hash": "d1f98cb0",
+    "date": "2026-11-09T11:08:10+09:00",
+    "msg": "쇼츠 21 섬네일: 디오라마 장면 + 큰 글자 2안"
+   },
+   {
     "hash": "f680e1ac",
     "date": "2026-11-09T09:55:02+09:00",
     "msg": "쇼츠 21 녹색 물결: 로우폴리 3D 디오라마판 섬네일·기록"
@@ -811,19 +821,9 @@
     "hash": "7aa3bd6c",
     "date": "2026-11-08T22:13:47+09:00",
     "msg": "업로드 일정 조정: 11/8 쇼츠 26을 11/10로, 11/9 18시 한국어 롱폼 25, 할 일 갱신"
-   },
-   {
-    "hash": "0bd470c6",
-    "date": "2026-11-08T22:11:15+09:00",
-    "msg": "아침 보고: Cloudflare 방문 합계가 0으로 오면 나라별 합으로 보정"
-   },
-   {
-    "hash": "3cd28f5b",
-    "date": "2026-11-08T11:30:57+09:00",
-    "msg": "영상 문서·섬네일: 한국어 롱폼 25(보이지 않는 구멍), 쇼츠 26(추격국, 사이트 3D판), 쇼츠 21 녹색 물결 3D·mph 갱신, 한국어 쇼츠 24, 인계 메모"
    }
   ],
-  "commitCount": 307
+  "commitCount": 309
  },
  "eleven": {
   "used": 36780,
