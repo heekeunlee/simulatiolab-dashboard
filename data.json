@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-09 22:06",
+ "generated": "2026-11-09 22:45",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -514,8 +514,8 @@
    "exp": "greenwave",
    "title": "Fast Car vs Slow Car Through 8 Timed Lights. Who Wins? #shorts (2026-11-08 변경: 미국 시청자가 km/h에 익숙하지 않아 숫자를 뺌)",
    "rendered": true,
-   "renderedAt": "11-09 11:34",
-   "sizeMB": 291.3,
+   "renderedAt": "11-09 22:35",
+   "sizeMB": 284.5,
    "thumbs": [
     "21-greenwave-en-a.png",
     "21-greenwave-en-b.png",
@@ -661,7 +661,7 @@
    "id": "6ovJqQ_BFto",
    "title": "Every Bet Is Fair. So Who Ends Up Rich? #shorts",
    "published": "2026-11-07T00:00:29+00:00",
-   "views": 995,
+   "views": 996,
    "likes": 10
   },
   {
@@ -757,11 +757,36 @@
   }
  ],
  "site": {
-  "version": "2.0.5",
+  "version": "2.0.6",
   "liveVersion": "2.0.5",
   "experiments": 81,
   "languages": 8,
   "commits": [
+   {
+    "hash": "b36700d9",
+    "date": "2026-11-09T22:44:55+09:00",
+    "msg": "추격국(powershift) 쇼츠 영상 연결(1HBnFlR6kw8), 2.0.6"
+   },
+   {
+    "hash": "9d7d27c3",
+    "date": "2026-11-09T22:36:40+09:00",
+    "msg": "11/10 업로드 체크리스트, 쇼츠 21 실사 컷 기록·Pexels 출처"
+   },
+   {
+    "hash": "124c4c94",
+    "date": "2026-11-09T22:18:58+09:00",
+    "msg": "롱폼 25: 자막 8개 언어 추가(ja·zh-Hant·es·pt·id·vi·fr·de)"
+   },
+   {
+    "hash": "69f88794",
+    "date": "2026-11-09T22:15:16+09:00",
+    "msg": "롱폼 25 업로드 준비: 영어 SRT, 9개 언어 제목·설명, 업로드 순서"
+   },
+   {
+    "hash": "c12d2dc5",
+    "date": "2026-11-09T22:12:04+09:00",
+    "msg": "할 일: 롱폼 25 최종 확정, 11/10 18:00 예약 게시 안내"
+   },
    {
     "hash": "74341ec5",
     "date": "2026-11-09T21:59:53+09:00",
@@ -796,34 +821,9 @@
     "hash": "a2aacf2b",
     "date": "2026-11-09T11:35:36+09:00",
     "msg": "쇼츠 21: 디오라마 세밀화(건물·도로·신호등·차) + 섬네일 A안 갱신"
-   },
-   {
-    "hash": "d1f98cb0",
-    "date": "2026-11-09T11:08:10+09:00",
-    "msg": "쇼츠 21 섬네일: 디오라마 장면 + 큰 글자 2안"
-   },
-   {
-    "hash": "f680e1ac",
-    "date": "2026-11-09T09:55:02+09:00",
-    "msg": "쇼츠 21 녹색 물결: 로우폴리 3D 디오라마판 섬네일·기록"
-   },
-   {
-    "hash": "104aa1ea",
-    "date": "2026-11-09T09:43:28+09:00",
-    "msg": "쇼츠 21: 독일어 자막·제목·설명 추가(기본 세트 10개 언어)"
-   },
-   {
-    "hash": "2d222d3d",
-    "date": "2026-11-09T09:19:40+09:00",
-    "msg": "쇼츠 21 녹색 물결: 9개 언어 기본 세트 자막(ko ja zh-Hant es pt id vi fr)과 제목·설명"
-   },
-   {
-    "hash": "af6264de",
-    "date": "2026-11-09T09:14:45+09:00",
-    "msg": "할 일: 쇼츠 26 게시 완료(11/9 09:10)"
    }
   ],
-  "commitCount": 315
+  "commitCount": 320
  },
  "eleven": {
   "used": 39357,
