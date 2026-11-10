@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-10 16:37",
+ "generated": "2026-11-10 17:37",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -661,7 +661,7 @@
    "id": "1HBnFlR6kw8",
    "title": "Almost Equal Rivals Are 91× More Likely to Clash. Why? #shorts",
    "published": "2026-11-09T00:10:39+00:00",
-   "views": 398,
+   "views": 441,
    "likes": 7
   },
   {
@@ -675,7 +675,7 @@
    "id": "j2kx61evKk4",
    "title": "You're Choosing Too Early. Math Proves It. #shorts",
    "published": "2026-11-06T00:00:21+00:00",
-   "views": 79,
+   "views": 81,
    "likes": 2
   },
   {
@@ -757,11 +757,16 @@
   }
  ],
  "site": {
-  "version": "2.0.8",
-  "liveVersion": "2.0.8",
+  "version": "2.0.9",
+  "liveVersion": "2.0.9",
   "experiments": 81,
   "languages": 8,
   "commits": [
+   {
+    "hash": "6dcd7243",
+    "date": "2026-11-10T16:42:07+09:00",
+    "msg": "사이트: 쇼츠 21 녹색 물결(w82lSLfWws4) 연결, 2.0.9"
+   },
    {
     "hash": "fc553d5f",
     "date": "2026-11-10T16:13:54+09:00",
@@ -816,14 +821,9 @@
     "hash": "69f88794",
     "date": "2026-11-09T22:15:16+09:00",
     "msg": "롱폼 25 업로드 준비: 영어 SRT, 9개 언어 제목·설명, 업로드 순서"
-   },
-   {
-    "hash": "c12d2dc5",
-    "date": "2026-11-09T22:12:04+09:00",
-    "msg": "할 일: 롱폼 25 최종 확정, 11/10 18:00 예약 게시 안내"
    }
   ],
-  "commitCount": 327
+  "commitCount": 328
  },
  "eleven": {
   "used": 39357,
