@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-10 19:55",
+ "generated": "2026-11-10 20:37",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -169,15 +169,16 @@
    "exp": "bunching",
    "title": "A Bus Comes Every 10 Minutes. How Long Do You Wait? #shorts",
    "rendered": true,
-   "renderedAt": "11-02 00:29",
-   "sizeMB": 187.7,
+   "renderedAt": "11-10 20:14",
+   "sizeMB": 304.3,
    "thumbs": [
     "08-inspection-en-a.png",
     "08-inspection-en-b.png"
    ],
    "srt": true,
    "langs": [
-    "en"
+    "en",
+    "ko"
    ],
    "youtube": null,
    "linked": false,
@@ -654,7 +655,7 @@
    "id": "UEsRhXsq7wA",
    "title": "성공한 사람 말만 들으면 속는 이유 (feat. 2차 대전 폭격기 총알 구멍)",
    "published": "2026-11-10T09:00:06+00:00",
-   "views": 4,
+   "views": 1,
    "likes": 1
   },
   {
@@ -668,7 +669,7 @@
    "id": "1HBnFlR6kw8",
    "title": "Almost Equal Rivals Are 91× More Likely to Clash. Why? #shorts",
    "published": "2026-11-09T00:10:39+00:00",
-   "views": 521,
+   "views": 518,
    "likes": 9
   },
   {
@@ -763,6 +764,16 @@
   "languages": 8,
   "commits": [
    {
+    "hash": "87d85747",
+    "date": "2026-11-10T20:14:44+09:00",
+    "msg": "쇼츠 08 검사 역설 3D 디오라마판(11/11 게시): 업로드 메모·Pexels 출처, 한국어 자막"
+   },
+   {
+    "hash": "9fe1d103",
+    "date": "2026-11-10T19:55:59+09:00",
+    "msg": "대시보드: 새 쇼츠 전략(결과 장면+실사 오프닝, 교통 우선, 영어·한국어 두 줄, 자막 축소), 로드맵 11/11~12/8, 11/11 검사 역설로 앞당김"
+   },
+   {
     "hash": "9b70040d",
     "date": "2026-11-10T19:55:16+09:00",
     "msg": "대시보드 전략 메모: 11/10 28일 분석(계속 시청함 53% 벽, 녹색 물결 실사 컷 신호, 롱폼 시청자 분리)"
@@ -811,19 +822,9 @@
     "hash": "ed4857b5",
     "date": "2026-11-09T23:02:50+09:00",
     "msg": "검색 색인 정리: 한국어 대표 주소를 기본 주소로(canonical), 사이트맵에서 ?lang=ko 중복 제거, 검색 로봇은 원문 한국어로, 2.0.7"
-   },
-   {
-    "hash": "b36700d9",
-    "date": "2026-11-09T22:44:55+09:00",
-    "msg": "추격국(powershift) 쇼츠 영상 연결(1HBnFlR6kw8), 2.0.6"
-   },
-   {
-    "hash": "9d7d27c3",
-    "date": "2026-11-09T22:36:40+09:00",
-    "msg": "11/10 업로드 체크리스트, 쇼츠 21 실사 컷 기록·Pexels 출처"
    }
   ],
-  "commitCount": 330
+  "commitCount": 332
  },
  "eleven": {
   "used": 39357,
