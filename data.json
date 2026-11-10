@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-10 15:35",
+ "generated": "2026-11-10 16:37",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -654,14 +654,14 @@
    "id": "w82lSLfWws4",
    "title": "Fast Car vs Slow Car Through 8 Timed Lights. Who Wins? #shorts",
    "published": "2026-11-10T00:00:14+00:00",
-   "views": 944,
-   "likes": 27
+   "views": 1262,
+   "likes": 25
   },
   {
    "id": "1HBnFlR6kw8",
    "title": "Almost Equal Rivals Are 91× More Likely to Clash. Why? #shorts",
    "published": "2026-11-09T00:10:39+00:00",
-   "views": 361,
+   "views": 398,
    "likes": 7
   },
   {
@@ -752,7 +752,7 @@
    "id": "8LKa2AeEOik",
    "title": "Braess's Paradox: Why More Roads Can Mean More Traffic #shorts",
    "published": "2026-10-29T02:44:08+00:00",
-   "views": 1136,
+   "views": 1137,
    "likes": 10
   }
  ],
@@ -762,6 +762,11 @@
   "experiments": 81,
   "languages": 8,
   "commits": [
+   {
+    "hash": "fc553d5f",
+    "date": "2026-11-10T16:13:54+09:00",
+    "msg": "롱폼 25 다국어 설명: 수동 자막을 올리므로 CC 안내를 '자동 번역'에서 '자막 켜기'로"
+   },
    {
     "hash": "05e766f2",
     "date": "2026-11-09T23:54:47+09:00",
@@ -816,14 +821,9 @@
     "hash": "c12d2dc5",
     "date": "2026-11-09T22:12:04+09:00",
     "msg": "할 일: 롱폼 25 최종 확정, 11/10 18:00 예약 게시 안내"
-   },
-   {
-    "hash": "74341ec5",
-    "date": "2026-11-09T21:59:53+09:00",
-    "msg": "롱폼 25: '세 대' 재녹음, 그물·물고기 세밀화, 영어 자막 확대, 잔잔한 배경음악"
    }
   ],
-  "commitCount": 326
+  "commitCount": 327
  },
  "eleven": {
   "used": 39357,
