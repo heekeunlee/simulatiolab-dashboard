@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-10 23:38",
+ "generated": "2026-11-11 00:38",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -655,7 +655,7 @@
    "id": "UEsRhXsq7wA",
    "title": "성공한 사람 말만 들으면 속는 이유 (feat. 2차 대전 폭격기 총알 구멍)",
    "published": "2026-11-10T09:00:06+00:00",
-   "views": 8,
+   "views": 7,
    "likes": 2
   },
   {
@@ -669,7 +669,7 @@
    "id": "1HBnFlR6kw8",
    "title": "Almost Equal Rivals Are 91× More Likely to Clash. Why? #shorts",
    "published": "2026-11-09T00:10:39+00:00",
-   "views": 581,
+   "views": 595,
    "likes": 10
   },
   {
@@ -826,10 +826,5 @@
   ],
   "commitCount": 335
  },
- "eleven": {
-  "used": 39357,
-  "limit": 40000,
-  "tier": "starter",
-  "reset": "2026-11-25"
- }
+ "eleven": null
 }
