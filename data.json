@@ -696,7 +696,7 @@
    "id": "rka9lnm6xg0",
    "title": "Put Out Every Small Fire. What Happens Next? #shorts",
    "published": "2026-11-04T00:00:31+00:00",
-   "views": 1116,
+   "views": 1115,
    "likes": 19
   },
   {
@@ -763,6 +763,11 @@
   "languages": 8,
   "commits": [
    {
+    "hash": "9b70040d",
+    "date": "2026-11-10T19:55:16+09:00",
+    "msg": "대시보드 전략 메모: 11/10 28일 분석(계속 시청함 53% 벽, 녹색 물결 실사 컷 신호, 롱폼 시청자 분리)"
+   },
+   {
     "hash": "76863b44",
     "date": "2026-11-10T19:44:19+09:00",
     "msg": "사이트: 롱폼 25 생존자 편향(UEsRhXsq7wA)을 survivor 실험에 연결, 2.0.10"
@@ -816,14 +821,9 @@
     "hash": "9d7d27c3",
     "date": "2026-11-09T22:36:40+09:00",
     "msg": "11/10 업로드 체크리스트, 쇼츠 21 실사 컷 기록·Pexels 출처"
-   },
-   {
-    "hash": "124c4c94",
-    "date": "2026-11-09T22:18:58+09:00",
-    "msg": "롱폼 25: 자막 8개 언어 추가(ja·zh-Hant·es·pt·id·vi·fr·de)"
    }
   ],
-  "commitCount": 329
+  "commitCount": 330
  },
  "eleven": {
   "used": 39357,
