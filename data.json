@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-10 19:37",
+ "generated": "2026-11-10 19:55",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -654,21 +654,21 @@
    "id": "UEsRhXsq7wA",
    "title": "성공한 사람 말만 들으면 속는 이유 (feat. 2차 대전 폭격기 총알 구멍)",
    "published": "2026-11-10T09:00:06+00:00",
-   "views": 1,
+   "views": 4,
    "likes": 1
   },
   {
    "id": "w82lSLfWws4",
    "title": "Fast Car vs Slow Car Through 8 Timed Lights. Who Wins? #shorts",
    "published": "2026-11-10T00:00:14+00:00",
-   "views": 1262,
+   "views": 1366,
    "likes": 25
   },
   {
    "id": "1HBnFlR6kw8",
    "title": "Almost Equal Rivals Are 91× More Likely to Clash. Why? #shorts",
    "published": "2026-11-09T00:10:39+00:00",
-   "views": 505,
+   "views": 521,
    "likes": 9
   },
   {
@@ -696,7 +696,7 @@
    "id": "rka9lnm6xg0",
    "title": "Put Out Every Small Fire. What Happens Next? #shorts",
    "published": "2026-11-04T00:00:31+00:00",
-   "views": 1115,
+   "views": 1116,
    "likes": 19
   },
   {
@@ -710,7 +710,7 @@
    "id": "T2M8Djwwl7A",
    "title": "Is the Other Lane Really Faster? #shorts",
    "published": "2026-11-02T00:00:34+00:00",
-   "views": 1250,
+   "views": 1252,
    "likes": 18
   },
   {
@@ -757,11 +757,16 @@
   }
  ],
  "site": {
-  "version": "2.0.9",
-  "liveVersion": "2.0.9",
+  "version": "2.1.0",
+  "liveVersion": "2.1.0",
   "experiments": 81,
   "languages": 8,
   "commits": [
+   {
+    "hash": "76863b44",
+    "date": "2026-11-10T19:44:19+09:00",
+    "msg": "사이트: 롱폼 25 생존자 편향(UEsRhXsq7wA)을 survivor 실험에 연결, 2.0.10"
+   },
    {
     "hash": "6dcd7243",
     "date": "2026-11-10T16:42:07+09:00",
@@ -816,14 +821,9 @@
     "hash": "124c4c94",
     "date": "2026-11-09T22:18:58+09:00",
     "msg": "롱폼 25: 자막 8개 언어 추가(ja·zh-Hant·es·pt·id·vi·fr·de)"
-   },
-   {
-    "hash": "69f88794",
-    "date": "2026-11-09T22:15:16+09:00",
-    "msg": "롱폼 25 업로드 준비: 영어 SRT, 9개 언어 제목·설명, 업로드 순서"
    }
   ],
-  "commitCount": 328
+  "commitCount": 329
  },
  "eleven": {
   "used": 39357,
