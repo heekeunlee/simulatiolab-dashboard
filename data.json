@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-10 20:37",
+ "generated": "2026-11-10 21:37",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -169,8 +169,8 @@
    "exp": "bunching",
    "title": "A Bus Comes Every 10 Minutes. How Long Do You Wait? #shorts",
    "rendered": true,
-   "renderedAt": "11-10 20:14",
-   "sizeMB": 304.3,
+   "renderedAt": "11-10 21:07",
+   "sizeMB": 318.6,
    "thumbs": [
     "08-inspection-en-a.png",
     "08-inspection-en-b.png"
@@ -655,8 +655,8 @@
    "id": "UEsRhXsq7wA",
    "title": "성공한 사람 말만 들으면 속는 이유 (feat. 2차 대전 폭격기 총알 구멍)",
    "published": "2026-11-10T09:00:06+00:00",
-   "views": 1,
-   "likes": 1
+   "views": 6,
+   "likes": 2
   },
   {
    "id": "w82lSLfWws4",
@@ -764,6 +764,11 @@
   "languages": 8,
   "commits": [
    {
+    "hash": "baafddfb",
+    "date": "2026-11-10T21:08:06+09:00",
+    "msg": "쇼츠 08 디오라마 세밀화 기록"
+   },
+   {
     "hash": "87d85747",
     "date": "2026-11-10T20:14:44+09:00",
     "msg": "쇼츠 08 검사 역설 3D 디오라마판(11/11 게시): 업로드 메모·Pexels 출처, 한국어 자막"
@@ -817,14 +822,9 @@
     "hash": "901dec6d",
     "date": "2026-11-09T23:14:34+09:00",
     "msg": "robots.txt: Cloudflare 내부 주소(/cdn-cgi/) 수집 막음(GSC 404 2건 대응), 2.0.8"
-   },
-   {
-    "hash": "ed4857b5",
-    "date": "2026-11-09T23:02:50+09:00",
-    "msg": "검색 색인 정리: 한국어 대표 주소를 기본 주소로(canonical), 사이트맵에서 ?lang=ko 중복 제거, 검색 로봇은 원문 한국어로, 2.0.7"
    }
   ],
-  "commitCount": 332
+  "commitCount": 333
  },
  "eleven": {
   "used": 39357,
