@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-11 09:04",
+ "generated": "2026-11-11 09:40",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -155,8 +155,8 @@
    "langs": [
     "en"
    ],
-   "youtube": "lGnrLC4eFzE",
-   "linked": true,
+   "youtube": null,
+   "linked": false,
    "thumb": "thumbs/07-survivor.jpg"
   },
   {
@@ -180,8 +180,8 @@
     "en",
     "ko"
    ],
-   "youtube": null,
-   "linked": false,
+   "youtube": "QcfjqGzFvSk",
+   "linked": true,
    "thumb": "thumbs/08-inspection.jpg"
   },
   {
@@ -652,6 +652,13 @@
  ],
  "youtube": [
   {
+   "id": "QcfjqGzFvSk",
+   "title": "A Bus Comes Every 10 Minutes. How Long Do You Wait? #shorts",
+   "published": "2026-11-11T00:00:33+00:00",
+   "views": 28,
+   "likes": 1
+  },
+  {
    "id": "UEsRhXsq7wA",
    "title": "성공한 사람 말만 들으면 속는 이유 (feat. 2차 대전 폭격기 총알 구멍)",
    "published": "2026-11-10T09:00:06+00:00",
@@ -669,7 +676,7 @@
    "id": "1HBnFlR6kw8",
    "title": "Almost Equal Rivals Are 91× More Likely to Clash. Why? #shorts",
    "published": "2026-11-09T00:10:39+00:00",
-   "views": 645,
+   "views": 654,
    "likes": 10
   },
   {
@@ -748,21 +755,24 @@
    "published": "2026-10-29T14:55:09+00:00",
    "views": 10,
    "likes": 3
-  },
-  {
-   "id": "lGnrLC4eFzE",
-   "title": "Where Would You Add Armor? (Most People Get It Wrong) #shorts",
-   "published": "2026-10-29T14:46:12+00:00",
-   "views": 1340,
-   "likes": 23
   }
  ],
  "site": {
-  "version": "2.1.1",
-  "liveVersion": "2.1.1",
+  "version": "2.1.2",
+  "liveVersion": "2.1.2",
   "experiments": 81,
   "languages": 8,
   "commits": [
+   {
+    "hash": "154b9a35",
+    "date": "2026-11-11T09:25:09+09:00",
+    "msg": "검사 역설 실험: '먼저 직접 겪어 보세요' — 버스 룰렛 · 정류장에서 직접 기다리기(10번) · 결과 카드 공유 · 친구 도전 링크(?c=), 10개 언어, 2.1.2"
+   },
+   {
+    "hash": "999c066f",
+    "date": "2026-11-11T09:04:55+09:00",
+    "msg": "대시보드: 11/11 쇼츠 08 게시 기록"
+   },
    {
     "hash": "c6806711",
     "date": "2026-11-11T09:04:04+09:00",
@@ -812,19 +822,9 @@
     "hash": "fc553d5f",
     "date": "2026-11-10T16:13:54+09:00",
     "msg": "롱폼 25 다국어 설명: 수동 자막을 올리므로 CC 안내를 '자동 번역'에서 '자막 켜기'로"
-   },
-   {
-    "hash": "05e766f2",
-    "date": "2026-11-09T23:54:47+09:00",
-    "msg": "롱폼 25 섬네일 3안: 망한 사람은 말이 없다(표기 바로잡음: 2차 대전 · 총알 구멍 수백 개)"
-   },
-   {
-    "hash": "390efd43",
-    "date": "2026-11-09T23:41:10+09:00",
-    "msg": "롱폼 25 제목에 '총알 구멍'(10개 언어), 섬네일 경로 갱신"
    }
   ],
-  "commitCount": 336
+  "commitCount": 338
  },
  "eleven": {
   "used": 39357,
