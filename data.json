@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-11 09:40",
+ "generated": "2026-11-11 10:40",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -227,15 +227,16 @@
    "exp": null,
    "title": "4 Lines or 1 Shared Line: Which Is Faster? #shorts",
    "rendered": true,
-   "renderedAt": "11-02 00:27",
-   "sizeMB": 131.5,
+   "renderedAt": "11-11 10:00",
+   "sizeMB": 268.1,
    "thumbs": [
     "10-checkout-en-a.png",
     "10-checkout-en-b.png"
    ],
    "srt": true,
    "langs": [
-    "en"
+    "en",
+    "ko"
    ],
    "youtube": null,
    "linked": false,
@@ -655,7 +656,7 @@
    "id": "QcfjqGzFvSk",
    "title": "A Bus Comes Every 10 Minutes. How Long Do You Wait? #shorts",
    "published": "2026-11-11T00:00:33+00:00",
-   "views": 28,
+   "views": 31,
    "likes": 1
   },
   {
@@ -669,7 +670,7 @@
    "id": "w82lSLfWws4",
    "title": "Fast Car vs Slow Car Through 8 Timed Lights. Who Wins? #shorts",
    "published": "2026-11-10T00:00:14+00:00",
-   "views": 1469,
+   "views": 1464,
    "likes": 27
   },
   {
@@ -764,6 +765,11 @@
   "languages": 8,
   "commits": [
    {
+    "hash": "7120e057",
+    "date": "2026-11-11T10:01:22+09:00",
+    "msg": "쇼츠 10 마트 계산대 3D 디오라마판(11/12 게시): 기록·Pexels 출처·한국어 자막·섬네일 2안"
+   },
+   {
     "hash": "154b9a35",
     "date": "2026-11-11T09:25:09+09:00",
     "msg": "검사 역설 실험: '먼저 직접 겪어 보세요' — 버스 룰렛 · 정류장에서 직접 기다리기(10번) · 결과 카드 공유 · 친구 도전 링크(?c=), 10개 언어, 2.1.2"
@@ -817,14 +823,9 @@
     "hash": "6dcd7243",
     "date": "2026-11-10T16:42:07+09:00",
     "msg": "사이트: 쇼츠 21 녹색 물결(w82lSLfWws4) 연결, 2.0.9"
-   },
-   {
-    "hash": "fc553d5f",
-    "date": "2026-11-10T16:13:54+09:00",
-    "msg": "롱폼 25 다국어 설명: 수동 자막을 올리므로 CC 안내를 '자동 번역'에서 '자막 켜기'로"
    }
   ],
-  "commitCount": 338
+  "commitCount": 339
  },
  "eleven": {
   "used": 39357,
