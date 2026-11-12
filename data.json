@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-12 09:05",
+ "generated": "2026-11-12 09:59",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -131,8 +131,8 @@
    "langs": [
     "en"
    ],
-   "youtube": "l6zXtQNpIdI",
-   "linked": true,
+   "youtube": null,
+   "linked": false,
    "thumb": "thumbs/06-friendship.jpg"
   },
   {
@@ -238,8 +238,8 @@
     "en",
     "ko"
    ],
-   "youtube": null,
-   "linked": false,
+   "youtube": "SP-0D_L3QgE",
+   "linked": true,
    "thumb": "thumbs/10-checkout.jpg"
   },
   {
@@ -415,15 +415,16 @@
    "exp": null,
    "title": "7 Seats, Nobody Wants a Neighbor. How Many Can Sit? #shorts",
    "rendered": true,
-   "renderedAt": "11-02 00:47",
-   "sizeMB": 88.0,
+   "renderedAt": "11-12 09:23",
+   "sizeMB": 216.6,
    "thumbs": [
     "17-seating-en-a.png",
     "17-seating-en-b.png"
    ],
    "srt": true,
    "langs": [
-    "en"
+    "en",
+    "ko"
    ],
    "youtube": null,
    "linked": false,
@@ -653,10 +654,17 @@
  ],
  "youtube": [
   {
+   "id": "SP-0D_L3QgE",
+   "title": "4 Lines or 1 Shared Line: Which Is Faster? #shorts",
+   "published": "2026-11-11T23:59:32+00:00",
+   "views": 3,
+   "likes": 1
+  },
+  {
    "id": "QcfjqGzFvSk",
    "title": "A Bus Comes Every 10 Minutes. How Long Do You Wait? #shorts",
    "published": "2026-11-11T00:00:33+00:00",
-   "views": 147,
+   "views": 149,
    "likes": 5
   },
   {
@@ -749,21 +757,19 @@
    "published": "2026-10-29T15:00:30+00:00",
    "views": 11,
    "likes": 2
-  },
-  {
-   "id": "l6zXtQNpIdI",
-   "title": "Your Friends Are More Popular Than You (It's Math) #shorts #math",
-   "published": "2026-10-29T14:55:09+00:00",
-   "views": 10,
-   "likes": 3
   }
  ],
  "site": {
   "version": "2.1.3",
-  "liveVersion": "2.1.2",
+  "liveVersion": "2.1.3",
   "experiments": 81,
   "languages": 8,
   "commits": [
+   {
+    "hash": "6e149c4c",
+    "date": "2026-11-12T09:23:39+09:00",
+    "msg": "쇼츠 17 벤치 3D 디오라마판(11/13 게시): 기록·Pexels 출처·한국어 자막·섬네일 2안"
+   },
    {
     "hash": "ad848c8e",
     "date": "2026-11-12T09:05:40+09:00",
@@ -818,14 +824,9 @@
     "hash": "87d85747",
     "date": "2026-11-10T20:14:44+09:00",
     "msg": "쇼츠 08 검사 역설 3D 디오라마판(11/11 게시): 업로드 메모·Pexels 출처, 한국어 자막"
-   },
-   {
-    "hash": "9fe1d103",
-    "date": "2026-11-10T19:55:59+09:00",
-    "msg": "대시보드: 새 쇼츠 전략(결과 장면+실사 오프닝, 교통 우선, 영어·한국어 두 줄, 자막 축소), 로드맵 11/11~12/8, 11/11 검사 역설로 앞당김"
    }
   ],
-  "commitCount": 342
+  "commitCount": 343
  },
  "eleven": {
   "used": 39357,
