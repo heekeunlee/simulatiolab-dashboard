@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-13 09:25",
+ "generated": "2026-11-13 10:32",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -343,8 +343,8 @@
    "langs": [
     "en"
    ],
-   "youtube": null,
-   "linked": false,
+   "youtube": "3zXaoMD-jms",
+   "linked": true,
    "thumb": "thumbs/14-talent-vs-luck.jpg"
   },
   {
@@ -654,13 +654,6 @@
  ],
  "youtube": [
   {
-   "id": "2eSAk2eJ-Qc",
-   "title": "7 Seats. Only 3 People Sit. Why? #shorts",
-   "published": "2026-11-13T00:00:19+00:00",
-   "views": 8,
-   "likes": 0
-  },
-  {
    "id": "SP-0D_L3QgE",
    "title": "4 Lines or 1 Shared Line: Which Is Faster? #shorts",
    "published": "2026-11-11T23:59:32+00:00",
@@ -678,7 +671,7 @@
    "id": "UEsRhXsq7wA",
    "title": "성공한 사람 말만 들으면 속는 이유 (feat. 2차 대전 폭격기 총알 구멍)",
    "published": "2026-11-10T09:00:06+00:00",
-   "views": 32,
+   "views": 33,
    "likes": 3
   },
   {
@@ -686,7 +679,7 @@
    "title": "Fast Car vs Slow Car Through 8 Timed Lights. Who Wins? #shorts",
    "published": "2026-11-10T00:00:14+00:00",
    "views": 1784,
-   "likes": 30
+   "likes": 31
   },
   {
    "id": "1HBnFlR6kw8",
@@ -757,6 +750,13 @@
    "published": "2026-10-29T15:06:52+00:00",
    "views": 14,
    "likes": 3
+  },
+  {
+   "id": "3zXaoMD-jms",
+   "title": "The Most Talented Person Almost Never Ends Up the Richest #shorts",
+   "published": "2026-10-29T15:00:30+00:00",
+   "views": 11,
+   "likes": 2
   }
  ],
  "site": {
