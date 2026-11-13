@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-13 22:00",
+ "generated": "2026-11-13 22:39",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -252,8 +252,8 @@
    "exp": null,
    "title": "Praise the Best, Scold the Worst. Who Improves? #shorts",
    "rendered": true,
-   "renderedAt": "11-13 20:51",
-   "sizeMB": 283.6,
+   "renderedAt": "11-13 22:27",
+   "sizeMB": 315.6,
    "thumbs": [
     "11-regression-en-a.png",
     "11-regression-en-b.png"
@@ -658,7 +658,7 @@
    "id": "2eSAk2eJ-Qc",
    "title": "7 Seats. Only 3 People Sit. Why? #shorts",
    "published": "2026-11-13T00:00:19+00:00",
-   "views": 192,
+   "views": 193,
    "likes": 4
   },
   {
@@ -686,7 +686,7 @@
    "id": "w82lSLfWws4",
    "title": "Fast Car vs Slow Car Through 8 Timed Lights. Who Wins? #shorts",
    "published": "2026-11-10T00:00:14+00:00",
-   "views": 1790,
+   "views": 1792,
    "likes": 31
   },
   {
@@ -767,6 +767,11 @@
   "languages": 8,
   "commits": [
    {
+    "hash": "28c3d3ea",
+    "date": "2026-11-13T22:27:58+09:00",
+    "msg": "쇼츠 11 회귀 3차: 골턴 구간을 군중 되감기·평균으로 끌려오기 장면으로, 활주로 교관 추가, 제목 결과형으로"
+   },
+   {
     "hash": "b445fba5",
     "date": "2026-11-13T21:57:32+09:00",
     "msg": "대시보드: 11/14 쇼츠 11 예약 완료(jojykksCgCE)"
@@ -820,14 +825,9 @@
     "hash": "7120e057",
     "date": "2026-11-11T10:01:22+09:00",
     "msg": "쇼츠 10 마트 계산대 3D 디오라마판(11/12 게시): 기록·Pexels 출처·한국어 자막·섬네일 2안"
-   },
-   {
-    "hash": "154b9a35",
-    "date": "2026-11-11T09:25:09+09:00",
-    "msg": "검사 역설 실험: '먼저 직접 겪어 보세요' — 버스 룰렛 · 정류장에서 직접 기다리기(10번) · 결과 카드 공유 · 친구 도전 링크(?c=), 10개 언어, 2.1.2"
    }
   ],
-  "commitCount": 349
+  "commitCount": 350
  },
  "eleven": {
   "used": 39357,
