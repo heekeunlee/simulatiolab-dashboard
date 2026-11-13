@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-13 20:36",
+ "generated": "2026-11-13 21:00",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -252,8 +252,8 @@
    "exp": null,
    "title": "Praise the Best, Scold the Worst. Who Improves? #shorts",
    "rendered": true,
-   "renderedAt": "11-13 20:35",
-   "sizeMB": 261.5,
+   "renderedAt": "11-13 20:51",
+   "sizeMB": 283.6,
    "thumbs": [
     "11-regression-en-a.png",
     "11-regression-en-b.png"
@@ -767,6 +767,16 @@
   "languages": 8,
   "commits": [
    {
+    "hash": "d96951ed",
+    "date": "2026-11-13T20:52:31+09:00",
+    "msg": "쇼츠 11 회귀 디오라마판 2차: 착륙 장면 다시 짜기·인물과 사물 세밀화·섬네일 갱신"
+   },
+   {
+    "hash": "23055600",
+    "date": "2026-11-13T20:36:12+09:00",
+    "msg": "대시보드: 11/14 회귀 디오라마판(실사 컷 없음)"
+   },
+   {
     "hash": "df33dcb1",
     "date": "2026-11-13T20:35:43+09:00",
     "msg": "쇼츠 11 회귀 3D 디오라마판(11/14 게시, 실사 컷 없음): 기록·한국어 자막·섬네일 2안"
@@ -815,19 +825,9 @@
     "hash": "999c066f",
     "date": "2026-11-11T09:04:55+09:00",
     "msg": "대시보드: 11/11 쇼츠 08 게시 기록"
-   },
-   {
-    "hash": "c6806711",
-    "date": "2026-11-11T09:04:04+09:00",
-    "msg": "사이트: 쇼츠 08 검사 역설(QcfjqGzFvSk) 연결"
-   },
-   {
-    "hash": "aa63102b",
-    "date": "2026-11-10T22:00:18+09:00",
-    "msg": "쇼츠 08 섬네일 새 2안: 밤 정류장 실사(Pexels 7253204), 얼굴 안 가리게, 'math' 빼고 후킹 문구"
    }
   ],
-  "commitCount": 346
+  "commitCount": 348
  },
  "eleven": {
   "used": 39357,
