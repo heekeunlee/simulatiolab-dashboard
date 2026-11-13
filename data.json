@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-13 21:57",
+ "generated": "2026-11-13 22:00",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -658,7 +658,7 @@
    "id": "2eSAk2eJ-Qc",
    "title": "7 Seats. Only 3 People Sit. Why? #shorts",
    "published": "2026-11-13T00:00:19+00:00",
-   "views": 193,
+   "views": 192,
    "likes": 4
   },
   {
@@ -686,7 +686,7 @@
    "id": "w82lSLfWws4",
    "title": "Fast Car vs Slow Car Through 8 Timed Lights. Who Wins? #shorts",
    "published": "2026-11-10T00:00:14+00:00",
-   "views": 1792,
+   "views": 1790,
    "likes": 31
   },
   {
@@ -767,6 +767,11 @@
   "languages": 8,
   "commits": [
    {
+    "hash": "b445fba5",
+    "date": "2026-11-13T21:57:32+09:00",
+    "msg": "대시보드: 11/14 쇼츠 11 예약 완료(jojykksCgCE)"
+   },
+   {
     "hash": "d96951ed",
     "date": "2026-11-13T20:52:31+09:00",
     "msg": "쇼츠 11 회귀 디오라마판 2차: 착륙 장면 다시 짜기·인물과 사물 세밀화·섬네일 갱신"
@@ -820,14 +825,9 @@
     "hash": "154b9a35",
     "date": "2026-11-11T09:25:09+09:00",
     "msg": "검사 역설 실험: '먼저 직접 겪어 보세요' — 버스 룰렛 · 정류장에서 직접 기다리기(10번) · 결과 카드 공유 · 친구 도전 링크(?c=), 10개 언어, 2.1.2"
-   },
-   {
-    "hash": "999c066f",
-    "date": "2026-11-11T09:04:55+09:00",
-    "msg": "대시보드: 11/11 쇼츠 08 게시 기록"
    }
   ],
-  "commitCount": 348
+  "commitCount": 349
  },
  "eleven": {
   "used": 39357,
