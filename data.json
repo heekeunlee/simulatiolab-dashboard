@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-15 08:45",
+ "generated": "2026-11-15 08:59",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -309,8 +309,8 @@
    "exp": null,
    "title": "Everyone Is Fine Being Outnumbered. Does the Town Still Split? #shorts",
    "rendered": true,
-   "renderedAt": "11-02 00:40",
-   "sizeMB": 136.9,
+   "renderedAt": "11-15 08:56",
+   "sizeMB": 349.4,
    "thumbs": [
     "13-schelling-en-a.png",
     "13-schelling-en-b.png"
@@ -693,7 +693,7 @@
    "id": "w82lSLfWws4",
    "title": "Fast Car vs Slow Car Through 8 Timed Lights. Who Wins? #shorts",
    "published": "2026-11-10T00:00:14+00:00",
-   "views": 1796,
+   "views": 1797,
    "likes": 31
   },
   {
@@ -767,6 +767,16 @@
   "languages": 8,
   "commits": [
    {
+    "hash": "7ae6c33d",
+    "date": "2026-11-15T08:57:42+09:00",
+    "msg": "쇼츠 13 셸링 3D 디오라마판(11/15 게시): 기록·섬네일 2안"
+   },
+   {
+    "hash": "a888475d",
+    "date": "2026-11-15T08:45:27+09:00",
+    "msg": "대시보드: 회귀 편 결과로 공식 고정"
+   },
+   {
     "hash": "0897277d",
     "date": "2026-11-15T08:44:31+09:00",
     "msg": "사이트: 쇼츠 17 벤치(2eSAk2eJ-Qc)·11 회귀(2bmz7QRevwc) 연결"
@@ -815,19 +825,9 @@
     "hash": "6e149c4c",
     "date": "2026-11-12T09:23:39+09:00",
     "msg": "쇼츠 17 벤치 3D 디오라마판(11/13 게시): 기록·Pexels 출처·한국어 자막·섬네일 2안"
-   },
-   {
-    "hash": "ad848c8e",
-    "date": "2026-11-12T09:05:40+09:00",
-    "msg": "대시보드: 11/12 쇼츠 10 게시 기록"
-   },
-   {
-    "hash": "f50ba4a1",
-    "date": "2026-11-12T09:05:22+09:00",
-    "msg": "사이트: 쇼츠 10 마트 계산대(SP-0D_L3QgE) 연결"
    }
   ],
-  "commitCount": 352
+  "commitCount": 354
  },
  "eleven": {
   "used": 39357,
