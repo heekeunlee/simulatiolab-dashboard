@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-15 08:59",
+ "generated": "2026-11-15 09:13",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -761,7 +761,7 @@
   }
  ],
  "site": {
-  "version": "2.1.4",
+  "version": "2.1.5",
   "liveVersion": "2.1.4",
   "experiments": 81,
   "languages": 8,
