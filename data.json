@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-15 16:51",
+ "generated": "2026-11-15 17:51",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -480,8 +480,8 @@
     "ko",
     "pt"
    ],
-   "youtube": "yTuOnrvKgNg",
-   "linked": true,
+   "youtube": null,
+   "linked": false,
    "thumb": "thumbs/19-strait.jpg"
   },
   {
@@ -655,6 +655,13 @@
  ],
  "youtube": [
   {
+   "id": "p2Dtk-wOUHE",
+   "title": "Everyone's Fine Being Outnumbered. The Town Splits Anyway. #shorts",
+   "published": "2026-11-15T00:11:39+00:00",
+   "views": 1280,
+   "likes": 10
+  },
+  {
    "id": "2bmz7QRevwc",
    "title": "Praise Them, They Get Worse. Scold Them, They Improve?! #shorts",
    "published": "2026-11-14T00:00:15+00:00",
@@ -679,7 +686,7 @@
    "id": "QcfjqGzFvSk",
    "title": "A Bus Comes Every 10 Minutes. How Long Do You Wait? #shorts",
    "published": "2026-11-11T00:00:33+00:00",
-   "views": 206,
+   "views": 205,
    "likes": 5
   },
   {
@@ -751,13 +758,6 @@
    "published": "2026-10-31T23:51:02+00:00",
    "views": 1368,
    "likes": 17
-  },
-  {
-   "id": "yTuOnrvKgNg",
-   "title": "One Sea Lane Gets Blocked. Do Your Prices Rise Too? #shorts",
-   "published": "2026-10-31T00:00:19+00:00",
-   "views": 1763,
-   "likes": 21
   }
  ],
  "site": {
