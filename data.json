@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-16 22:17",
+ "generated": "2026-11-16 23:17",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -490,12 +490,12 @@
    "name": "새치기가 이득이면 왜 모두 새치기하지 않을까",
    "series": "교통",
    "voice": "Brian",
-   "length": 28.9,
+   "length": 21.6,
    "exp": null,
    "title": "If Cutting the Line Pays, Why Doesn't Everyone Cut? #shorts",
    "rendered": true,
-   "renderedAt": "11-02 00:47",
-   "sizeMB": 67.4,
+   "renderedAt": "11-16 22:52",
+   "sizeMB": 255.9,
    "thumbs": [
     "20-queue-en-a.png",
     "20-queue-en-b.png"
@@ -651,6 +651,26 @@
    "youtube": null,
    "linked": false,
    "thumb": "thumbs/26-powershift.jpg"
+  },
+  {
+   "num": 27,
+   "base": "27-busconvoy",
+   "name": "버스 한 대가 2초 늦으면: 6시간 뒤 버스 6대가 한 덩어리",
+   "series": "교통",
+   "voice": "Brian",
+   "length": 15.6,
+   "exp": null,
+   "title": "One Bus Runs 2 Seconds Late. 6 Hours Later, This. #shorts",
+   "rendered": true,
+   "renderedAt": "11-16 23:04",
+   "sizeMB": 130.6,
+   "thumbs": [],
+   "srt": true,
+   "langs": [
+    "en"
+   ],
+   "youtube": null,
+   "linked": false
   }
  ],
  "youtube": [
@@ -658,8 +678,8 @@
    "id": "n-b82FaFw-w",
    "title": "Everyone Avoids the Crowd. Everyone's Wrong Every Week. #shorts",
    "published": "2026-11-16T00:00:02+00:00",
-   "views": 477,
-   "likes": 7
+   "views": 578,
+   "likes": 8
   },
   {
    "id": "p2Dtk-wOUHE",
@@ -767,6 +787,21 @@
   "languages": 8,
   "commits": [
    {
+    "hash": "7a826177",
+    "date": "2026-11-16T23:05:20+09:00",
+    "msg": "쇼츠 27 버스 한 덩어리 시험판(사실적 3D·드론 카메라·한 단어 자막): 기록·자막·섬네일"
+   },
+   {
+    "hash": "e79d385e",
+    "date": "2026-11-16T22:52:38+09:00",
+    "msg": "쇼츠 20 새 공식판 세밀화: 대합실 소품·광장 인형 팔다리·역 건물·근접 카메라"
+   },
+   {
+    "hash": "09a1daf0",
+    "date": "2026-11-16T22:40:02+09:00",
+    "msg": "쇼츠 20 새치기 새 공식판(20초 새 녹음·0초 갈등·3D): 기록·자막·섬네일"
+   },
+   {
     "hash": "31c0d72d",
     "date": "2026-11-16T10:06:23+09:00",
     "msg": "사이트: 쇼츠 18 엘 파롤 바(n-b82FaFw-w) 연결, 버전 2.1.6"
@@ -810,27 +845,12 @@
     "hash": "b445fba5",
     "date": "2026-11-13T21:57:32+09:00",
     "msg": "대시보드: 11/14 쇼츠 11 예약 완료(jojykksCgCE)"
-   },
-   {
-    "hash": "d96951ed",
-    "date": "2026-11-13T20:52:31+09:00",
-    "msg": "쇼츠 11 회귀 디오라마판 2차: 착륙 장면 다시 짜기·인물과 사물 세밀화·섬네일 갱신"
-   },
-   {
-    "hash": "23055600",
-    "date": "2026-11-13T20:36:12+09:00",
-    "msg": "대시보드: 11/14 회귀 디오라마판(실사 컷 없음)"
-   },
-   {
-    "hash": "df33dcb1",
-    "date": "2026-11-13T20:35:43+09:00",
-    "msg": "쇼츠 11 회귀 3D 디오라마판(11/14 게시, 실사 컷 없음): 기록·한국어 자막·섬네일 2안"
    }
   ],
-  "commitCount": 357
+  "commitCount": 360
  },
  "eleven": {
-  "used": 39357,
+  "used": 39596,
   "limit": 40000,
   "tier": "starter",
   "reset": "2026-11-25"
