@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-16 09:54",
+ "generated": "2026-11-16 10:06",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -658,7 +658,7 @@
    "id": "n-b82FaFw-w",
    "title": "Everyone Avoids the Crowd. Everyone's Wrong Every Week. #shorts",
    "published": "2026-11-16T00:00:02+00:00",
-   "views": 12,
+   "views": 19,
    "likes": 1
   },
   {
@@ -761,11 +761,16 @@
   }
  ],
  "site": {
-  "version": "2.1.5",
+  "version": "2.1.6",
   "liveVersion": "2.1.5",
   "experiments": 81,
   "languages": 8,
   "commits": [
+   {
+    "hash": "31c0d72d",
+    "date": "2026-11-16T10:06:23+09:00",
+    "msg": "사이트: 쇼츠 18 엘 파롤 바(n-b82FaFw-w) 연결, 버전 2.1.6"
+   },
    {
     "hash": "1983fc7f",
     "date": "2026-11-16T07:56:52+09:00",
@@ -820,14 +825,9 @@
     "hash": "df33dcb1",
     "date": "2026-11-13T20:35:43+09:00",
     "msg": "쇼츠 11 회귀 3D 디오라마판(11/14 게시, 실사 컷 없음): 기록·한국어 자막·섬네일 2안"
-   },
-   {
-    "hash": "362f91c4",
-    "date": "2026-11-13T20:18:40+09:00",
-    "msg": "대시보드: 0초 실사 컷이 원인으로 정정"
    }
   ],
-  "commitCount": 356
+  "commitCount": 357
  },
  "eleven": {
   "used": 39357,
