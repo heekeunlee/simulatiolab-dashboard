@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-16 10:06",
+ "generated": "2026-11-16 10:55",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -658,7 +658,7 @@
    "id": "n-b82FaFw-w",
    "title": "Everyone Avoids the Crowd. Everyone's Wrong Every Week. #shorts",
    "published": "2026-11-16T00:00:02+00:00",
-   "views": 19,
+   "views": 21,
    "likes": 1
   },
   {
@@ -672,7 +672,7 @@
    "id": "2bmz7QRevwc",
    "title": "Praise Them, They Get Worse. Scold Them, They Improve?! #shorts",
    "published": "2026-11-14T00:00:15+00:00",
-   "views": 1484,
+   "views": 1485,
    "likes": 11
   },
   {
@@ -762,7 +762,7 @@
  ],
  "site": {
   "version": "2.1.6",
-  "liveVersion": "2.1.5",
+  "liveVersion": "2.1.6",
   "experiments": 81,
   "languages": 8,
   "commits": [
