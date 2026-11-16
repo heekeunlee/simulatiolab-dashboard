@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17 08:18",
+ "generated": "2026-11-17 08:34",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -678,8 +678,8 @@
    "id": "n-b82FaFw-w",
    "title": "Everyone Avoids the Crowd. Everyone's Wrong Every Week. #shorts",
    "published": "2026-11-16T00:00:02+00:00",
-   "views": 789,
-   "likes": 10
+   "views": 741,
+   "likes": 9
   },
   {
    "id": "p2Dtk-wOUHE",
@@ -713,7 +713,7 @@
    "id": "QcfjqGzFvSk",
    "title": "A Bus Comes Every 10 Minutes. How Long Do You Wait? #shorts",
    "published": "2026-11-11T00:00:33+00:00",
-   "views": 208,
+   "views": 207,
    "likes": 5
   },
   {
@@ -787,6 +787,11 @@
   "languages": 8,
   "commits": [
    {
+    "hash": "ecf8c439",
+    "date": "2026-11-17T08:34:06+09:00",
+    "msg": "대시보드: 11/17 새치기 새 공식판 예약(LawCvY_kLJg)"
+   },
+   {
     "hash": "7a826177",
     "date": "2026-11-16T23:05:20+09:00",
     "msg": "쇼츠 27 버스 한 덩어리 시험판(사실적 3D·드론 카메라·한 단어 자막): 기록·자막·섬네일"
@@ -840,14 +845,9 @@
     "hash": "28c3d3ea",
     "date": "2026-11-13T22:27:58+09:00",
     "msg": "쇼츠 11 회귀 3차: 골턴 구간을 군중 되감기·평균으로 끌려오기 장면으로, 활주로 교관 추가, 제목 결과형으로"
-   },
-   {
-    "hash": "b445fba5",
-    "date": "2026-11-13T21:57:32+09:00",
-    "msg": "대시보드: 11/14 쇼츠 11 예약 완료(jojykksCgCE)"
    }
   ],
-  "commitCount": 360
+  "commitCount": 361
  },
  "eleven": {
   "used": 39596,
