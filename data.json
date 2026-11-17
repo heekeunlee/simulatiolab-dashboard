@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17 14:19",
+ "generated": "2026-11-17 15:19",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -685,14 +685,14 @@
    "id": "n-b82FaFw-w",
    "title": "Everyone Avoids the Crowd. Everyone's Wrong Every Week. #shorts",
    "published": "2026-11-16T00:00:02+00:00",
-   "views": 897,
-   "likes": 13
+   "views": 977,
+   "likes": 16
   },
   {
    "id": "p2Dtk-wOUHE",
    "title": "Everyone's Fine Being Outnumbered. The Town Splits Anyway. #shorts",
    "published": "2026-11-15T00:11:39+00:00",
-   "views": 1412,
+   "views": 1416,
    "likes": 10
   },
   {
@@ -849,10 +849,5 @@
   ],
   "commitCount": 362
  },
- "eleven": {
-  "used": 39596,
-  "limit": 40000,
-  "tier": "starter",
-  "reset": "2026-11-25"
- }
+ "eleven": null
 }
