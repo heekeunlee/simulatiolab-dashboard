@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17 09:11",
+ "generated": "2026-11-17 09:18",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -567,8 +567,8 @@
     "ko",
     "pt"
    ],
-   "youtube": "T2M8Djwwl7A",
-   "linked": true,
+   "youtube": null,
+   "linked": false,
    "thumb": "thumbs/22-lanechange.jpg"
   },
   {
@@ -675,6 +675,13 @@
  ],
  "youtube": [
   {
+   "id": "LawCvY_kLJg",
+   "title": "Cutting in Line Saves Time. Why Doesn't Everyone Cut? #shorts",
+   "published": "2026-11-17T00:00:38+00:00",
+   "views": 16,
+   "likes": 1
+  },
+  {
    "id": "n-b82FaFw-w",
    "title": "Everyone Avoids the Crowd. Everyone's Wrong Every Week. #shorts",
    "published": "2026-11-16T00:00:02+00:00",
@@ -771,18 +778,11 @@
    "published": "2026-11-03T00:00:29+00:00",
    "views": 1393,
    "likes": 10
-  },
-  {
-   "id": "T2M8Djwwl7A",
-   "title": "Is the Other Lane Really Faster? #shorts",
-   "published": "2026-11-02T00:00:34+00:00",
-   "views": 1251,
-   "likes": 18
   }
  ],
  "site": {
   "version": "2.1.7",
-  "liveVersion": "2.1.6",
+  "liveVersion": "2.1.7",
   "experiments": 81,
   "languages": 8,
   "commits": [

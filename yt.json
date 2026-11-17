@@ -1,15 +1,22 @@
 {
- "updated": "2026-11-17 09:00",
+ "updated": "2026-11-17 09:18",
  "channel": {
   "subscribers": 15
  },
  "videos": [
   {
+   "id": "LawCvY_kLJg",
+   "title": "Cutting in Line Saves Time. Why Doesn't Everyone Cut? #shorts",
+   "published": "2026-11-17T00:00:38+00:00",
+   "views": 16,
+   "likes": 1
+  },
+  {
    "id": "n-b82FaFw-w",
    "title": "Everyone Avoids the Crowd. Everyone's Wrong Every Week. #shorts",
    "published": "2026-11-16T00:00:02+00:00",
-   "views": 789,
-   "likes": 10
+   "views": 741,
+   "likes": 9
   },
   {
    "id": "p2Dtk-wOUHE",
@@ -101,13 +108,6 @@
    "published": "2026-11-03T00:00:29+00:00",
    "views": 1393,
    "likes": 10
-  },
-  {
-   "id": "T2M8Djwwl7A",
-   "title": "Is the Other Lane Really Faster? #shorts",
-   "published": "2026-11-02T00:00:34+00:00",
-   "views": 1251,
-   "likes": 18
   }
  ]
 }
