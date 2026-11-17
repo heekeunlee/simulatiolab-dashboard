@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17 08:34",
+ "generated": "2026-11-17 09:11",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -678,8 +678,8 @@
    "id": "n-b82FaFw-w",
    "title": "Everyone Avoids the Crowd. Everyone's Wrong Every Week. #shorts",
    "published": "2026-11-16T00:00:02+00:00",
-   "views": 741,
-   "likes": 9
+   "views": 789,
+   "likes": 10
   },
   {
    "id": "p2Dtk-wOUHE",
@@ -713,7 +713,7 @@
    "id": "QcfjqGzFvSk",
    "title": "A Bus Comes Every 10 Minutes. How Long Do You Wait? #shorts",
    "published": "2026-11-11T00:00:33+00:00",
-   "views": 207,
+   "views": 208,
    "likes": 5
   },
   {
@@ -781,11 +781,16 @@
   }
  ],
  "site": {
-  "version": "2.1.6",
+  "version": "2.1.7",
   "liveVersion": "2.1.6",
   "experiments": 81,
   "languages": 8,
   "commits": [
+   {
+    "hash": "6a815fd8",
+    "date": "2026-11-17T09:11:08+09:00",
+    "msg": "사이트: 쇼츠 20 새치기(LawCvY_kLJg) 연결, 버전 2.1.7 · 대시보드: 11/18 버스 편 예약(CkFnlk4zI80)"
+   },
    {
     "hash": "ecf8c439",
     "date": "2026-11-17T08:34:06+09:00",
@@ -840,14 +845,9 @@
     "hash": "ae3d71fb",
     "date": "2026-11-13T22:39:26+09:00",
     "msg": "대시보드: 11/14 쇼츠 11 최종판 예약(2bmz7QRevwc), 이전 업로드 비공개"
-   },
-   {
-    "hash": "28c3d3ea",
-    "date": "2026-11-13T22:27:58+09:00",
-    "msg": "쇼츠 11 회귀 3차: 골턴 구간을 군중 되감기·평균으로 끌려오기 장면으로, 활주로 교관 추가, 제목 결과형으로"
    }
   ],
-  "commitCount": 361
+  "commitCount": 362
  },
  "eleven": {
   "used": 39596,
