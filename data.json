@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-18 10:23",
+ "generated": "2026-11-18 11:23",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -685,14 +685,14 @@
    "id": "LawCvY_kLJg",
    "title": "Cutting in Line Saves Time. Why Doesn't Everyone Cut? #shorts",
    "published": "2026-11-17T00:00:38+00:00",
-   "views": 1236,
+   "views": 1238,
    "likes": 6
   },
   {
    "id": "n-b82FaFw-w",
    "title": "Everyone Avoids the Crowd. Everyone's Wrong Every Week. #shorts",
    "published": "2026-11-16T00:00:02+00:00",
-   "views": 1164,
+   "views": 1165,
    "likes": 15
   },
   {
@@ -787,6 +787,16 @@
   "languages": 8,
   "commits": [
    {
+    "hash": "796da6e5",
+    "date": "2026-11-18T11:10:02+09:00",
+    "msg": "쇼츠 21 한국어판 2판: 첫·끝 문장 '초록불' 표현으로"
+   },
+   {
+    "hash": "8220705b",
+    "date": "2026-11-18T10:27:52+09:00",
+    "msg": "쇼츠 21 녹색 물결 한국어판(네이버 클립 시험판): 무료 음성 edge-tts·화면 문구 한국어화 기록"
+   },
+   {
     "hash": "e299943f",
     "date": "2026-11-18T10:03:04+09:00",
     "msg": "할 일: 블로그 8~12편 완료, 네이버 8~12편·13~15편 쓰기 추가"
@@ -835,19 +845,14 @@
     "hash": "31c0d72d",
     "date": "2026-11-16T10:06:23+09:00",
     "msg": "사이트: 쇼츠 18 엘 파롤 바(n-b82FaFw-w) 연결, 버전 2.1.6"
-   },
-   {
-    "hash": "1983fc7f",
-    "date": "2026-11-16T07:56:52+09:00",
-    "msg": "쇼츠 18 엘 파롤 바 3D 디오라마판(11/16): 기록·섬네일 2안, 대시보드 11/16 분석"
-   },
-   {
-    "hash": "0d26d8be",
-    "date": "2026-11-15T09:13:15+09:00",
-    "msg": "쇼츠 13 셸링 3D판 공개(p2Dtk-wOUHE): 사이트 연결·대시보드 기록"
    }
   ],
-  "commitCount": 366
+  "commitCount": 368
  },
- "eleven": null
+ "eleven": {
+  "used": 39596,
+  "limit": 40000,
+  "tier": "starter",
+  "reset": "2026-11-25"
+ }
 }
