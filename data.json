@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-18 13:24",
+ "generated": "2026-11-18 14:25",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -678,8 +678,8 @@
    "id": "CkFnlk4zI80",
    "title": "One Bus Runs 2 Seconds Late. 6 Hours Later, This. #shorts",
    "published": "2026-11-18T00:00:00+00:00",
-   "views": 67,
-   "likes": 1
+   "views": 163,
+   "likes": 2
   },
   {
    "id": "LawCvY_kLJg",
@@ -787,6 +787,16 @@
   "languages": 8,
   "commits": [
    {
+    "hash": "9e6458cd",
+    "date": "2026-11-18T13:45:20+09:00",
+    "msg": "쇼츠 20 새치기 한국어판(네이버 클립용) 기록"
+   },
+   {
+    "hash": "5ae2e0f0",
+    "date": "2026-11-18T13:27:03+09:00",
+    "msg": "쇼츠 11 칭찬과 꾸중 한국어판(네이버 클립용) 기록"
+   },
+   {
     "hash": "796da6e5",
     "date": "2026-11-18T11:10:02+09:00",
     "msg": "쇼츠 21 한국어판 2판: 첫·끝 문장 '초록불' 표현으로"
@@ -835,19 +845,14 @@
     "hash": "e79d385e",
     "date": "2026-11-16T22:52:38+09:00",
     "msg": "쇼츠 20 새 공식판 세밀화: 대합실 소품·광장 인형 팔다리·역 건물·근접 카메라"
-   },
-   {
-    "hash": "09a1daf0",
-    "date": "2026-11-16T22:40:02+09:00",
-    "msg": "쇼츠 20 새치기 새 공식판(20초 새 녹음·0초 갈등·3D): 기록·자막·섬네일"
-   },
-   {
-    "hash": "31c0d72d",
-    "date": "2026-11-16T10:06:23+09:00",
-    "msg": "사이트: 쇼츠 18 엘 파롤 바(n-b82FaFw-w) 연결, 버전 2.1.6"
    }
   ],
-  "commitCount": 368
+  "commitCount": 370
  },
- "eleven": null
+ "eleven": {
+  "used": 39596,
+  "limit": 40000,
+  "tier": "starter",
+  "reset": "2026-11-25"
+ }
 }
