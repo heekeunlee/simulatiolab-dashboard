@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-18 16:26",
+ "generated": "2026-11-18 17:26",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -678,8 +678,8 @@
    "id": "CkFnlk4zI80",
    "title": "One Bus Runs 2 Seconds Late. 6 Hours Later, This. #shorts",
    "published": "2026-11-18T00:00:00+00:00",
-   "views": 435,
-   "likes": 5
+   "views": 541,
+   "likes": 4
   },
   {
    "id": "LawCvY_kLJg",
@@ -706,7 +706,7 @@
    "id": "2bmz7QRevwc",
    "title": "Praise Them, They Get Worse. Scold Them, They Improve?! #shorts",
    "published": "2026-11-14T00:00:15+00:00",
-   "views": 1492,
+   "views": 1487,
    "likes": 11
   },
   {
@@ -787,6 +787,11 @@
   "languages": 8,
   "commits": [
    {
+    "hash": "fe1f694c",
+    "date": "2026-11-18T16:56:11+09:00",
+    "msg": "쇼츠 20 새치기 한국어판 선희 목소리 기록"
+   },
+   {
     "hash": "e1527062",
     "date": "2026-11-18T14:37:40+09:00",
     "msg": "쇼츠 13·18 한국어판(네이버 클립용) 기록"
@@ -840,14 +845,9 @@
     "hash": "6a815fd8",
     "date": "2026-11-17T09:11:08+09:00",
     "msg": "사이트: 쇼츠 20 새치기(LawCvY_kLJg) 연결, 버전 2.1.7 · 대시보드: 11/18 버스 편 예약(CkFnlk4zI80)"
-   },
-   {
-    "hash": "ecf8c439",
-    "date": "2026-11-17T08:34:06+09:00",
-    "msg": "대시보드: 11/17 새치기 새 공식판 예약(LawCvY_kLJg)"
    }
   ],
-  "commitCount": 372
+  "commitCount": 373
  },
  "eleven": {
   "used": 39596,
