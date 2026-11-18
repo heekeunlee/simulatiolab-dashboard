@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-19 02:28",
+ "generated": "2026-11-19 03:29",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -678,14 +678,14 @@
    "id": "CkFnlk4zI80",
    "title": "One Bus Runs 2 Seconds Late. 6 Hours Later, This. #shorts",
    "published": "2026-11-18T00:00:00+00:00",
-   "views": 638,
+   "views": 648,
    "likes": 5
   },
   {
    "id": "LawCvY_kLJg",
    "title": "Cutting in Line Saves Time. Why Doesn't Everyone Cut? #shorts",
    "published": "2026-11-17T00:00:38+00:00",
-   "views": 1285,
+   "views": 1299,
    "likes": 6
   },
   {
@@ -849,5 +849,10 @@
   ],
   "commitCount": 373
  },
- "eleven": null
+ "eleven": {
+  "used": 39596,
+  "limit": 40000,
+  "tier": "starter",
+  "reset": "2026-11-25"
+ }
 }
