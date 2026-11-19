@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-19 09:30",
+ "generated": "2026-11-19 10:30",
  "channel": {
   "id": "UCjTsqCOK6Bf1aVPx_mXgPig",
   "handle": "@simulatiolab"
@@ -678,7 +678,7 @@
    "id": "CkFnlk4zI80",
    "title": "One Bus Runs 2 Seconds Late. 6 Hours Later, This. #shorts",
    "published": "2026-11-18T00:00:00+00:00",
-   "views": 652,
+   "views": 654,
    "likes": 5
   },
   {
@@ -787,6 +787,11 @@
   "languages": 8,
   "commits": [
    {
+    "hash": "997972b1",
+    "date": "2026-11-19T09:44:19+09:00",
+    "msg": "새치기 선희판 약간 빠르게 · 여행 출발 전 할 일 추가"
+   },
+   {
     "hash": "efd5701d",
     "date": "2026-11-19T09:12:40+09:00",
     "msg": "할 일: 11/10 롱폼·쇼츠21 게시 완료 표시"
@@ -840,14 +845,9 @@
     "hash": "28199f20",
     "date": "2026-11-18T09:43:56+09:00",
     "msg": "할 일: 블로그 4편 완료(11/18)"
-   },
-   {
-    "hash": "098ecebc",
-    "date": "2026-11-18T08:29:11+09:00",
-    "msg": "할 일: 블로그 4·5편 쓰기(11/21·11/23), 네이버 1~3편 올리기"
    }
   ],
-  "commitCount": 374
+  "commitCount": 375
  },
  "eleven": {
   "used": 39596,
